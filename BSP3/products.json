@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "test",
+    "description": "description",
+    "imageURL": "https://via.placeholder.com/150",
+    "category": "cat1"
+  },
+  {
+    "id": 2,
+    "title": "test2",
+    "description": "description2",
+    "imageURL": "https://via.placeholder.com/150",
+    "category": "cat2"
+  }
+]
