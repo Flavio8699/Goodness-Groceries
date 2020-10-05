@@ -3,8 +3,6 @@ import CarBode
 
 struct Welcome_page1: View {
     @EnvironmentObject var UserSettings: UserSettings
-    @ObservedObject var welcomeVM = WelcomeViewModel()
-    @State private var clientID: String = ""
     @State private var alert: Bool = false
     @State private var isPresentingScanner: Bool = false
     
@@ -17,7 +15,7 @@ struct Welcome_page1: View {
                 .padding(.bottom, 100)
                 .padding(.top, 80)
             
-            TextField("Identifiant", text: $clientID)
+            TextField("Identifiant", text: $UserSettings.clientID)
             Rectangle()
                 .frame(height: 1.0, alignment: .bottom)
                 .foregroundColor(.gray)
@@ -37,7 +35,7 @@ struct Welcome_page1: View {
             }).padding()
             
             BlueButton(label: "Sign In", action: {
-                self.hideKeyboard()
+                hideKeyboard()
                 login()
             })
             
@@ -49,14 +47,14 @@ struct Welcome_page1: View {
                 .padding(.bottom, 30)
         }.padding(.horizontal)
         .alert(isPresented: self.$alert) {
-            Alert(title: Text("verification step..."))
+            Alert(title: Text("something wrong..."))
         }
         .sheet(isPresented: self.$isPresentingScanner) {
-            CBScanner(supportBarcode: [.qr, .code128, .code39, .code93, .upce])
+            CBScanner(supportBarcode: [.ean13])
                 .interval(delay: 5.0)
                 .found {
                     self.isPresentingScanner = false
-                    self.clientID = $0
+                    UserSettings.clientID = $0
                     login()
                 }
                 .edgesIgnoringSafeArea(.bottom)
@@ -64,15 +62,15 @@ struct Welcome_page1: View {
     }
     
     func login() {
-        welcomeVM.signIn(user: self.clientID, { result in
+        UserSettings.signIn { result in
             switch result {
             case .success(let user):
-                self.UserSettings.setUser(user: user, clientID: clientID)
-                self.UserSettings.showWelcome = false
+                UserSettings.setUser(user: user)
+                UserSettings.nextStep()
             case .failure(_):
-                self.alert.toggle()
+                alert.toggle()
             }
-        })
+        }
     }
 }
 
@@ -90,12 +88,12 @@ struct Welcome_page2: View {
             VStack (alignment: .center, spacing: 30) {
                 Text("Bienvenue dans GreenBot!").font(.title)
                 Text("Nous voulons être transparents et vous permettre d'acheter les produits qui vous correspondent. C'est pourquoi nous avons développé l'application GreenBot. Celle-ci vous permettra de consulter une multitude de données spécifiques à un produit et de le comparer à d'autres avant d'effectuer vos achats.")
-                Bullets(step: self.UserSettings.step)
+                Bullets(step: UserSettings.getStep())
                 HStack {
                     Spacer()
                     BlueButton(label: "Compris!", action: {
                         withAnimation(.default) {
-                            self.UserSettings.step += 1
+                            UserSettings.nextStep()
                         }
                     })
                     Spacer()
@@ -120,12 +118,12 @@ struct Welcome_page3: View {
             VStack (alignment: .center, spacing: 30) {
                 Text("Scannez un produit!").font(.title)
                 Text("Scannez un produit pour obtenir toutes les informations. Cela rapporte aussi de l'exp à votre niveau.")
-                Bullets(step: self.UserSettings.step)
+                Bullets(step: UserSettings.getStep())
                 HStack {
                     Spacer()
                     BlueButton(label: "Compris!", action: {
                         withAnimation(.default) {
-                            self.UserSettings.step += 1
+                            UserSettings.nextStep()
                         }
                     })
                     Spacer()
@@ -152,13 +150,13 @@ struct Welcome_page4: View {
                 Text("Effectuer des actions comme faire des scans et des comparaisons. Réussir des hauts faits!").fixedSize(horizontal: false, vertical: true)
                 Text("Pourquoi gagner des niveaux?").font(.title).fixedSize(horizontal: false, vertical: true)
                 Text("Effectuer des actions comme faire des scans et des comparaisons. Réussir des hauts faits!").fixedSize(horizontal: false, vertical: true).padding(.bottom, 18)
-                Bullets(step: self.UserSettings.step)
+                Bullets(step: UserSettings.getStep())
                 HStack {
                     Spacer()
                     BlueButton(label: "Compris!", action: {
                         withAnimation(.default) {
-                            self.UserSettings.step += 1
-                            self.UserSettings.showWelcome = false
+                            UserSettings.nextStep()
+                            UserSettings.updateWelcome()
                         }
                     })
                     Spacer()

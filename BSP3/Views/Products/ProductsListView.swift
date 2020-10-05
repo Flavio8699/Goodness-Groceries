@@ -6,8 +6,26 @@ struct ProductsListView: View {
     let category: Category
     
     var body: some View {
-        ForEach(self.productsVM.products.filter { $0.category == category.name }, id: \.self) {
-            Text($0.name)
+        ScrollView (.vertical, showsIndicators: false) {
+            VStack (spacing: 0) {
+                let products = self.productsVM.products.filter { product in
+                    for indicator in category.indicators {
+                        for productIndicator in product.indicators {
+                            if productIndicator.id == indicator {
+                                return true
+                            }
+                        }
+                    }
+                    return false
+                }
+                
+                ForEach(products, id: \.self) { product in
+                    NavigationLink(destination: ProductView(product: product)) {
+                        ProductRowView(product: product, hideSeparator: (product == products.last)).foregroundColor(.black)
+                    }
+                }
+                .navigationBarTitle("Liste des produits")
+            }
         }
     }
 }

@@ -9,7 +9,8 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             VStack {
-                if let user = self.UserSettings.getUser() {
+                if !UserSettings.showWelcome && UserSettings.getUser() != nil {
+                    let user = UserSettings.getUser()!
                     TabView {
                         Accueil().tabItem {
                             Image(systemName: "house.fill").font(.system(size: 23))
@@ -19,7 +20,7 @@ struct ContentView: View {
                             Image(systemName: "qrcode.viewfinder").font(.system(size: 23))
                             Text("Scanner").font(.system(size: 23))
                         }
-                        Text("\(user.name)").tabItem {
+                        Profile(user: user).tabItem {
                             Image(systemName: "person.circle.fill").font(.system(size: 23))
                             Text("Profil").font(.system(size: 23))
                         }
@@ -28,9 +29,9 @@ struct ContentView: View {
                     handleWelcomeView()
                 }
             }
-            if self.showSurvey {
+            if showSurvey {
                 NavigationView {
-                    SurveyView(products: self.surveyProducts)
+                    SurveyView(products: surveyProducts)
                     .navigationBarTitle("", displayMode: .inline)
                     .navigationBarHidden(true)
                 }
@@ -42,13 +43,13 @@ struct ContentView: View {
                         //self.surveyProducts.append(i)
                     }
                 }
-                self.showSurvey = true
+                showSurvey = true
             }
         }
     }
     
     func handleWelcomeView() -> AnyView {
-        switch self.UserSettings.step {
+        switch UserSettings.getStep() {
             case 0: return AnyView(Welcome_page1())
             case 1: return AnyView(Welcome_page2())
             case 2: return AnyView(Welcome_page3())

@@ -5,7 +5,6 @@ struct Scanner: View {
     
     @ObservedObject var productsVM = ProductsViewModel()
     @State var product: Product?
-    var notifs = NotificationsManager()
     
     var body: some View {
         NavigationView {
@@ -26,16 +25,11 @@ struct Scanner: View {
                 if let product = self.product {
                     VStack {
                         Spacer()
-                        NavigationLink(destination: Text("product view")) {
+                        NavigationLink(destination: ProductView(product: product)) {
                             ProductScannedView(product: product).padding(.bottom, 70)
                         }
                     }
                 }
-                Button(action: {
-                    self.notifs.sendNotification()
-                }, label: {
-                    Text("tessssssst")
-                })
             }.edgesIgnoringSafeArea(.top)
             .navigationBarTitle("", displayMode: .inline)
             .navigationBarHidden(true)

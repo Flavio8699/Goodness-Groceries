@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>867833184923-r6afku79o2odid386n18a45rvpho905q.apps.googleusercontent.com</string>
+	<string>404967988395-rmv17iekk1dpbsshribtllkd1fqr70s1.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.867833184923-r6afku79o2odid386n18a45rvpho905q</string>
+	<string>com.googleusercontent.apps.404967988395-rmv17iekk1dpbsshribtllkd1fqr70s1</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCJxCe2Ne_c2hZa6LODCO_Q8UY8swznrrY</string>
+	<string>AIzaSyCUwe2naCJ-GvJlR85ndIBe3KxRGrcubOg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>867833184923</string>
+	<string>404967988395</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.flavio.BSP3</string>
 	<key>PROJECT_ID</key>
-	<string>bsp3-f0b1b</string>
+	<string>goodnessgroceries-fe208</string>
 	<key>STORAGE_BUCKET</key>
-	<string>bsp3-f0b1b.appspot.com</string>
+	<string>goodnessgroceries-fe208.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:867833184923:ios:c95f233b55a0a215093c3e</string>
+	<string>1:404967988395:ios:9bc36be5d759c99290ebee</string>
 	<key>DATABASE_URL</key>
-	<string>https://bsp3-f0b1b.firebaseio.com</string>
+	<string>https://goodnessgroceries-fe208.firebaseio.com</string>
 </dict>
 </plist>

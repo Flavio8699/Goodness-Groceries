@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CategoryCellView: View {
+struct CategoryRowView: View {
     
     let category: Category
     let hideSeparator: Bool
@@ -17,10 +17,10 @@ struct CategoryCellView: View {
             }.padding(10)
             if !hideSeparator {
                 Rectangle()
-                    .frame(height: 1.0, alignment: .bottom)
+                    .frame(height: 1, alignment: .bottom)
                     .foregroundColor(Color.black.opacity(0.5))
             }
         }
-        .navigationBarTitle("Retour")
+        .navigationBarTitle("Accueil")
     }
 }
