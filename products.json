@@ -1,0 +1,28 @@
+[
+  {
+    "code": "1",
+    "name": "Pommes de terre",
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+    "category": "Honey",
+    "type": "local_organic",
+    "provider": "obco",
+    "imageURL": "https://www.academiedugout.fr/images/16365/1200-auto/fotolia_55292183_subscription_xl-copy.jpg?poix=50&poiy=50",
+    "indicators": [
+        {
+            "id": 1,
+            "icon": "flower",
+            "description": "test"
+        },
+        {
+            "id": 3,
+            "icon": "milk",
+            "description": "test"
+        },
+        {
+            "id": 4,
+            "icon": "milk",
+            "description": "test"
+        }
+    ]
+  }
+]
