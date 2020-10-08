@@ -3,6 +3,6 @@
     "customer": "12345",
     "product_name": "milk",
     "product_id": "1",
-    "price": "1.2"
+    "price": 1.2
   }
 ]
