@@ -42,19 +42,19 @@ struct ContentView: View {
                     var productsForSurvey = [String]()
                     for product in products {
                         // check if products exists and compare to current user
-                        productsForSurvey.append(product.product_id)
+                        productsForSurvey.append(product.product_code)
                     }
                     NotificationsManager().sendNotification(products: productsForSurvey)
                 }
             }
             
-            NotificationCenter.default.addObserver(forName: NSNotification.Name("Survey"), object: nil, queue: .main) { xx in
-                if let productIDs = xx.userInfo!["products"] {
-                    for i in productIDs as! [String] {
-                        self.surveyProducts.append(i)
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("Survey"), object: nil, queue: .main) { notif in
+                if let products = notif.userInfo!["products"] {
+                    for code in products as! [String] {
+                        self.surveyProducts.append(code)
+                        showSurvey = true
                     }
                 }
-                showSurvey = true
             }
         }
     }
