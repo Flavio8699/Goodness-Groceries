@@ -4,7 +4,7 @@ struct ContentView: View {
     
     @EnvironmentObject var UserSettings: UserSettings
     @State var showSurvey = false
-    var surveyProducts: [Int] = [0]
+    @State var surveyProducts = [String]()
     
     var body: some View {
         ZStack {
@@ -37,10 +37,21 @@ struct ContentView: View {
                 }
             }
         }.onAppear {
+            NetworkManager().fetchProductsBought {
+                if let products = $0 {
+                    var productsForSurvey = [String]()
+                    for product in products {
+                        // check if products exists and compare to current user
+                        productsForSurvey.append(product.product_id)
+                    }
+                    NotificationsManager().sendNotification(products: productsForSurvey)
+                }
+            }
+            
             NotificationCenter.default.addObserver(forName: NSNotification.Name("Survey"), object: nil, queue: .main) { xx in
                 if let productIDs = xx.userInfo!["products"] {
-                    for i in productIDs as! [Int] {
-                        //self.surveyProducts.append(i)
+                    for i in productIDs as! [String] {
+                        self.surveyProducts.append(i)
                     }
                 }
                 showSurvey = true

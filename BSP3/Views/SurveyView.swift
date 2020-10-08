@@ -2,17 +2,15 @@ import SwiftUI
 
 struct SurveyView: View {
     
-    let products: [Int]
+    @ObservedObject var productsVM = ProductsViewModel()
+    let products: [String]
     
     var body: some View {
-        /*
-         if let product = ProductsViewModel().products.first(where: { $0.code == String(i) }) {
-             self.surveyProducts!.append(product)
-         }
-         */
-        /*ForEach(self.products, id: \.self) { product in
-            Text(product.name)
-        }*/
+        ForEach(self.products, id: \.self) { id in
+            if let product = productsVM.products.filter { $0.code == id }.first {
+                Text(product.name)
+            }
+        }
         Text("survey")
     }
 }

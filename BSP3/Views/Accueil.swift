@@ -24,10 +24,5 @@ struct Accueil: View {
             .navigationBarTitle("", displayMode: .inline)
             .navigationBarHidden(true)
         }
-        .onAppear {
-            NetworkManager().fetchProductsBought {
-                print($0)
-            }
-        }
     }
 }

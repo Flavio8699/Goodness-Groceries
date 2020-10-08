@@ -1,8 +1,14 @@
 [
-  {
-    "customer": "12345",
-    "product_name": "milk",
-    "product_id": "1",
-    "price": 1.2
-  }
+    {
+        "customer": "12345",
+        "product_name": "test",
+        "product_id": "1",
+        "price": 1.2
+    },
+    {
+        "customer": "12345",
+        "product_name": "test",
+        "product_id": "2",
+        "price": 1.2
+    }
 ]

@@ -7,7 +7,7 @@ struct Profile: View {
     
     var body: some View {
         BlueButton(label: "Send notification test") {
-            self.notifs.sendNotification()
+            //self.notifs.sendNotification()
         }
     }
 }
