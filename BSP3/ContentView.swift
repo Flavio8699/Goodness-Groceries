@@ -37,7 +37,8 @@ struct ContentView: View {
                 }
             }
         }.onAppear {
-            NetworkManager().fetchProductsBought {
+            // set timer to execute this code at a precise time (fetch products, 9pm?)
+            /*NetworkManager().fetchProductsBought {
                 if let products = $0 {
                     var productsForSurvey = [String]()
                     for product in products {
@@ -46,7 +47,7 @@ struct ContentView: View {
                     }
                     NotificationsManager().sendNotification(products: productsForSurvey)
                 }
-            }
+            }*/
             
             NotificationCenter.default.addObserver(forName: NSNotification.Name("Survey"), object: nil, queue: .main) { notif in
                 if let products = notif.userInfo!["products"] {

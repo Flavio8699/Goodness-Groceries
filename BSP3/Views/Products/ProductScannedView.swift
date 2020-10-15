@@ -8,7 +8,7 @@ struct ProductScannedView: View {
     var body: some View {
         VStack {
             HStack {
-                WebImage(url: URL(string: product.imageURL)).resizable().frame(width: 80, height: 80).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                WebImage(url: URL(string: product.image_url)).resizable().frame(width: 80, height: 80).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                 VStack (alignment: .leading) {
                     Text(product.name).bold().font(.system(size: 18))
                     Text(product.description).lineLimit(2).font(.system(size: 16))

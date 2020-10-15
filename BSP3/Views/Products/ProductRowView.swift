@@ -7,14 +7,11 @@ struct ProductRowView: View {
     let hideSeparator: Bool
     
     var body: some View {
-        VStack (spacing: 0) {
-            HStack (alignment: .top) {
-                WebImage(url: URL(string: product.imageURL)).resizable().frame(width: 100, height: 100).clipShape(Circle())
-                VStack (alignment: .leading, spacing: 15) {
-                    Text(product.name).bold()
-                    //Text("indicators: \(product.indicators)")
-                }.padding()
-                Spacer()
+        VStack (alignment: .leading, spacing: 0) {
+            HStack (alignment: .top, spacing: 15) {
+                WebImage(url: URL(string: product.image_url)).resizable().frame(width: 100, height: 100).cornerRadius(7)
+                Text(product.name).bold().multilineTextAlignment(.leading).lineLimit(3)
+                Spacer(minLength: 0)
             }
             if !hideSeparator {
                 Spacer()

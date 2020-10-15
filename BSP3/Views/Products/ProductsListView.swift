@@ -9,9 +9,9 @@ struct ProductsListView: View {
         ScrollView (.vertical, showsIndicators: false) {
             VStack (spacing: 0) {
                 let products = self.productsVM.products.filter { product in
-                    for indicator in category.indicators {
-                        for productIndicator in product.indicators {
-                            if productIndicator.id == indicator {
+                    for productIndicator in product.indicators {
+                        if let indicator = self.productsVM.indicators.first(where: { $0.id == productIndicator.indicator_id }) {
+                            if indicator.category_id == category.id {
                                 return true
                             }
                         }
@@ -19,13 +19,17 @@ struct ProductsListView: View {
                     return false
                 }
                 
-                ForEach(products, id: \.self) { product in
-                    NavigationLink(destination: ProductView(product: product)) {
-                        ProductRowView(product: product, hideSeparator: (product == products.last)).foregroundColor(.black)
+                if products.count > 0 {
+                    ForEach(products, id: \.self) { product in
+                        NavigationLink(destination: ProductView(product: product)) {
+                            ProductRowView(product: product, hideSeparator: (product == products.last)).foregroundColor(.black)
+                        }
                     }
+                } else {
+                    Text("pas de produits")
                 }
-                .navigationBarTitle("Liste des produits")
             }
         }
+        .navigationBarTitle(category.name)
     }
 }
