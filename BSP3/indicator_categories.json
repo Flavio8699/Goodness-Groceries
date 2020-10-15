@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ind_cat_environment",
+    "name": "Environmental Integrity",
+    "icon_name": "Socio-Culturel",
+    "description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
+  },
+  {
+    "id": "ind_cat_economic",
+    "name": "Economic Resilience",
+    "icon_name": "Socio-Economique",
+    "description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
+  },
+  {
+    "id": "ind_cat_social",
+    "name": "Social Well_being",
+    "icon_name": "Socio-Ecologique",
+    "description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
+  },
+  {
+    "id": "ind_cat_governance",
+    "name": "Good Governance",
+    "icon_name": "Socio-Politique",
+    "description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
+  }
+]
