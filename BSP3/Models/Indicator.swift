@@ -1,7 +1,9 @@
 import Foundation
 
 struct Indicator: Hashable, Decodable {
-    let id: Int
-    let icon: String
-    let description: String
+    var id: String
+    var name: String
+    var category_id: String
+    var icon_name: String
+    var general_description: String
 }

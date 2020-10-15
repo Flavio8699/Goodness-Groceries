@@ -1,8 +1,8 @@
 import Foundation
 
 struct ProductBought: Decodable {
-    let customer: String
-    let product_name: String
-    let product_code: String
-    let price: Double
+    var customer: String
+    var product_name: String
+    var product_code: String
+    var price: Double
 }

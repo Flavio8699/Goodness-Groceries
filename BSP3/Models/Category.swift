@@ -1,7 +1,8 @@
 import Foundation
 
-struct Category: Identifiable, Equatable {
-    var id = UUID()
+struct Category: Hashable, Decodable {
+    var id: String
     var name: String
-    var indicators: [Int]
+    var icon_name: String
+    var description: String
 }

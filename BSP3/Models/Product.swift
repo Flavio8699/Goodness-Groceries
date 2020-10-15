@@ -1,14 +1,14 @@
 import Foundation
 
 struct Product: Hashable, Decodable {
-    let code: String
-    let name: String
-    let description: String
-    let category: String
-    let type: ProductType
-    let provider: String
-    let imageURL: String
-    let indicators: [Indicator]
+    var code: String
+    var name: String
+    var description: String
+    var category: String
+    var type: ProductType
+    var provider: String
+    var image_url: String
+    var indicators: [ProductIndicator]
     
     static func == (lhs: Product, rhs: Product) -> Bool {
         return lhs.code == rhs.code
@@ -17,4 +17,7 @@ struct Product: Hashable, Decodable {
 
 enum ProductType: String, Codable {
     case localOrganic = "local_organic"
+    case importedOrganic = "imported_organic"
+    case localConventional = "local_conventional"
+    case importedConventional = "imported_conventional"
 }
