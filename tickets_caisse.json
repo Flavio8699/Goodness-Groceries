@@ -2,13 +2,13 @@
     {
         "customer": "12345",
         "product_name": "test",
-        "product_code": "1",
+        "product_code": "2354896578459",
         "price": 1.2
     },
     {
         "customer": "12345",
         "product_name": "test",
-        "product_code": "2",
+        "product_code": "2354896578498",
         "price": 1.2
     }
 ]
