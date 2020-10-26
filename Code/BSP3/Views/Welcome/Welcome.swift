@@ -62,7 +62,8 @@ struct Welcome_page1: View {
     }
     
     func login() {
-        UserSettings.signIn { result in
+        UserSettings.nextStep()
+        /*UserSettings.signIn { result in
             switch result {
             case .success(let user):
                 UserSettings.setUser(user: user)
@@ -70,7 +71,20 @@ struct Welcome_page1: View {
             case .failure(_):
                 alert.toggle()
             }
-        }
+        }*/
+        /*UserSettings.signIn { result in
+            switch result {
+            case .success(let userStatus):
+                switch userStatus.status {
+                case .requested:
+                    print("requested")
+                case .valid:
+                    print("valid")
+                }
+            case .failure(_):
+                print("error")
+            }
+        }*/
     }
 }
 
@@ -156,7 +170,7 @@ struct Welcome_page4: View {
                     BlueButton(label: "Compris!", action: {
                         withAnimation(.default) {
                             UserSettings.nextStep()
-                            UserSettings.updateWelcome()
+                            UserSettings.requestAccess()
                         }
                     })
                     Spacer()

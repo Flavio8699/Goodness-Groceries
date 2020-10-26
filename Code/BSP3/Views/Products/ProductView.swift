@@ -18,23 +18,26 @@ struct ProductView: View {
                 }
                 HStack(alignment: .top, spacing: 15) {
                     VStack (alignment: .leading, spacing: 15) {
-                        Text("Catégorie:").bold()
-                        Text("Fournisseur:").bold()
+                        Text("Type").bold()
+                        Text("Fournisseur").bold()
                     }
                     VStack (alignment: .leading, spacing: 15) {
-                        Text(product.category)
+                        Text(product.type)
                         Text(product.provider)
                     }
                     Spacer()
                 }
                 Map(coordinateRegion: $region).frame(height: 150).cornerRadius(7)
-                Text("Indicateurs:").font(.title2).bold()
+                Text("Indicateurs").font(.title2).bold()
                 ForEach(product.indicators, id: \.self) { productIndicator in
-                    if let indicator = self.productsVM.indicators.first(where: { $0.id == productIndicator.indicator_id }) {
+                    if let indicator = productsVM.indicators.first(where: { $0.id == productIndicator.indicator_id }) {
                         HStack (alignment: .top, spacing: 15) {
                             Image(indicator.icon_name)
                             Text(productIndicator.indicator_description)
                             Spacer()
+                        }
+                        if productIndicator != product.indicators.last {
+                            Divider()
                         }
                     }
                 }

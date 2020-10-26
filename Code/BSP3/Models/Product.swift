@@ -4,8 +4,8 @@ struct Product: Hashable, Decodable {
     var code: String
     var name: String
     var description: String
-    var category: String
-    var type: ProductType
+    var type: String
+    var category: ProductCategory
     var provider: String
     var image_url: String
     var indicators: [ProductIndicator]
@@ -15,7 +15,7 @@ struct Product: Hashable, Decodable {
     }
 }
 
-enum ProductType: String, Codable {
+enum ProductCategory: String, Codable {
     case localOrganic = "local_organic"
     case importedOrganic = "imported_organic"
     case localConventional = "local_conventional"

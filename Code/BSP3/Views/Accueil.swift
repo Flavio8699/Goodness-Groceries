@@ -10,51 +10,26 @@ struct Accueil: View {
     var body: some View {
         NavigationView {
             VStack (alignment: .leading, spacing: 15) {
-                HStack {
-                    TextField("Rechercher", text: $search, onEditingChanged: {
-                        if $0 {
-                            withAnimation(.default) {
-                                width = UIScreen.main.bounds.size.width*3/4-15
-                            }
-                            withAnimation(Animation.default.delay(0.25)) {
-                                showCancelButton = true
-                            }
-                        } else {
-                            hideKeyboard()
-                            withAnimation(.default) {
-                                search = ""
-                                showCancelButton = false
-                            }
-                            withAnimation(Animation.default.delay(0.25)) {
-                                width = .infinity
-                            }
-                        }
-                    }).textFieldStyle(RoundedBorderTextFieldStyle()).frame(maxWidth: width)
-                    if(showCancelButton) {
-                        Spacer()
-                        Button(action: {
-                            hideKeyboard()
-                            withAnimation(.default) {
-                                search = ""
-                                showCancelButton = false
-                            }
-                            withAnimation(Animation.default.delay(0.25)) {
-                                width = .infinity
-                            }
-                        }, label: {
-                            Text("Annuler")
-                        })
-                    }
+                VStack {
+                    HStack (spacing: 12) {
+                        Image(systemName: "magnifyingglass")
+                        TextField("Rechercher", text: $search)
+                    }.padding(.vertical, 10).padding(.horizontal)
                 }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 7)
+                        .stroke(Color.black.opacity(0.3), lineWidth: 0.5)
+                )
+                .padding([.horizontal, .top])
                 if(search != "") {
                     let productsFiltered = productsVM.products.filter { $0.name.contains(search) }
-                    SearchView(products: productsFiltered)
+                    SearchView(products: productsFiltered).padding(.horizontal)
                 } else {
                     ScrollView (.vertical, showsIndicators: false) {
                         CategoryListView()
-                    }.padding(0).frame(maxHeight: .infinity)
+                    }.padding(.horizontal).frame(maxHeight: .infinity)
                 }
-            }.padding([.horizontal, .top])
+            }
             .navigationBarTitle("", displayMode: .inline)
             .navigationBarHidden(true)
         }

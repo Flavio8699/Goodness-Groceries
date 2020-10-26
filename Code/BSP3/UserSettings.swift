@@ -6,12 +6,14 @@ class UserSettings: ObservableObject {
     
     @Published private var step: Int = 0
     @Published var clientID: String = ""
+    @Published var statusRequested: Bool = false
     @Published var showWelcome: Bool = true
+    private var NetworkManager = BSP3.NetworkManager()
     private var user: User? = nil
     private var db = Firestore.firestore()
     
     init() {
-        if let id = UserDefaults.standard.string(forKey: "clientID") {
+        /*if let id = UserDefaults.standard.string(forKey: "clientID") {
             DispatchQueue.main.async {
                 self.clientID = id
                 self.userExists { result in
@@ -23,6 +25,25 @@ class UserSettings: ObservableObject {
                         print("not found")
                     }
                 }
+            }
+        }*/
+    }
+    
+    func signIn() {
+        NetworkManager.fetchUserStatus {
+            guard let userStatus = $0 else {
+                return
+            }
+            switch userStatus.status {
+            case .requested:
+                print("requested")
+                self.statusRequested = true
+                // tests
+                //self.showWelcome = false
+            case .valid:
+                print("valid")
+                self.statusRequested = false
+                self.showWelcome = false
             }
         }
     }
@@ -36,20 +57,20 @@ class UserSettings: ObservableObject {
         return self.user
     }
     
-    func signIn(_ completion: @escaping (Result<User, SignInError>) -> Void) {
+    /*func signIn(_ completion: @escaping (Result<User, SignInError>) -> Void) {
         self.userExists { result in
             completion(result)
         }
-    }
+    }*/
     
-    func userExists(_ completion: @escaping (Result<User, SignInError>) -> Void) {
-        db.collection("customers").document(clientID).getDocument { doc, error in
+    func userExists(_ completion: @escaping (Result<User, ResultError>) -> Void) {
+        /*db.collection("customers").document(clientID).getDocument { doc, error in
             guard let user = try! doc?.data(as: User.self) else {
                 completion(.failure(.UserNotFound))
                 return
             }
             completion(.success(user))
-        }
+        }*/
     }
     
     func getStep() -> Int {
@@ -60,17 +81,14 @@ class UserSettings: ObservableObject {
         self.step += 1
     }
     
-    func updateWelcome() {
-        db.collection("customers").document(clientID).updateData(["showWelcome": false]) { error in
-            if let error = error {
-                print(error)
-            } else {
-                self.showWelcome = false
-            }
-        }
+    func requestAccess() {
+        self.statusRequested = true
+        // NetworkManager post for access request
     }
 }
 
-enum SignInError: Error {
+enum ResultError: Error {
+    case Error
     case UserNotFound
+    case NetworkError
 }

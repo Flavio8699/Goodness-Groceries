@@ -5,29 +5,29 @@ struct ContentView: View {
     @EnvironmentObject var UserSettings: UserSettings
     @State var showSurvey = false
     @State var surveyProducts = [String]()
+    private var NetworkManager = BSP3.NetworkManager()
+    
     
     var body: some View {
         ZStack {
-            VStack {
-                if !UserSettings.showWelcome && UserSettings.getUser() != nil {
-                    let user = UserSettings.getUser()!
-                    TabView {
-                        Accueil().tabItem {
-                            Image(systemName: "house.fill").font(.system(size: 23))
-                            Text("Accueil").font(.system(size: 23))
-                        }
-                        Scanner().tabItem {
-                            Image(systemName: "qrcode.viewfinder").font(.system(size: 23))
-                            Text("Scanner").font(.system(size: 23))
-                        }
-                        Profile(user: user).tabItem {
-                            Image(systemName: "person.circle.fill").font(.system(size: 23))
-                            Text("Profil").font(.system(size: 23))
-                        }
+            if !UserSettings.showWelcome /*&& UserSettings.getUser() != nil*/ {
+                //let user = UserSettings.getUser()!
+                TabView {
+                    Accueil().tabItem {
+                        Image(systemName: "house.fill").font(.system(size: 23))
+                        Text("Accueil").font(.system(size: 23))
                     }
-                } else {
-                    handleWelcomeView()
+                    Scanner().tabItem {
+                        Image(systemName: "qrcode.viewfinder").font(.system(size: 23))
+                        Text("Scanner").font(.system(size: 23))
+                    }
+                    Profile(/*user: user*/).tabItem {
+                        Image(systemName: "person.circle.fill").font(.system(size: 23))
+                        Text("Profil").font(.system(size: 23))
+                    }
                 }
+            } else {
+                handleWelcomeView()
             }
             if showSurvey {
                 NavigationView {
@@ -36,18 +36,28 @@ struct ContentView: View {
                     .navigationBarHidden(true)
                 }
             }
+            if UserSettings.statusRequested {
+                StatusRequestedView()
+            }
         }.onAppear {
-            // set timer to execute this code at a precise time (fetch products, 9pm?)
-            /*NetworkManager().fetchProductsBought {
-                if let products = $0 {
-                    var productsForSurvey = [String]()
-                    for product in products {
-                        // check if products exists and compare to current user
-                        productsForSurvey.append(product.product_code)
+            let group = DispatchGroup()
+            
+            
+            //NetworkManager.requestUserAccess(for: "13")
+            
+            DispatchQueue(label: "queue2").async(group: group) {
+                // set timer to execute this code at a precise time (fetch products, 9pm?)
+                NetworkManager.fetchProductsBought {
+                    if let products = $0 {
+                        var productsForSurvey = [String]()
+                        for product in products {
+                            // check if products exists and compare to current user
+                            productsForSurvey.append(product.product_code)
+                        }
+                        //NotificationsManager().sendNotification(products: productsForSurvey)
                     }
-                    NotificationsManager().sendNotification(products: productsForSurvey)
                 }
-            }*/
+            }
             
             NotificationCenter.default.addObserver(forName: NSNotification.Name("Survey"), object: nil, queue: .main) { notif in
                 if let products = notif.userInfo!["products"] {
@@ -57,6 +67,8 @@ struct ContentView: View {
                     }
                 }
             }
+            
+            group.wait()
         }
     }
     

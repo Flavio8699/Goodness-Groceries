@@ -19,14 +19,11 @@ struct ProductsListView: View {
                     return false
                 }
                 
-                if products.count > 0 {
-                    ForEach(products, id: \.self) { product in
-                        NavigationLink(destination: ProductView(product: product)) {
-                            ProductRowView(product: product, hideSeparator: (product == products.last)).foregroundColor(.black)
-                        }
+                ForEach(products, id: \.self) { product in
+                    NavigationLink(destination: ProductView(product: product)) {
+                        ProductRowView(product: product, category: category).foregroundColor(.black)
                     }
-                } else {
-                    Text("pas de produits")
+                    Divider().padding(.horizontal)
                 }
             }
         }

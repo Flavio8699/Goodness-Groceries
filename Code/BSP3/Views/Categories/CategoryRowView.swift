@@ -16,9 +16,7 @@ struct CategoryRowView: View {
                 Text(category.description).font(.system(size: 14)).multilineTextAlignment(.leading).lineLimit(2)
             }.padding(10)
             if !hideSeparator {
-                Rectangle()
-                    .frame(height: 1, alignment: .bottom)
-                    .foregroundColor(Color.black.opacity(0.5))
+                Divider()
             }
         }
         .navigationBarTitle("Accueil")

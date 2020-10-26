@@ -18,6 +18,8 @@
 		7240C4352538382C000AD50A /* indicator_categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 7240C4342538382C000AD50A /* indicator_categories.json */; };
 		7240C439253838DA000AD50A /* indicators.json in Resources */ = {isa = PBXBuildFile; fileRef = 7240C438253838DA000AD50A /* indicators.json */; };
 		7240C43D253839C4000AD50A /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240C43C253839C4000AD50A /* CategoriesViewModel.swift */; };
+		7272E7952547006400A38A7D /* percentEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272E7942547006400A38A7D /* percentEncoded.swift */; };
+		7272E79825470BB000A38A7D /* StatusRequestedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272E79725470BB000A38A7D /* StatusRequestedView.swift */; };
 		7274B7572513EB8000867FDB /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7274B7562513EB8000867FDB /* Welcome.swift */; };
 		72771C17252B7830005245FB /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72771C16252B7830005245FB /* Indicator.swift */; };
 		72999EF025237A3C0018750E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 72999EEF25237A3C0018750E /* SDWebImageSwiftUI */; };
@@ -63,6 +65,8 @@
 		7240C4342538382C000AD50A /* indicator_categories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = indicator_categories.json; sourceTree = "<group>"; };
 		7240C438253838DA000AD50A /* indicators.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = indicators.json; sourceTree = "<group>"; };
 		7240C43C253839C4000AD50A /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		7272E7942547006400A38A7D /* percentEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = percentEncoded.swift; sourceTree = "<group>"; };
+		7272E79725470BB000A38A7D /* StatusRequestedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusRequestedView.swift; sourceTree = "<group>"; };
 		7274B7562513EB8000867FDB /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		72771C16252B7830005245FB /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		72999EF2252385810018750E /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 				72999F0A2524C89F0018750E /* Scanner.swift */,
 				72999F0E2524CF310018750E /* SurveyView.swift */,
 				7233D7BF2525C8DD0087E9EF /* Profile.swift */,
+				7272E79725470BB000A38A7D /* StatusRequestedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				72CCF07B251A339600460AF0 /* hideKeyboard.swift */,
+				7272E7942547006400A38A7D /* percentEncoded.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 				72AC8AE225129AE700C0887F /* Bullets.swift in Sources */,
 				7233D7C02525C8DD0087E9EF /* Profile.swift in Sources */,
 				72AC8ABE2512770B00C0887F /* AppDelegate.swift in Sources */,
+				7272E79825470BB000A38A7D /* StatusRequestedView.swift in Sources */,
 				72AC8ADB25128B4A00C0887F /* UserSettings.swift in Sources */,
 				7233D7BA2525C49A0087E9EF /* ProductRowView.swift in Sources */,
 				72AC8AD725127FD100C0887F /* BlueButton.swift in Sources */,
@@ -409,6 +416,7 @@
 				72AC8AC52512770B00C0887F /* ContentView.swift in Sources */,
 				72B7F3EB252F6C1500231772 /* ProductBought.swift in Sources */,
 				7240C43225383795000AD50A /* ProductIndicator.swift in Sources */,
+				7272E7952547006400A38A7D /* percentEncoded.swift in Sources */,
 				7240C43D253839C4000AD50A /* CategoriesViewModel.swift in Sources */,
 				72999EF82524C6FE0018750E /* Accueil.swift in Sources */,
 				72D913D42518E69A00CA817D /* Product.swift in Sources */,
