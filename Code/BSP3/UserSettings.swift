@@ -1,6 +1,4 @@
 import Foundation
-import FirebaseFirestore
-import FirebaseFirestoreSwift
 
 class UserSettings: ObservableObject {
     
@@ -12,7 +10,6 @@ class UserSettings: ObservableObject {
     @Published var loading: Bool = true
     private var NetworkManager = BSP3.NetworkManager()
     private var user: User? = nil
-    private var db = Firestore.firestore()
     
     init() {
         if isKeyPresentInUserDefaults(key: "completedWelcome") {
