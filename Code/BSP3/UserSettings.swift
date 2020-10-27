@@ -8,69 +8,47 @@ class UserSettings: ObservableObject {
     @Published var clientID: String = ""
     @Published var statusRequested: Bool = false
     @Published var showWelcome: Bool = true
+    @Published var networkError: Bool = false
+    @Published var loading: Bool = true
     private var NetworkManager = BSP3.NetworkManager()
     private var user: User? = nil
     private var db = Firestore.firestore()
     
     init() {
-        /*if let id = UserDefaults.standard.string(forKey: "clientID") {
-            DispatchQueue.main.async {
-                self.clientID = id
-                self.userExists { result in
-                    switch result {
-                    case .success(let user):
-                        self.user = user
-                        self.showWelcome = user.showWelcome
-                    case .failure(_):
-                        print("not found")
-                    }
-                }
-            }
-        }*/
+        if isKeyPresentInUserDefaults(key: "completedWelcome") {
+            self.showWelcome = false
+        }
+        if isKeyPresentInUserDefaults(key: "statusRequested") {
+            self.statusRequested = true
+        }
     }
     
     func signIn() {
-        NetworkManager.fetchUserStatus {
-            guard let userStatus = $0 else {
-                return
+        self.NetworkManager.fetchUserStatus {
+            switch $0 {
+            case let .success(status):
+                switch status.status {
+                case .requested:
+                    print("requested")
+                    self.showWelcome = false
+                    self.statusRequested = true
+                case .valid:
+                    print("valid")
+                    self.showWelcome = false
+                    self.statusRequested = false
+                    UserDefaults.standard.removeObject(forKey: "statusRequested")
+                }
+                self.networkError = false
+            case .failure(_):
+                self.networkError = true
             }
-            switch userStatus.status {
-            case .requested:
-                print("requested")
-                self.statusRequested = true
-                // tests
-                //self.showWelcome = false
-            case .valid:
-                print("valid")
-                self.statusRequested = false
-                self.showWelcome = false
-            }
+            self.loading = false
         }
     }
     
     func setUser(user: User) {
         self.user = user
         UserDefaults.standard.set(clientID, forKey: "clientID")
-    }
-    
-    func getUser() -> User? {
-        return self.user
-    }
-    
-    /*func signIn(_ completion: @escaping (Result<User, SignInError>) -> Void) {
-        self.userExists { result in
-            completion(result)
-        }
-    }*/
-    
-    func userExists(_ completion: @escaping (Result<User, ResultError>) -> Void) {
-        /*db.collection("customers").document(clientID).getDocument { doc, error in
-            guard let user = try! doc?.data(as: User.self) else {
-                completion(.failure(.UserNotFound))
-                return
-            }
-            completion(.success(user))
-        }*/
     }
     
     func getStep() -> Int {
@@ -81,10 +59,19 @@ class UserSettings: ObservableObject {
         self.step += 1
     }
     
+    func completedWelcome() {
+        UserDefaults.standard.set(true, forKey: "completedWelcome")
+    }
+    
     func requestAccess() {
         self.statusRequested = true
+        UserDefaults.standard.set(true, forKey: "statusRequested")
         // NetworkManager post for access request
     }
+}
+
+func isKeyPresentInUserDefaults(key: String) -> Bool {
+    return UserDefaults.standard.object(forKey: key) != nil
 }
 
 enum ResultError: Error {

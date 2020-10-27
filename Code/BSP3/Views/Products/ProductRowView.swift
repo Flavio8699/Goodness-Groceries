@@ -29,5 +29,6 @@ struct ProductRowView: View {
         .frame(height: 120)
         .padding(.horizontal)
         .padding(.vertical, 10)
+        .navigationBarTitle(category.name)
     }
 }

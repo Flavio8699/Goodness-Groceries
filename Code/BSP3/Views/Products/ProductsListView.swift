@@ -27,6 +27,5 @@ struct ProductsListView: View {
                 }
             }
         }
-        .navigationBarTitle(category.name)
     }
 }

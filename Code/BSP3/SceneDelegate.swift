@@ -57,7 +57,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to undo the changes made on entering the background.
         
         // IF NOT LOGGED IN CORRECTLY -> CHECK STATUS
-        UserSettings.signIn()
+        //UserSettings.signIn()
+        //UserSettings.loading = false
+        if isKeyPresentInUserDefaults(key: "completedWelcome") {
+            UserSettings.signIn()
+            print("scene")
+        }
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

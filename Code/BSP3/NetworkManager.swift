@@ -17,17 +17,26 @@ class NetworkManager: ObservableObject {
         ]
         request.httpBody = parameters.percentEncoded()
         
-        URLSession(configuration: config).dataTask(with: request) { (data, response, error) in
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+            print(error)
+            }
         }.resume()
     }
     
-    func fetchUserStatus(completion: @escaping (UserStatus?) -> Void) {
+    func fetchUserStatus(completion: @escaping (Result<UserStatus,ResultError>) -> Void) {
         let request = URLRequest(url: URL(string: "https://flavio8699.github.io/Goodness-Groceries/user.json")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if error != nil {
+                DispatchQueue.main.async {
+                    completion(.failure(.NetworkError))
+                }
+                return
+            }
             let json = try? JSONDecoder().decode(UserStatus.self, from: data!)
             DispatchQueue.main.async {
-                completion(json)
+                completion(.success(json!))
             }
         }.resume()
     }

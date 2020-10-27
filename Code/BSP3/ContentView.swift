@@ -10,40 +10,60 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            if !UserSettings.showWelcome /*&& UserSettings.getUser() != nil*/ {
-                //let user = UserSettings.getUser()!
-                TabView {
-                    Accueil().tabItem {
-                        Image(systemName: "house.fill").font(.system(size: 23))
-                        Text("Accueil").font(.system(size: 23))
-                    }
-                    Scanner().tabItem {
-                        Image(systemName: "qrcode.viewfinder").font(.system(size: 23))
-                        Text("Scanner").font(.system(size: 23))
-                    }
-                    Profile(/*user: user*/).tabItem {
-                        Image(systemName: "person.circle.fill").font(.system(size: 23))
-                        Text("Profil").font(.system(size: 23))
-                    }
-                }
+            if UserSettings.loading {
+                ProgressView()
             } else {
-                handleWelcomeView()
-            }
-            if showSurvey {
-                NavigationView {
-                    SurveyView(products: surveyProducts)
-                    .navigationBarTitle("", displayMode: .inline)
-                    .navigationBarHidden(true)
+                if !UserSettings.showWelcome {
+                    TabView {
+                        Accueil().tabItem {
+                            Image(systemName: "house.fill").font(.system(size: 23))
+                            Text("Accueil").font(.system(size: 23))
+                        }
+                        Scanner().tabItem {
+                            Image(systemName: "qrcode.viewfinder").font(.system(size: 23))
+                            Text("Scanner").font(.system(size: 23))
+                        }
+                        Profile(/*user: user*/).tabItem {
+                            Image(systemName: "person.circle.fill").font(.system(size: 23))
+                            Text("Profil").font(.system(size: 23))
+                        }
+                    }
+                } else {
+                    handleWelcomeView()
                 }
-            }
-            if UserSettings.statusRequested {
-                StatusRequestedView()
+                
+                if showSurvey {
+                    NavigationView {
+                        SurveyView(products: surveyProducts)
+                        .navigationBarTitle("", displayMode: .inline)
+                        .navigationBarHidden(true)
+                    }
+                }
+                
+                if UserSettings.statusRequested {
+                    StatusRequestedView()
+                }
+                
+                if UserSettings.networkError {
+                    BlueButton(label: "test", action: {
+                        UserSettings.signIn()
+                    })
+                        .foregroundColor(.black)
+                        .frame(width: UIScreen.main.bounds.width-100, height: 120)
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color.black.opacity(0.6).ignoresSafeArea())
+                }
             }
         }.onAppear {
             let group = DispatchGroup()
             
-            
-            //NetworkManager.requestUserAccess(for: "13")
+            if isKeyPresentInUserDefaults(key: "completedWelcome") {
+                UserSettings.signIn()
+            } else {
+                UserSettings.loading = false
+            }
             
             DispatchQueue(label: "queue2").async(group: group) {
                 // set timer to execute this code at a precise time (fetch products, 9pm?)

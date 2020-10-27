@@ -3,7 +3,6 @@ import CarBode
 
 struct Welcome_page1: View {
     @EnvironmentObject var UserSettings: UserSettings
-    @State private var alert: Bool = false
     @State private var isPresentingScanner: Bool = false
     
     var body: some View {
@@ -36,7 +35,9 @@ struct Welcome_page1: View {
             
             BlueButton(label: "Sign In", action: {
                 hideKeyboard()
-                login()
+                withAnimation(.default) {
+                    UserSettings.nextStep()
+                }
             })
             
             Spacer()
@@ -46,46 +47,20 @@ struct Welcome_page1: View {
                 .aspectRatio(contentMode: .fit)
                 .padding(.bottom, 30)
         }.padding(.horizontal)
-        .alert(isPresented: self.$alert) {
-            Alert(title: Text("something wrong..."))
-        }
         .sheet(isPresented: self.$isPresentingScanner) {
             CBScanner(supportBarcode: [.ean13])
                 .interval(delay: 5.0)
                 .found {
                     self.isPresentingScanner = false
                     UserSettings.clientID = $0
-                    login()
+                    withAnimation(.default) {
+                        UserSettings.nextStep()
+                    }
                 }
                 .edgesIgnoringSafeArea(.bottom)
         }
     }
-    
-    func login() {
-        UserSettings.nextStep()
-        /*UserSettings.signIn { result in
-            switch result {
-            case .success(let user):
-                UserSettings.setUser(user: user)
-                UserSettings.nextStep()
-            case .failure(_):
-                alert.toggle()
-            }
-        }*/
-        /*UserSettings.signIn { result in
-            switch result {
-            case .success(let userStatus):
-                switch userStatus.status {
-                case .requested:
-                    print("requested")
-                case .valid:
-                    print("valid")
-                }
-            case .failure(_):
-                print("error")
-            }
-        }*/
-    }
+
 }
 
 struct Welcome_page2: View {
@@ -170,6 +145,7 @@ struct Welcome_page4: View {
                     BlueButton(label: "Compris!", action: {
                         withAnimation(.default) {
                             UserSettings.nextStep()
+                            UserSettings.completedWelcome()
                             UserSettings.requestAccess()
                         }
                     })
