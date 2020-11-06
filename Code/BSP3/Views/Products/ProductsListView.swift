@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ProductsListView: View {
     
-    @ObservedObject var productsVM = ProductsViewModel()
+    @StateObject var productsVM = ProductsViewModel()
     let category: Category
     
     var body: some View {

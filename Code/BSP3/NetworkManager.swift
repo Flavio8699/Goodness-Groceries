@@ -9,17 +9,18 @@ class NetworkManager: ObservableObject {
     }
     
     func requestUserAccess(for participant_id: String) {
-        
-        var request = URLRequest(url: URL(string: "https://6ed007d9c0de.ngrok.io/authentication.php")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
+        var request = URLRequest(url: URL(string: "https://3f17a1fa9509.ngrok.io/request_user_access/")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         request.httpMethod = "POST"
         let parameters: [String: Any] = [
-            "participant_id": participant_id
+            "participant_id": participant_id,
+            "product_category_1": "hey",
+            "product_category_2": "tesssssting"
         ]
         request.httpBody = parameters.percentEncoded()
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
-            print(error)
+                print(error)
             }
         }.resume()
     }
@@ -28,6 +29,12 @@ class NetworkManager: ObservableObject {
         let request = URLRequest(url: URL(string: "https://flavio8699.github.io/Goodness-Groceries/user.json")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let httpResponse = response as? HTTPURLResponse else { return }
+            
+            /*if httpResponse.statusCode != 200 {
+                return
+            }*/
+            
             if error != nil {
                 DispatchQueue.main.async {
                     completion(.failure(.NetworkError))

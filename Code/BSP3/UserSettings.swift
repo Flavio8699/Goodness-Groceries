@@ -63,7 +63,7 @@ class UserSettings: ObservableObject {
     func requestAccess() {
         self.statusRequested = true
         UserDefaults.standard.set(true, forKey: "statusRequested")
-        // NetworkManager post for access request
+        NetworkManager.requestUserAccess(for: clientID)
     }
 }
 

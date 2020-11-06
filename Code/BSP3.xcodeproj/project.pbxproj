@@ -42,12 +42,19 @@
 		72AC8AE225129AE700C0887F /* Bullets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC8AE125129AE700C0887F /* Bullets.swift */; };
 		72B7F3E8252F6B4B00231772 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B7F3E7252F6B4B00231772 /* NetworkManager.swift */; };
 		72B7F3EB252F6C1500231772 /* ProductBought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B7F3EA252F6C1500231772 /* ProductBought.swift */; };
+		72B88C3425508BBA00295F04 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 72B88C3325508BBA00295F04 /* QGrid */; };
+		72B88C372550B79600295F04 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B88C362550B79600295F04 /* RoundedCorner.swift */; };
+		72B88C3A2550B7B600295F04 /* cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B88C392550B7B600295F04 /* cornerRadius.swift */; };
 		72CCF078251A2F1F00460AF0 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 72CCF077251A2F1F00460AF0 /* CarBode */; };
 		72CCF07C251A339600460AF0 /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CCF07B251A339600460AF0 /* hideKeyboard.swift */; };
 		72CCF080251A3B3E00460AF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CCF07F251A3B3E00460AF0 /* User.swift */; };
 		72D913D42518E69A00CA817D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D913D32518E69A00CA817D /* Product.swift */; };
 		72D913DB2518E96900CA817D /* loadJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D913DA2518E96900CA817D /* loadJson.swift */; };
 		72D913E02518EC9D00CA817D /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D913DF2518EC9D00CA817D /* ProductsViewModel.swift */; };
+		72E34AA625544E5F0034B75B /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E34AA525544E5F0034B75B /* WelcomeViewModel.swift */; };
+		72E34AA925544EA20034B75B /* ProductCategoryWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E34AA825544EA20034B75B /* ProductCategoryWelcome.swift */; };
+		72E34AAD25544F840034B75B /* WelcomeCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E34AAC25544F840034B75B /* WelcomeCategoryCell.swift */; };
+		72FF6F49255334B500E6D95E /* viewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FF6F48255334B500E6D95E /* viewTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,11 +96,17 @@
 		72AC8AE125129AE700C0887F /* Bullets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullets.swift; sourceTree = "<group>"; };
 		72B7F3E7252F6B4B00231772 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		72B7F3EA252F6C1500231772 /* ProductBought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductBought.swift; sourceTree = "<group>"; };
+		72B88C362550B79600295F04 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		72B88C392550B7B600295F04 /* cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cornerRadius.swift; sourceTree = "<group>"; };
 		72CCF07B251A339600460AF0 /* hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
 		72CCF07F251A3B3E00460AF0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		72D913D32518E69A00CA817D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		72D913DA2518E96900CA817D /* loadJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadJson.swift; sourceTree = "<group>"; };
 		72D913DF2518EC9D00CA817D /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		72E34AA525544E5F0034B75B /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		72E34AA825544EA20034B75B /* ProductCategoryWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryWelcome.swift; sourceTree = "<group>"; };
+		72E34AAC25544F840034B75B /* WelcomeCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCategoryCell.swift; sourceTree = "<group>"; };
+		72FF6F48255334B500E6D95E /* viewTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B88C3425508BBA00295F04 /* QGrid in Frameworks */,
 				72999EF025237A3C0018750E /* SDWebImageSwiftUI in Frameworks */,
 				72CCF078251A2F1F00460AF0 /* CarBode in Frameworks */,
 			);
@@ -129,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				7274B7562513EB8000867FDB /* Welcome.swift */,
+				72E34AAC25544F840034B75B /* WelcomeCategoryCell.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -227,6 +242,7 @@
 			children = (
 				72AC8AD625127FD100C0887F /* BlueButton.swift */,
 				72AC8AE125129AE700C0887F /* Bullets.swift */,
+				72B88C362550B79600295F04 /* RoundedCorner.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -236,6 +252,8 @@
 			children = (
 				72CCF07B251A339600460AF0 /* hideKeyboard.swift */,
 				7272E7942547006400A38A7D /* percentEncoded.swift */,
+				72B88C392550B7B600295F04 /* cornerRadius.swift */,
+				72FF6F48255334B500E6D95E /* viewTransition.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,6 +267,7 @@
 				7233B9CF251E34660073635F /* Category.swift */,
 				72771C16252B7830005245FB /* Indicator.swift */,
 				7240C43125383795000AD50A /* ProductIndicator.swift */,
+				72E34AA825544EA20034B75B /* ProductCategoryWelcome.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,6 +277,7 @@
 			children = (
 				72D913DF2518EC9D00CA817D /* ProductsViewModel.swift */,
 				7240C43C253839C4000AD50A /* CategoriesViewModel.swift */,
+				72E34AA525544E5F0034B75B /* WelcomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -282,6 +302,7 @@
 			packageProductDependencies = (
 				72CCF077251A2F1F00460AF0 /* CarBode */,
 				72999EEF25237A3C0018750E /* SDWebImageSwiftUI */,
+				72B88C3325508BBA00295F04 /* QGrid */,
 			);
 			productName = BSP3;
 			productReference = 72AC8ABA2512770B00C0887F /* BSP3.app */;
@@ -314,6 +335,7 @@
 			packageReferences = (
 				72CCF076251A2F1F00460AF0 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
 				72999EEE25237A3C0018750E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				72B88C3225508BBA00295F04 /* XCRemoteSwiftPackageReference "QGrid" */,
 			);
 			productRefGroup = 72AC8ABB2512770B00C0887F /* Products */;
 			projectDirPath = "";
@@ -372,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72B7F3E8252F6B4B00231772 /* NetworkManager.swift in Sources */,
+				72E34AA625544E5F0034B75B /* WelcomeViewModel.swift in Sources */,
 				7233D7BD2525C6260087E9EF /* ProductView.swift in Sources */,
 				72AC8AE225129AE700C0887F /* Bullets.swift in Sources */,
 				7233D7C02525C8DD0087E9EF /* Profile.swift in Sources */,
@@ -380,14 +403,18 @@
 				72AC8ADB25128B4A00C0887F /* UserSettings.swift in Sources */,
 				7233D7BA2525C49A0087E9EF /* ProductRowView.swift in Sources */,
 				72AC8AD725127FD100C0887F /* BlueButton.swift in Sources */,
+				72B88C372550B79600295F04 /* RoundedCorner.swift in Sources */,
 				72999F052524C8140018750E /* ProductsListView.swift in Sources */,
+				72E34AAD25544F840034B75B /* WelcomeCategoryCell.swift in Sources */,
 				72999F012524C79F0018750E /* CategoryRowView.swift in Sources */,
+				72B88C3A2550B7B600295F04 /* cornerRadius.swift in Sources */,
 				72999F0F2524CF310018750E /* SurveyView.swift in Sources */,
 				72CCF07C251A339600460AF0 /* hideKeyboard.swift in Sources */,
 				7233B9D0251E34660073635F /* Category.swift in Sources */,
 				72CCF080251A3B3E00460AF0 /* User.swift in Sources */,
 				72771C17252B7830005245FB /* Indicator.swift in Sources */,
 				72AC8AC32512770B00C0887F /* BSP3.xcdatamodeld in Sources */,
+				72E34AA925544EA20034B75B /* ProductCategoryWelcome.swift in Sources */,
 				72D913E02518EC9D00CA817D /* ProductsViewModel.swift in Sources */,
 				72999F082524C8720018750E /* ProductScannedView.swift in Sources */,
 				72999EFD2524C7850018750E /* CategoryListView.swift in Sources */,
@@ -398,6 +425,7 @@
 				7240C43D253839C4000AD50A /* CategoriesViewModel.swift in Sources */,
 				72999EF82524C6FE0018750E /* Accueil.swift in Sources */,
 				72D913D42518E69A00CA817D /* Product.swift in Sources */,
+				72FF6F49255334B500E6D95E /* viewTransition.swift in Sources */,
 				72999EF3252385810018750E /* NotificationsManager.swift in Sources */,
 				72AC8AC02512770B00C0887F /* SceneDelegate.swift in Sources */,
 				72D913DB2518E96900CA817D /* loadJson.swift in Sources */,
@@ -612,6 +640,14 @@
 				minimumVersion = 1.5.0;
 			};
 		};
+		72B88C3225508BBA00295F04 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
 		72CCF076251A2F1F00460AF0 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI.git";
@@ -627,6 +663,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 72999EEE25237A3C0018750E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		72B88C3325508BBA00295F04 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72B88C3225508BBA00295F04 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
 		};
 		72CCF077251A2F1F00460AF0 /* CarBode */ = {
 			isa = XCSwiftPackageProductDependency;

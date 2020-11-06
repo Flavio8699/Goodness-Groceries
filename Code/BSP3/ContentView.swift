@@ -29,7 +29,17 @@ struct ContentView: View {
                         }
                     }
                 } else {
-                    handleWelcomeView()
+                    if UserSettings.getStep() == 0 {
+                        Welcome_page1().transition(.viewTransition)
+                    } else if UserSettings.getStep() == 1 {
+                        Welcome_page2().transition(.viewTransition)
+                    } else if UserSettings.getStep() == 2 {
+                        Welcome_page3().transition(.viewTransition)
+                    } else if UserSettings.getStep() == 3 {
+                        Welcome_page4().transition(.viewTransition)
+                    } else if UserSettings.getStep() == 4 {
+                        Welcome_page5().transition(.viewTransition)
+                    }
                 }
                 
                 if showSurvey {
@@ -92,16 +102,20 @@ struct ContentView: View {
         }
     }
     
-    func handleWelcomeView() -> AnyView {
-        switch UserSettings.getStep() {
-            case 0: return AnyView(Welcome_page1())
+    /*func handleWelcomeView() -> some View {
+        /*switch UserSettings.getStep() {
+        case 0: return AnyView(Welcome_page1())
             case 1: return AnyView(Welcome_page2())
             case 2: return AnyView(Welcome_page3())
             case 3: return AnyView(Welcome_page4())
             case 4: return AnyView(Welcome_page4())
             default: return AnyView(Text("error"))
+        }*/
+        if UserSettings.getStep() == 0 {
+            return Welcome_page1()
         }
-    }
+        
+    }*/
 }
 
 

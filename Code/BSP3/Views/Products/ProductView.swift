@@ -6,7 +6,7 @@ struct ProductView: View {
     
     let product: Product
     @ObservedObject var productsVM = ProductsViewModel()
-    @State var showSheet = false
+    @State var showSheet = true
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 49.623874, longitude: 6.052060), span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
     
     var body: some View {
