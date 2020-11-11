@@ -24,7 +24,7 @@
 		7285D35D255BEAF4004D6E14 /* WelcomeCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285D35C255BEAF4004D6E14 /* WelcomeCategoryCell.swift */; };
 		72930B12255B075D0012A251 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72930B14255B075D0012A251 /* Localizable.strings */; };
 		72930B1D255B08660012A251 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72930B1F255B08660012A251 /* Localizable.strings */; };
-		72999EF025237A3C0018750E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 72999EEF25237A3C0018750E /* SwiftPackageProductDependency */; };
+		72999EF025237A3C0018750E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 72999EEF25237A3C0018750E /* SDWebImageSwiftUI */; };
 		72999EF3252385810018750E /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72999EF2252385810018750E /* NotificationsManager.swift */; };
 		72999EF82524C6FE0018750E /* Accueil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72999EF72524C6FD0018750E /* Accueil.swift */; };
 		72999EFD2524C7850018750E /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72999EFC2524C7850018750E /* CategoryListView.swift */; };
@@ -44,10 +44,10 @@
 		72AC8AE225129AE700C0887F /* Bullets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC8AE125129AE700C0887F /* Bullets.swift */; };
 		72B7F3E8252F6B4B00231772 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B7F3E7252F6B4B00231772 /* NetworkManager.swift */; };
 		72B7F3EB252F6C1500231772 /* ProductBought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B7F3EA252F6C1500231772 /* ProductBought.swift */; };
-		72B88C3425508BBA00295F04 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 72B88C3325508BBA00295F04 /* SwiftPackageProductDependency */; };
+		72B88C3425508BBA00295F04 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 72B88C3325508BBA00295F04 /* QGrid */; };
 		72B88C372550B79600295F04 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B88C362550B79600295F04 /* RoundedCorner.swift */; };
 		72B88C3A2550B7B600295F04 /* cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B88C392550B7B600295F04 /* cornerRadius.swift */; };
-		72CCF078251A2F1F00460AF0 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 72CCF077251A2F1F00460AF0 /* SwiftPackageProductDependency */; };
+		72CCF078251A2F1F00460AF0 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 72CCF077251A2F1F00460AF0 /* CarBode */; };
 		72CCF07C251A339600460AF0 /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CCF07B251A339600460AF0 /* hideKeyboard.swift */; };
 		72CCF080251A3B3E00460AF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CCF07F251A3B3E00460AF0 /* User.swift */; };
 		72D913D42518E69A00CA817D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D913D32518E69A00CA817D /* Product.swift */; };
@@ -121,9 +121,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72B88C3425508BBA00295F04 /* BuildFile in Frameworks */,
-				72999EF025237A3C0018750E /* BuildFile in Frameworks */,
-				72CCF078251A2F1F00460AF0 /* BuildFile in Frameworks */,
+				72B88C3425508BBA00295F04 /* QGrid in Frameworks */,
+				72999EF025237A3C0018750E /* SDWebImageSwiftUI in Frameworks */,
+				72CCF078251A2F1F00460AF0 /* CarBode in Frameworks */,
 				91B3F763CF80024EB8823E27 /* Pods_BSP3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,13 +149,13 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
-		72930B18255B08380012A251 /* Localizable.strings */ = {
+		72930B18255B08380012A251 /* Languages */ = {
 			isa = PBXGroup;
 			children = (
 				72930B14255B075D0012A251 /* Localizable.strings */,
 				72930B1F255B08660012A251 /* Localizable.strings */,
 			);
-			path = Localizable.strings;
+			path = Languages;
 			sourceTree = "<group>";
 		};
 		72999EFB2524C7740018750E /* Categories */ = {
@@ -218,7 +218,7 @@
 				72AC8AC12512770B00C0887F /* BSP3.xcdatamodeld */,
 				72AC8AC82512770E00C0887F /* Preview Content */,
 				72D913DA2518E96900CA817D /* loadJson.swift */,
-				72930B18255B08380012A251 /* Localizable.strings */,
+				72930B18255B08380012A251 /* Languages */,
 			);
 			path = BSP3;
 			sourceTree = "<group>";
@@ -299,7 +299,6 @@
 				99D8737B08B954BCEE15BFFC /* Pods-BSP3.debug.xcconfig */,
 				AC4DECCB8DDBB313ECC6EF03 /* Pods-BSP3.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -321,9 +320,9 @@
 			);
 			name = BSP3;
 			packageProductDependencies = (
-				72CCF077251A2F1F00460AF0 /* SwiftPackageProductDependency */,
-				72999EEF25237A3C0018750E /* SwiftPackageProductDependency */,
-				72B88C3325508BBA00295F04 /* SwiftPackageProductDependency */,
+				72CCF077251A2F1F00460AF0 /* CarBode */,
+				72999EEF25237A3C0018750E /* SDWebImageSwiftUI */,
+				72B88C3325508BBA00295F04 /* QGrid */,
 			);
 			productName = BSP3;
 			productReference = 72AC8ABA2512770B00C0887F /* BSP3.app */;
@@ -354,9 +353,9 @@
 			);
 			mainGroup = 72AC8AB12512770B00C0887F;
 			packageReferences = (
-				72CCF076251A2F1F00460AF0 /* RemoteSwiftPackageReference */,
-				72999EEE25237A3C0018750E /* RemoteSwiftPackageReference */,
-				72B88C3225508BBA00295F04 /* RemoteSwiftPackageReference */,
+				72CCF076251A2F1F00460AF0 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
+				72999EEE25237A3C0018750E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				72B88C3225508BBA00295F04 /* XCRemoteSwiftPackageReference "QGrid" */,
 			);
 			productRefGroup = 72AC8ABB2512770B00C0887F /* Products */;
 			projectDirPath = "";
@@ -669,7 +668,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		72999EEE25237A3C0018750E /* RemoteSwiftPackageReference */ = {
+		72999EEE25237A3C0018750E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
 			requirement = {
@@ -677,7 +676,7 @@
 				minimumVersion = 1.5.0;
 			};
 		};
-		72B88C3225508BBA00295F04 /* RemoteSwiftPackageReference */ = {
+		72B88C3225508BBA00295F04 /* XCRemoteSwiftPackageReference "QGrid" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Q-Mobile/QGrid.git";
 			requirement = {
@@ -685,7 +684,7 @@
 				minimumVersion = 0.1.4;
 			};
 		};
-		72CCF076251A2F1F00460AF0 /* RemoteSwiftPackageReference */ = {
+		72CCF076251A2F1F00460AF0 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI.git";
 			requirement = {
@@ -696,19 +695,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		72999EEF25237A3C0018750E /* SwiftPackageProductDependency */ = {
+		72999EEF25237A3C0018750E /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 72999EEE25237A3C0018750E /* RemoteSwiftPackageReference */;
+			package = 72999EEE25237A3C0018750E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
 		};
-		72B88C3325508BBA00295F04 /* SwiftPackageProductDependency */ = {
+		72B88C3325508BBA00295F04 /* QGrid */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 72B88C3225508BBA00295F04 /* RemoteSwiftPackageReference */;
+			package = 72B88C3225508BBA00295F04 /* XCRemoteSwiftPackageReference "QGrid" */;
 			productName = QGrid;
 		};
-		72CCF077251A2F1F00460AF0 /* SwiftPackageProductDependency */ = {
+		72CCF077251A2F1F00460AF0 /* CarBode */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 72CCF076251A2F1F00460AF0 /* RemoteSwiftPackageReference */;
+			package = 72CCF076251A2F1F00460AF0 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
 			productName = CarBode;
 		};
 /* End XCSwiftPackageProductDependency section */
