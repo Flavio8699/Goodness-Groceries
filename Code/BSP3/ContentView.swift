@@ -105,21 +105,6 @@ struct ContentView: View {
             group.wait()
         }
     }
-    
-    /*func handleWelcomeView() -> some View {
-        /*switch UserSettings.getStep() {
-        case 0: return AnyView(Welcome_page1())
-            case 1: return AnyView(Welcome_page2())
-            case 2: return AnyView(Welcome_page3())
-            case 3: return AnyView(Welcome_page4())
-            case 4: return AnyView(Welcome_page4())
-            default: return AnyView(Text("error"))
-        }*/
-        if UserSettings.getStep() == 0 {
-            return Welcome_page1()
-        }
-        
-    }*/
 }
 
 
