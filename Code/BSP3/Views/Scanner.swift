@@ -25,7 +25,7 @@ struct Scanner: View {
                 if let product = self.product {
                     VStack {
                         Spacer()
-                        NavigationLink(destination: ProductView(product: product)) {
+                        NavigationLink(destination: ProductView(product: product, category: nil)) {
                             ProductScannedView(product: product).padding(.bottom, 70)
                         }
                     }

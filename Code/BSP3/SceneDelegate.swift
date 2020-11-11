@@ -55,13 +55,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
-        
-        // IF NOT LOGGED IN CORRECTLY -> CHECK STATUS
-        //UserSettings.signIn()
-        //UserSettings.loading = false
-        if isKeyPresentInUserDefaults(key: "completedWelcome") {
+
+        if isKeyPresentInUserDefaults(key: "statusRequested") {
             UserSettings.signIn()
-            print("scene")
+            print("scene sign in")
         }
     }
 

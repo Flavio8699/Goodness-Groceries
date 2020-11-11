@@ -20,7 +20,7 @@ struct ProductsListView: View {
                 }
                 
                 ForEach(products, id: \.self) { product in
-                    NavigationLink(destination: ProductView(product: product)) {
+                    NavigationLink(destination: ProductView(product: product, category: category)) {
                         ProductRowView(product: product, category: category).foregroundColor(.black)
                     }
                     Divider().padding(.horizontal)

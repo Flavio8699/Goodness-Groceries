@@ -13,8 +13,8 @@ class NetworkManager: ObservableObject {
         request.httpMethod = "POST"
         let parameters: [String: Any] = [
             "participant_id": participant_id,
-            "product_category_1": "hey",
-            "product_category_2": "tesssssting"
+            "product_category_1": "test1",
+            "product_category_2": "test2"
         ]
         request.httpBody = parameters.percentEncoded()
         

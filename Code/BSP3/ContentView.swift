@@ -39,6 +39,10 @@ struct ContentView: View {
                         Welcome_page4().transition(.viewTransition)
                     } else if UserSettings.getStep() == 4 {
                         Welcome_page5().transition(.viewTransition)
+                    } else if UserSettings.getStep() == 5 {
+                        Welcome_page6().transition(.viewTransition)
+                    } else if UserSettings.getStep() == 6 {
+                        Welcome_page7().transition(.viewTransition)
                     }
                 }
                 
@@ -119,3 +123,12 @@ struct ContentView: View {
 }
 
 
+struct ContentViewView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        ForEach(["fr", "en"], id: \.self) { id in
+            Text("Test")
+                .environment(\.locale, .init(identifier: id))
+        }
+    }
+}

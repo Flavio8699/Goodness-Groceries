@@ -9,15 +9,19 @@ class UserSettings: ObservableObject {
     @Published var networkError: Bool = false
     @Published var loading: Bool = true
     private var NetworkManager = BSP3.NetworkManager()
-    private var user: User? = nil
     
     init() {
-        if isKeyPresentInUserDefaults(key: "completedWelcome") {
-            self.showWelcome = false
-        }
         if isKeyPresentInUserDefaults(key: "statusRequested") {
             self.statusRequested = true
         }
+        
+        if !isKeyPresentInUserDefaults(key: "step") {
+            UserDefaults.standard.set(0, forKey: "step")
+        } else {
+            self.step = self.getStep()
+        }
+        
+        self.handleShowWelcome()
     }
     
     func signIn() {
@@ -26,15 +30,12 @@ class UserSettings: ObservableObject {
             case let .success(status):
                 switch status.status {
                 case .requested:
-                    print("requested")
-                    self.showWelcome = false
                     self.statusRequested = true
                 case .valid:
-                    print("valid")
-                    self.showWelcome = false
                     self.statusRequested = false
                     UserDefaults.standard.removeObject(forKey: "statusRequested")
                 }
+                self.handleShowWelcome()
                 self.networkError = false
             case .failure(_):
                 self.networkError = true
@@ -43,26 +44,28 @@ class UserSettings: ObservableObject {
         }
     }
     
-    func setUser(user: User) {
-        self.user = user
-        UserDefaults.standard.set(clientID, forKey: "clientID")
+    func handleShowWelcome() {
+        if self.getStep() == 7 { // # of welcome pages
+            self.showWelcome = false
+        } else {
+            self.showWelcome = true
+        }
     }
     
     func getStep() -> Int {
-        return self.step
+        return UserDefaults.standard.integer(forKey: "step")
     }
     
     func nextStep() {
         self.step += 1
-    }
-    
-    func completedWelcome() {
-        UserDefaults.standard.set(true, forKey: "completedWelcome")
+        UserDefaults.standard.set(self.getStep()+1, forKey: "step")
+        self.handleShowWelcome()
     }
     
     func requestAccess() {
         self.statusRequested = true
         UserDefaults.standard.set(true, forKey: "statusRequested")
+        UserDefaults.standard.set(clientID, forKey: "clientID")
         NetworkManager.requestUserAccess(for: clientID)
     }
 }
