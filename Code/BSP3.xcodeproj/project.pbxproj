@@ -139,6 +139,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		724B4F40255C7C1500F0DF5D /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				7240C42E253836AE000AD50A /* products.json */,
+				7240C438253838DA000AD50A /* indicators.json */,
+				7240C4342538382C000AD50A /* indicator_categories.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		724B4F41255C7C2900F0DF5D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				72999EF2252385810018750E /* NotificationsManager.swift */,
+				72B7F3E7252F6B4B00231772 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		7274B7552513EB6800867FDB /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,25 +219,22 @@
 			isa = PBXGroup;
 			children = (
 				7238978C255C76AE00A12F38 /* BSP3.entitlements */,
-				72CCF07A251A338400460AF0 /* Extensions */,
 				72D913DE2518EC6D00CA817D /* ViewModels */,
 				72D913D22518E66700CA817D /* Models */,
 				72AC8AD425127FB100C0887F /* Views */,
+				724B4F41255C7C2900F0DF5D /* Managers */,
+				72CCF07A251A338400460AF0 /* Extensions */,
+				724B4F40255C7C1500F0DF5D /* Json */,
+				72930B18255B08380012A251 /* Languages */,
+				72AC8AC82512770E00C0887F /* Preview Content */,
+				72AC8AC62512770E00C0887F /* Assets.xcassets */,
+				72AC8ADA25128B4A00C0887F /* UserSettings.swift */,
+				72AC8AC42512770B00C0887F /* ContentView.swift */,
 				72AC8ABD2512770B00C0887F /* AppDelegate.swift */,
 				72AC8ABF2512770B00C0887F /* SceneDelegate.swift */,
-				72AC8AC42512770B00C0887F /* ContentView.swift */,
-				72AC8ADA25128B4A00C0887F /* UserSettings.swift */,
-				72999EF2252385810018750E /* NotificationsManager.swift */,
-				72B7F3E7252F6B4B00231772 /* NetworkManager.swift */,
-				7240C42E253836AE000AD50A /* products.json */,
-				7240C438253838DA000AD50A /* indicators.json */,
-				7240C4342538382C000AD50A /* indicator_categories.json */,
-				72AC8AC62512770E00C0887F /* Assets.xcassets */,
+				72D913DA2518E96900CA817D /* loadJson.swift */,
 				72AC8ACE2512770E00C0887F /* Info.plist */,
 				72AC8AC12512770B00C0887F /* BSP3.xcdatamodeld */,
-				72AC8AC82512770E00C0887F /* Preview Content */,
-				72D913DA2518E96900CA817D /* loadJson.swift */,
-				72930B18255B08380012A251 /* Languages */,
 			);
 			path = BSP3;
 			sourceTree = "<group>";
