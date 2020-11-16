@@ -3,56 +3,56 @@
     "id": "ind_animal",
     "name": "Animal Welfare",
     "category_id": "ind_cat_environment",
-    "icon_name": "test1",
+    "icon_name": "gouvernance_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
     "id": "ind_biodiv",
     "name": "Biodiversity",
     "category_id": "ind_cat_environment",
-    "icon_name": "test2",
+    "icon_name": "animal_wellfare_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
     "id": "ind_flora",
     "name": "Health of Flora and Fauna",
     "category_id": "ind_cat_environment",
-    "icon_name": "test1",
+    "icon_name": "gouvernance_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
     "id": "ind_soil",
     "name": "Soil Fertility",
     "category_id": "ind_cat_environment",
-    "icon_name": "test1",
+    "icon_name": "gouvernance_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
     "id": "ind_sovereignty",
     "name": "Product Sovereignty",
     "category_id": "ind_cat_economic",
-    "icon_name": "test1",
+    "icon_name": "gouvernance_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
     "id": "ind_food",
     "name": "Food Miles",
     "category_id": "ind_cat_economic",
-    "icon_name": "test1",
+    "icon_name": "gouvernance_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
     "id": "ind_localeco",
     "name": "Local Economy",
     "category_id": "ind_cat_economic",
-    "icon_name": "test3",
+    "icon_name": "geographical_proximity",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
     "id": "ind_decent",
     "name": "Decent Livelihoods",
     "category_id": "ind_cat_social",
-    "icon_name": "test1",
+    "icon_name": "gouvernance_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {

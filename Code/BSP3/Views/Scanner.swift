@@ -3,7 +3,7 @@ import CarBode
 
 struct Scanner: View {
     
-    @ObservedObject var productsVM = ProductsViewModel()
+    @StateObject var productsVM = ProductsViewModel()
     @State var product: Product?
     
     var body: some View {
@@ -13,8 +13,10 @@ struct Scanner: View {
                     .interval(delay: 1.0)
                     .found { search in
                         if let product = self.productsVM.products.first(where: { $0.code == search }) {
-                            withAnimation() {
-                                self.product = product
+                            if self.product != product {
+                                    self.product = product
+                                
+                                UINotificationFeedbackGenerator().notificationOccurred(.success)
                             }
                         } else {
                             withAnimation() {
@@ -27,6 +29,7 @@ struct Scanner: View {
                         Spacer()
                         NavigationLink(destination: ProductView(product: product, category: nil)) {
                             ProductScannedView(product: product).padding(.bottom, 70)
+                                .navigationBarTitle("Retour")
                         }
                     }
                 }

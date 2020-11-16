@@ -15,6 +15,10 @@ class UserSettings: ObservableObject {
             self.statusRequested = true
         }
         
+        if isKeyPresentInUserDefaults(key: "clientID") {
+            self.clientID = UserDefaults.standard.string(forKey: "clientID")!
+        }
+        
         if !isKeyPresentInUserDefaults(key: "step") {
             UserDefaults.standard.set(0, forKey: "step")
         } else {

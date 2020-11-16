@@ -3,9 +3,9 @@ import SDWebImageSwiftUI
 
 struct ProductRowView: View {
     
-    @ObservedObject var productsVM = ProductsViewModel()
+    @StateObject var productsVM = ProductsViewModel()
     let product: Product
-    let category: Category
+    let category: Category?
     
     var body: some View {
         VStack (alignment: .leading) {
@@ -16,7 +16,7 @@ struct ProductRowView: View {
                     HStack(alignment: .top, spacing: 10) {
                         ForEach(product.indicators, id: \.self) { productIndicator in
                             if let indicator = productsVM.indicators.first(where: { $0.id == productIndicator.indicator_id }) {
-                                if indicator.category_id == category.id {
+                                if (category != nil && indicator.category_id == category!.id) || category == nil {
                                     Image(indicator.icon_name)
                                 }
                             }
@@ -29,6 +29,6 @@ struct ProductRowView: View {
         .frame(height: 120)
         .padding(.horizontal)
         .padding(.vertical, 10)
-        .navigationBarTitle(category.name)
+        .navigationBarTitle((category != nil) ? category!.name : "Retour")
     }
 }

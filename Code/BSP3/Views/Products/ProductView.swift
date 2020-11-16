@@ -6,7 +6,7 @@ struct ProductView: View {
     
     let product: Product
     let category: Category?
-    @ObservedObject var productsVM = ProductsViewModel()
+    @StateObject var productsVM = ProductsViewModel()
     @State var showSheet = false
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 49.623874, longitude: 6.052060), span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
     
@@ -32,12 +32,14 @@ struct ProductView: View {
                 Map(coordinateRegion: $region).frame(height: 150).cornerRadius(7)
                 HStack {
                     Text("Indicateurs").font(.title2).bold()
-                    Spacer()
-                    Button(action: {
-                        showSheet.toggle()
-                    }, label: {
-                        Text("Voir plus")
-                    })
+                    if category != nil {
+                        Spacer()
+                        Button(action: {
+                            showSheet.toggle()
+                        }, label: {
+                            Text("Voir plus")
+                        })
+                    }
                 }
                 ForEach(product.indicators, id: \.self) { productIndicator in
                     if let indicator = productsVM.indicators.first(where: { $0.id == productIndicator.indicator_id }) {

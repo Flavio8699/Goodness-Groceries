@@ -12,7 +12,7 @@ struct CategoryRowView: View {
                 Image("arrow_right").padding(.top, 4)
             }
             HStack (spacing: 20) {
-                Image("\(category.icon_name)_Icon")
+                Image(category.icon_name)
                 Text(category.description).font(.system(size: 14)).multilineTextAlignment(.leading).lineLimit(2)
             }.padding(10)
             if !hideSeparator {

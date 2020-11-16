@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CategoryListView: View {
     
-    @ObservedObject var categoriesVM = CategoriesViewModel()
+    @StateObject var categoriesVM = CategoriesViewModel()
     
     var body: some View {
         ForEach(categoriesVM.categories, id: \.self) { category in

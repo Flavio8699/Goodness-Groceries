@@ -2,59 +2,25 @@ import SwiftUI
 
 struct Profile: View {
     
-    let notifs = NotificationsManager()
-    let generator = UINotificationFeedbackGenerator()
-    //let user: User
+    @EnvironmentObject var UserSettings: UserSettings
     
     var body: some View {
-        VStack(alignment: .center, spacing: 30.0) {
-                    Button(action: {
-                        self.generator.notificationOccurred(.success)
-                    }) {
-                        Text("Notification - Success")
-                    }
-                    
-                    Button(action: {
-                        self.generator.notificationOccurred(.error)
-                    }) {
-                        Text("Notification - Error")
-                    }
-                    
-                    Button(action: {
-                        self.generator.notificationOccurred(.warning)
-                    }) {
-                        Text("Notification - Warning")
-                    }
-                    
-                    Button(action: {
-                        let impactLight = UIImpactFeedbackGenerator(style: .light)
-                        impactLight.impactOccurred()
-                    }) {
-                        Text("Impact - Light")
-                    }
-                    
-                    Button(action: {
-                        let impactMed = UIImpactFeedbackGenerator(style: .medium)
-                        impactMed.impactOccurred()
-                    }) {
-                        Text("Impact - Medium")
-                    }
-                    
-                    Button(action: {
-                        let impactHeavy = UIImpactFeedbackGenerator(style: .heavy)
-                        impactHeavy.impactOccurred()
-                    }) {
-                        Text("Impact - Heavy")
-                    }
-                    
-                    Button(action: {
-                        let selectionFeedback = UISelectionFeedbackGenerator()
-                        selectionFeedback.selectionChanged()
-                    }) {
-                        Text("Selection Feedback - Changed")
-                    }
+        NavigationView {
+            VStack(alignment: .leading, spacing: 30) {
+                HStack (alignment: .top, spacing: 25) {
+                    Image(systemName: "person.crop.circle").font(.system(size: 100))
+                    VStack (alignment: .leading, spacing: 10) {
+                        Text("Identifiant").font(.title)
+                        Text(UserSettings.clientID)
+                    }.offset(y: 15)
+                    Spacer()
                 }
-                .padding(.all, 30.0)
+                Spacer()
             }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 30)
+            .navigationBarTitle("Profil")
+        }
+    }
 }
 

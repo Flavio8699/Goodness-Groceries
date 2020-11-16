@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SurveyView: View {
     
-    @ObservedObject var productsVM = ProductsViewModel()
+    @StateObject var productsVM = ProductsViewModel()
     let products: [String]
     
     var body: some View {

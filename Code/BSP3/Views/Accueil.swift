@@ -1,8 +1,9 @@
 import SwiftUI
 import UIKit
+
 struct Accueil: View {
     
-    @ObservedObject var productsVM = ProductsViewModel()
+    @StateObject var productsVM = ProductsViewModel()
     @State var search: String = ""
     @State var width: CGFloat = .infinity
     @State var showCancelButton: Bool = false
@@ -14,6 +15,17 @@ struct Accueil: View {
                     HStack (spacing: 12) {
                         Image(systemName: "magnifyingglass")
                         TextField("Rechercher", text: $search)
+                        if search != "" {
+                            Spacer(minLength: 0)
+                            Button(action: {
+                                withAnimation(.default) {
+                                    search = ""
+                                    hideKeyboard()
+                                }
+                            }, label: {
+                                Image(systemName: "xmark.circle").foregroundColor(.gray)
+                            }).transition(.fade)
+                        }
                     }.padding(.vertical, 10).padding(.horizontal)
                 }
                 .overlay(
@@ -22,8 +34,10 @@ struct Accueil: View {
                 )
                 .padding([.horizontal, .top])
                 if(search != "") {
-                    let productsFiltered = productsVM.products.filter { $0.name.contains(search) }
-                    SearchView(products: productsFiltered).padding(.horizontal)
+                    let productsFiltered = productsVM.products.filter { $0.name.lowercased().contains(search.lowercased()) }
+                    ScrollView (.vertical, showsIndicators: false) {
+                        SearchView(products: productsFiltered)
+                    }.padding(.horizontal).frame(maxHeight: .infinity)
                 } else {
                     ScrollView (.vertical, showsIndicators: false) {
                         CategoryListView()
@@ -33,16 +47,5 @@ struct Accueil: View {
             .navigationBarTitle("", displayMode: .inline)
             .navigationBarHidden(true)
         }
-    }
-}
-
-struct SearchView: View {
-    let products: [Product]
-    
-    var body: some View {
-        ForEach(products, id: \.self) { product in
-            Text(product.name).animation(Animation.default)
-        }
-        Spacer()
     }
 }
