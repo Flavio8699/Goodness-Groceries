@@ -58,7 +58,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         if isKeyPresentInUserDefaults(key: "statusRequested") {
             UserSettings.signIn()
-            print("scene sign in")
         }
     }
 

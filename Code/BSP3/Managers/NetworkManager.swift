@@ -9,12 +9,14 @@ class NetworkManager: ObservableObject {
     }
     
     func requestUserAccess(for participant_id: String) {
-        var request = URLRequest(url: URL(string: "https://3f17a1fa9509.ngrok.io/request_user_access/")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
+        var request = URLRequest(url: URL(string: "http://ec2-35-156-126-224.eu-central-1.compute.amazonaws.com:8000/request_user_access/")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         request.httpMethod = "POST"
         let parameters: [String: Any] = [
             "participant_id": participant_id,
             "product_category_1": "test1",
-            "product_category_2": "test2"
+            "product_category_2": "test2",
+            "product_category_3": "test3",
+            "product_category_4": "test4"
         ]
         request.httpBody = parameters.percentEncoded()
         
@@ -25,16 +27,10 @@ class NetworkManager: ObservableObject {
         }.resume()
     }
     
-    func fetchUserStatus(completion: @escaping (Result<UserStatus,ResultError>) -> Void) {
-        let request = URLRequest(url: URL(string: "https://flavio8699.github.io/Goodness-Groceries/user.json")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
+    func fetchUserStatus(for participant_id: String, completion: @escaping (Result<UserStatus,ResultError>) -> Void) {
+        let request = URLRequest(url: URL(string: "http://ec2-35-156-126-224.eu-central-1.compute.amazonaws.com:8000/fetch_user_status/\(participant_id)/")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let httpResponse = response as? HTTPURLResponse else { return }
-            
-            /*if httpResponse.statusCode != 200 {
-                return
-            }*/
-            
             if error != nil {
                 DispatchQueue.main.async {
                     completion(.failure(.NetworkError))

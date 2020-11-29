@@ -1,604 +1,105 @@
 [
   {
     "code": "2354896578459",
-    "name": "Honey from Ourdaller",
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-    "type": "Honey",
+    "name": "Miel d'Ourdaller",
+    "description": "Description du produit: miel d'Ourdaller",
+    "type": "Miel",
     "category": "local_organic",
     "provider": "Ourdaller",
     "image_url": "https://euzoea.com/wp-content/uploads/2016/12/honey.jpg",
     "indicators": [
         {
             "indicator_id": "ind_animal",
-            "indicator_description": "The company provides a large field of flowers without using pesticide."
+            "indicator_description": "Les abeilles ont été bien traitées par leur producteur."
         },
         {
-            "indicator_id": "ind_soil",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
+            "indicator_id": "ind_salary",
+            "indicator_description": "Les producteurs ont eu une rémunération adéquate."
         },
         {
             "indicator_id": "ind_localeco",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
+            "indicator_description": "Le miel provient d'un producteur local."
         }
     ]
   },
   {
     "code": "2354896578454",
-    "name": "Honey from Reiffers Charles",
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-    "type": "Honey",
+    "name": "Miel de Charles Reiffers",
+    "description": "Description du produit: miel de Charles Reiffers",
+    "type": "Miel",
     "category": "local_conventional",
-    "provider": "Reiffers Charles",
+    "provider": "Charles Reiffers",
     "image_url": "https://euzoea.com/wp-content/uploads/2016/12/honey.jpg",
     "indicators": [
         {
             "indicator_id": "ind_animal",
-            "indicator_description": "The company provides a large field of flowers without using pesticide."
+            "indicator_description": "Les abeilles ont été bien traitées par leur producteur."
         },
         {
-            "indicator_id": "ind_localeco",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-        },
-        {
-            "indicator_id": "ind_soil",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
+            "indicator_id": "ind_salary",
+            "indicator_description": "Les producteurs ont eu une rémunération adéquate."
         }
     ]
   },
   {
-    "code": "23548965784333",
-    "name": "Honey from Bona Miel / Mannavita",
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-    "type": "Honey",
+    "code": "2354896578499",
+    "name": "Chocolat de Genaveh",
+    "description": "Description du produit: chocolat de Genaveh",
+    "type": "Chocolat",
     "category": "imported_organic",
-    "provider": "Bona Miel / Mannavita",
-    "image_url": "https://euzoea.com/wp-content/uploads/2016/12/honey.jpg",
+    "provider": "Genaveh",
+    "image_url":"https://www.irishtimes.com/polopoly_fs/1.3907332.1559058394!/image/image.jpg_gen/derivatives/box_620_330/image.jpg",
     "indicators": [
         {
-            "indicator_id": "ind_animal",
-            "indicator_description": "The company provides a large field of flowers without using pesticide."
-        },
-        {
-            "indicator_id": "ind_localeco",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-        },
-        {
-            "indicator_id": "ind_soil",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-        }
-    ]
-  },
-  
-  {
-    "code": "2354896578455",
-    "name": "Flour from Moulin Dieschbourg",
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-    "type": "Flour",
-    "category": "local_organic",
-    "provider": "Moulin Dieschbourg",
-    "image_url":"https://www.bakingbusiness.com/ext/resources/2020/5/WholeWheatFlour_Lead.jpg",
-    "indicators": [
-        {
-            "indicator_id": "ind_animal",
-            "indicator_description": "The company provides a large field of flowers without using pesticide."
-        },
-        {
-            "indicator_id": "ind_localeco",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-        },
-        {
-            "indicator_id": "ind_soil",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
+            "indicator_id": "ind_childlabor",
+            "indicator_description": "Chocolat produit dans un environnement où le travail des enfants est très actif."
         }
     ]
   },
   {
-    "code": "2354896578496",
-    "name": "Flour from Moulin de Kleinbettingen",
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-    "type": "Flour",
-    "category": "local_conventional",
-    "provider": "Moulin de Kleinbettingen",
-    "image_url":"https://www.bakingbusiness.com/ext/resources/2020/5/WholeWheatFlour_Lead.jpg",
-    "indicators": [
-        {
-            "indicator_id": "ind_animal",
-            "indicator_description": "The company provides a large field of flowers without using pesticide."
-        },
-        {
-            "indicator_id": "ind_localeco",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-        },
-        {
-            "indicator_id": "ind_soil",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-        }
-    ]
-  },
-  {
-    "code": "2354896578498",
-    "name": "Flour from Celnat / Couleur Nature",
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-    "type": "Flour",
-    "category": "imported_organic",
-    "provider": "Celnat / Couleur Nature",
-    "image_url":"https://www.bakingbusiness.com/ext/resources/2020/5/WholeWheatFlour_Lead.jpg",
-    "indicators": [
-        {
-            "indicator_id": "ind_animal",
-            "indicator_description": "The company provides a large field of flowers without using pesticide."
-        },
-        {
-            "indicator_id": "ind_localeco",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-        },
-        {
-            "indicator_id": "ind_soil",
-            "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-        }
-    ]
-  },
-  {
-      "code": "2354896578490",
-      "name": "Chocolate spread from Nathalie Bonn",
-      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-      "type": "Chocolate spread",
-      "category": "imported_organic",
-      "provider": "Nathalie Bonn",
-      "image_url":"https://www.irishtimes.com/polopoly_fs/1.3907332.1559058394!/image/image.jpg_gen/derivatives/box_620_330/image.jpg",
-      "indicators": [
-          {
-              "indicator_id": "ind_animal",
-              "indicator_description": "The company provides a large field of flowers without using pesticide."
-          },
-          {
-              "indicator_id": "ind_localeco",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          },
-          {
-              "indicator_id": "ind_soil",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          }
-      ]
-    },
-  {
-      "code": "2354896578499",
-      "name": "Chocolate spread from Genaveh",
-      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-      "type": "Chocolate spread",
-      "category": "imported_organic",
-      "provider": "Genaveh",
-      "image_url":"https://www.irishtimes.com/polopoly_fs/1.3907332.1559058394!/image/image.jpg_gen/derivatives/box_620_330/image.jpg",
-      "indicators": [
-          {
-              "indicator_id": "ind_animal",
-              "indicator_description": "The company provides a large field of flowers without using pesticide."
-          },
-          {
-              "indicator_id": "ind_localeco",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          },
-          {
-              "indicator_id": "ind_soil",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          }
-      ]
-    },
-  
-  {
-      "code": "2354896578409",
-      "name": "Jam from Autisme",
-      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-      "type": "Jam",
-      "category": "local_conventional",
-      "provider": "Autisme",
-      "image_url":"https://www.irishtimes.com/polopoly_fs/1.3907332.1559058394!/image/image.jpg_gen/derivatives/box_620_330/image.jpg",
-      "indicators": [
-          {
-              "indicator_id": "ind_animal",
-              "indicator_description": "The company provides a large field of flowers without using pesticide."
-          },
-          {
-              "indicator_id": "ind_localeco",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          },
-          {
-              "indicator_id": "ind_soil",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          }
-      ]
-    },
-  {
-      "code": "2354896578780",
-      "name": "Jam from Fior Di Frutta / BIODIS",
-      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-      "type": "Jam",
-      "category": "imported_organic",
-      "provider": "Fior Di Frutta / BIODIS",
-      "image_url":"https://www.irishtimes.com/polopoly_fs/1.3907332.1559058394!/image/image.jpg_gen/derivatives/box_620_330/image.jpg",
-      "indicators": [
-          {
-              "indicator_id": "ind_animal",
-              "indicator_description": "The company provides a large field of flowers without using pesticide."
-          },
-          {
-              "indicator_id": "ind_localeco",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          },
-          {
-              "indicator_id": "ind_soil",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          }
-      ]
-    },
-  {
-      "code": "2354896578499",
-      "name": "Coffee from Dieschbourg",
-      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-      "type": "Jam",
-      "category": "local_organic",
-      "provider": "Dieschbourg",
-      "image_url":"https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
-      "indicators": [
-          {
-              "indicator_id": "ind_animal",
-              "indicator_description": "The company provides a large field of flowers without using pesticide."
-          },
-          {
-              "indicator_id": "ind_localeco",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          },
-          {
-              "indicator_id": "ind_soil",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          }
-      ]
-    },
-  {
-      "code": "2354896578569",
-      "name": "Coffee from Knopes",
-      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-      "type": "Coffee",
-      "category": "local_conventional",
-      "provider": "Knopes",
-      "image_url":"https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
-      "indicators": [
-          {
-              "indicator_id": "ind_animal",
-              "indicator_description": "The company provides a large field of flowers without using pesticide."
-          },
-          {
-              "indicator_id": "ind_localeco",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          },
-          {
-              "indicator_id": "ind_soil",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          }
-      ]
-    },
-
-  {
-      "code": "2354896578499",
-      "name": "Coffee from Ethiquable",
-      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-      "type": "Coffee",
-      "category": "imported_organic",
-      "provider": "Ethiquable",
-      "image_url":"https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
-      "indicators": [
-          {
-              "indicator_id": "ind_animal",
-              "indicator_description": "The company provides a large field of flowers without using pesticide."
-          },
-          {
-              "indicator_id": "ind_localeco",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          },
-          {
-              "indicator_id": "ind_soil",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          }
-      ]
-    },
-  {
-      "code": "2354896578499",
-      "name": "Milk from BIOG",
-      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-      "type": "Milk",
-      "category": "local_organic",
-      "provider": "BIOG",
-      "image_url":"https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/1/3/1/9/2389131-1-eng-GB/Will-the-value-of-milk-protein-continue-to-increase-Probably_wrbm_large.jpg",
-      "indicators": [
-          {
-              "indicator_id": "ind_animal",
-              "indicator_description": "The company provides a large field of flowers without using pesticide."
-          },
-          {
-              "indicator_id": "ind_localeco",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          },
-          {
-              "indicator_id": "ind_soil",
-              "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-          }
-      ]
-    },
-  {
-        "code": "2354896578839",
-        "name": "Milk from Luxlait",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Milk",
-        "category": "local_organic",
-        "provider": "Luxlait",
-        "image_url":"https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/1/3/1/9/2389131-1-eng-GB/Will-the-value-of-milk-protein-continue-to-increase-Probably_wrbm_large.jpg",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578089",
-        "name": "Milk from Berchtesgadener Land",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Milk",
-        "category": "imported_organic",
-        "provider": "Berchtesgadener Land",
-        "image_url":"https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/1/3/1/9/2389131-1-eng-GB/Will-the-value-of-milk-protein-continue-to-increase-Probably_wrbm_large.jpg",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578499",
-        "name": "Milk from Inza",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Milk",
-        "category": "imported_conventional",
-        "provider": "Inza",
-        "image_url":"https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/1/3/1/9/2389131-1-eng-GB/Will-the-value-of-milk-protein-continue-to-increase-Probably_wrbm_large.jpg",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578499",
-        "name": "Yaourt nature from Biog",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Yaourt nature",
-        "category": "local_organic",
-        "provider": "Biog",
-        "image_url":"https://crookies.fr/wp-content/uploads/2020/03/yaourt-nature-maison-crookies.png",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578499",
-        "name": "Yaourt nature from Luxlait",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Yaourt nature",
-        "category": "local_organic",
-        "provider": "Luxlait",
-        "image_url":"https://crookies.fr/wp-content/uploads/2020/03/yaourt-nature-maison-crookies.png",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578499",
-        "name": "Yaourt nature from Pur Natur",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Yaourt nature",
-        "category": "local_organic",
-        "provider": "Pur Natur",
-        "image_url":"https://crookies.fr/wp-content/uploads/2020/03/yaourt-nature-maison-crookies.png",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578499",
-        "name": "Yaourt nature from Fage",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Yaourt nature",
-        "category": "imported_conventional",
-        "provider": "Fage",
-        "image_url":"https://crookies.fr/wp-content/uploads/2020/03/yaourt-nature-maison-crookies.png",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578499",
-        "name": "Eggs from Biog",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Eggs",
-        "category": "local_organic",
-        "provider": "Biog",
-        "image_url":"https://cdn.vox-cdn.com/thumbor/hadCk8XZp60iP8jkUUmuj7e0PKc=/0x0:4800x3600/1820x1213/filters:focal(2016x1416:2784x2184)/cdn.vox-cdn.com/uploads/chorus_image/image/65052658/microwaved_eggs_delish_recipe.0.jpg",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578499",
-        "name": "Eggs from Meyrishaff",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Eggs",
-        "category": "local_organic",
-        "provider": "Meyrishaff",
-        "image_url":"https://cdn.vox-cdn.com/thumbor/hadCk8XZp60iP8jkUUmuj7e0PKc=/0x0:4800x3600/1820x1213/filters:focal(2016x1416:2784x2184)/cdn.vox-cdn.com/uploads/chorus_image/image/65052658/microwaved_eggs_delish_recipe.0.jpg",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578499",
-        "name": "Eggs from Rachecourt",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Eggs",
-        "category": "local_organic",
-        "provider": "Rachecourt",
-        "image_url":"https://cdn.vox-cdn.com/thumbor/hadCk8XZp60iP8jkUUmuj7e0PKc=/0x0:4800x3600/1820x1213/filters:focal(2016x1416:2784x2184)/cdn.vox-cdn.com/uploads/chorus_image/image/65052658/microwaved_eggs_delish_recipe.0.jpg",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578499",
-        "name": "Eggs from Rachecourt",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Eggs",
-        "category": "imported_organic",
-        "provider": "Rachecourt",
-        "image_url":"https://cdn.vox-cdn.com/thumbor/hadCk8XZp60iP8jkUUmuj7e0PKc=/0x0:4800x3600/1820x1213/filters:focal(2016x1416:2784x2184)/cdn.vox-cdn.com/uploads/chorus_image/image/65052658/microwaved_eggs_delish_recipe.0.jpg",
-        "indicators": [
-            {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
-            },
-            {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            },
-            {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
-            }
-        ]
-      },
-  {
-        "code": "2354896578499",
-        "name": "pasta from Maxime",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "type": "Eggs",
+        "code": "2354896578569",
+        "name": "Café de Knopes",
+        "description": "Description du produit: café de Knopes",
+        "type": "Coffee",
         "category": "local_conventional",
-        "provider": "Maxime",
-        "image_url":" https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Farfalle_Pasta.JPG/1920px-Farfalle_Pasta.JPG",
+        "provider": "Knopes",
+        "image_url":"https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
         "indicators": [
             {
-                "indicator_id": "ind_animal",
-                "indicator_description": "The company provides a large field of flowers without using pesticide."
+                "indicator_id": "ind_fair",
+                "indicator_description": "Pratiques commerciales équitables utilisées."
             },
             {
-                "indicator_id": "ind_localeco",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
+                "indicator_id": "ind_transparency",
+                "indicator_description": "Producteur transparent envers les clients."
             },
             {
-                "indicator_id": "ind_soil",
-                "indicator_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
+                "indicator_id": "ind_imported",
+                "indicator_description": "Produit importé."
             }
         ]
-      }
- 
+      },
+  {
+          "code": "2354896578839",
+          "name": "Lait de Luxlait",
+          "description": "Description du produit: lait de Luxlait",
+          "type": "Lait",
+          "category": "local_organic",
+          "provider": "Luxlait",
+          "image_url":"https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/1/3/1/9/2389131-1-eng-GB/Will-the-value-of-milk-protein-continue-to-increase-Probably_wrbm_large.jpg",
+          "indicators": [
+              {
+                  "indicator_id": "ind_animal",
+                  "indicator_description": "Les vaches ont été bien traitées par leur producteur."
+              },
+              {
+                  "indicator_id": "ind_localeco",
+                  "indicator_description": "Le lait provient d'un producteur local."
+              },
+              {
+                  "indicator_id": "ind_regulations",
+                  "indicator_description": "Règlement stricte adapté."
+              }
+          ]
+        },
 ]

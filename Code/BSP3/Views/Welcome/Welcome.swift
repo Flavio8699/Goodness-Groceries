@@ -80,14 +80,11 @@ struct Welcome_page2: View {
         }
         .sheet(isPresented: self.$isPresentingScanner) {
             CBScanner(supportBarcode: [.ean13])
-                .interval(delay: 5.0)
+                .interval(delay: 0)
                 .found {
                     hideKeyboard()
                     self.isPresentingScanner = false
                     UserSettings.clientID = $0
-                    withAnimation {
-                        UserSettings.nextStep()
-                    }
                 }
                 .edgesIgnoringSafeArea(.bottom)
         }
@@ -172,6 +169,7 @@ struct Welcome_page5: View {
     
     @EnvironmentObject var UserSettings: UserSettings
     @StateObject var welcomeVM = WelcomeViewModel()
+    @StateObject var categoriesVM = CategoriesViewModel()
     
     var body: some View {
         VStack {
@@ -183,7 +181,7 @@ struct Welcome_page5: View {
             
             VStack (alignment: .center, spacing: 30) {
                 Text("Quand je fais des courses, le plus important est de ...").font(.title)
-                QGrid(welcomeVM.categories, columns: 2, vPadding: 0, hPadding: 0, isScrollable: false) {
+                QGrid(categoriesVM.categories, columns: 2, vPadding: 0, hPadding: 0, isScrollable: false) {
                     WelcomeCategoryCell(category: $0)
                 }
                 Bullets(step: 3, of: 3)
@@ -212,7 +210,7 @@ struct Welcome_page6: View {
             
             VStack (alignment: .center, spacing: 20) {
                 Text("Scannez un produit").font(.title)
-                Text("Munissez vous de votre Smartphone durant vos courses afin de scanner les QR codes présents sur un sélection de produits.")
+                Text("Munissez vous de votre Smartphone durant vos courses afin de scanner les QR codes présents sur une sélection de produits.")
                     .frame(height: 80)
                 Image("scan").frame(width: 205, height: 210)
                 Bullets(step: 1, of: 2)
@@ -244,7 +242,7 @@ struct Welcome_page7: View {
             
             VStack (alignment: .center, spacing: 20) {
                 Text("Consultez les indicateurs qui comptent pour vous").font(.title).frame(height: 70)
-                Text("Pour des achats plus responsables, il ne vous reste plus qu'à profiter des informations disponibles our chaque produit.")
+                Text("Pour des achats plus responsables, il ne vous reste plus qu'à profiter des informations disponibles sur chaque produit.")
                     .frame(height: 80)
                 Image("list").frame(width: 205, height: 210)
                 Bullets(step: 2, of: 2)

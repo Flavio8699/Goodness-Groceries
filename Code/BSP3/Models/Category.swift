@@ -1,8 +1,9 @@
 import Foundation
 
-struct Category: Hashable, Decodable {
+struct Category: Identifiable, Hashable, Decodable {
     var id: String
     var name: String
     var icon_name: String
     var description: String
+    var color: String
 }

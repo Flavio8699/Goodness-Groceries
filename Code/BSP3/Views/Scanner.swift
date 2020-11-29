@@ -10,12 +10,11 @@ struct Scanner: View {
         NavigationView {
             ZStack {
                 CBScanner(supportBarcode: [.qr])
-                    .interval(delay: 1.0)
+                    .interval(delay: 0)
                     .found { search in
                         if let product = self.productsVM.products.first(where: { $0.code == search }) {
                             if self.product != product {
-                                    self.product = product
-                                
+                                self.product = product
                                 UINotificationFeedbackGenerator().notificationOccurred(.success)
                             }
                         } else {

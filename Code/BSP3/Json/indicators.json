@@ -2,8 +2,8 @@
   {
     "id": "ind_animal",
     "name": "Animal Welfare",
-    "category_id": "ind_cat_environment",
-    "icon_name": "gouvernance_Icon",
+    "category_id": "ind_cat_social",
+    "icon_name": "animal_wellfare_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
@@ -45,7 +45,7 @@
     "id": "ind_localeco",
     "name": "Local Economy",
     "category_id": "ind_cat_economic",
-    "icon_name": "geographical_proximity",
+    "icon_name": "regional_market_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
@@ -72,29 +72,50 @@
   {
     "id": "ind_fair",
     "name": "Fair Trade Practices",
-    "category_id": "ind_cat_social",
-    "icon_name": "ind_soverignty",
+    "category_id": "ind_cat_environment",
+    "icon_name": "fairtrade_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
     "id": "ind_transparency",
     "name": "Transparency",
-    "category_id": "ind_cat_good_gevernance",
-    "icon_name": "ind_soverignty",
+    "category_id": "ind_cat_governance",
+    "icon_name": "transparency_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
     "id": "ind_participation",
     "name": "Participation",
-    "category_id": "ind_cat_good_gevernance",
+    "category_id": "ind_cat_governance",
     "icon_name": "ind_soverignty",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
   },
   {
-    "id": "ind_sustainable",
-    "name": "Sustainable Management",
-    "category_id": "ind_cat_environmental_integrity",
-    "icon_name": "ind_soverignty",
+    "id": "ind_salary",
+    "name": "Fair salary",
+    "category_id": "ind_cat_environment",
+    "icon_name": "salary_Icon",
     "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
-  }
+  },
+  {
+      "id": "ind_childlabor",
+      "name": "Child labor",
+      "category_id": "ind_cat_environment",
+      "icon_name": "child_labor_Icon",
+      "general_description": "test"
+  },
+  {
+    "id": "ind_imported",
+    "name": "Local Economy",
+    "category_id": "ind_cat_economic",
+    "icon_name": "geographical_proximity",
+    "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
+  },
+  {
+    "id": "ind_regulations",
+    "name": "Local Economy",
+    "category_id": "ind_cat_governance",
+    "icon_name": "regulations_Icon",
+    "general_description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
+  },
 ]

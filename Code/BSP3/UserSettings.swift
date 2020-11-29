@@ -29,7 +29,7 @@ class UserSettings: ObservableObject {
     }
     
     func signIn() {
-        self.NetworkManager.fetchUserStatus {
+        self.NetworkManager.fetchUserStatus(for: clientID) {
             switch $0 {
             case let .success(status):
                 switch status.status {

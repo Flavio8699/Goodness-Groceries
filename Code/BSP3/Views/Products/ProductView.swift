@@ -48,7 +48,7 @@ struct ProductView: View {
                                 HStack (spacing: 15) {
                                     Image(indicator.icon_name)
                                     Text(productIndicator.indicator_description)
-                                    Spacer()
+                                    Spacer(minLength: 0)
                                 }
                                 Divider()
                             }
@@ -56,7 +56,7 @@ struct ProductView: View {
                             HStack (spacing: 15) {
                                 Image(indicator.icon_name)
                                 Text(productIndicator.indicator_description)
-                                Spacer()
+                                Spacer(minLength: 0)
                             }
                             Divider()
                         }
@@ -72,8 +72,8 @@ struct ProductView: View {
                             if let indicator = productsVM.indicators.first(where: { $0.id == productIndicator.indicator_id }) {
                                 HStack (spacing: 15) {
                                     Image(indicator.icon_name)
-                                    Text(productIndicator.indicator_description)
-                                    Spacer()
+                                    Text(productIndicator.indicator_description).fixedSize(horizontal: false, vertical: true)
+                                    Spacer(minLength: 0)
                                 }
                                 if productIndicator != product.indicators.last {
                                     Divider()
@@ -85,13 +85,13 @@ struct ProductView: View {
                 Spacer()
             }
             .navigationBarTitle("Produit")
-            .navigationBarItems(trailing:
+            /*.navigationBarItems(trailing:
                 Button(action: {
                     
                 }, label: {
                     Text("Comparer")
                 })
-            )
+            )*/
         }
     }
 }

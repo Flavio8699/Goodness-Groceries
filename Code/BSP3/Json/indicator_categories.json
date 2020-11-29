@@ -1,26 +1,30 @@
 [
   {
     "id": "ind_cat_environment",
-    "name": "Environmental Integrity",
+    "name": "Environnement",
     "icon_name": "Socio_Culturel_Icon",
-    "description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
+    "description": "Encourager une production équitable",
+    "color": "wc_orange"
   },
   {
     "id": "ind_cat_economic",
-    "name": "Economic Resilience",
+    "name": "Bien-être économique",
     "icon_name": "Socio_Economique_Icon",
-    "description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
+    "description": "Soutenir les producteurs au juste prix",
+    "color": "wc_yellow"
   },
   {
     "id": "ind_cat_social",
-    "name": "Social Well_being",
+    "name": "Bien-être social",
     "icon_name": "Socio_Ecologique_Icon",
-    "description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
+    "description": "Connaître les lois qui régissent une filière",
+    "color": "wc_green"
   },
   {
     "id": "ind_cat_governance",
-    "name": "Good Governance",
+    "name": "Bonne gouvernance",
     "icon_name": "Socio_Politique_Icon",
-    "description": "lorem ipsum Husbandry Conditions, Transport Conditions, Slaughtering Conditions"
-  }
+    "description": "Privilégier des méthodes agricoles éthiques",
+    "color": "wc_blue"
+  },
 ]
