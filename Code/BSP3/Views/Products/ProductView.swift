@@ -2,13 +2,21 @@ import SwiftUI
 import SDWebImageSwiftUI
 import MapKit
 
+enum ActiveSheet: Identifiable {
+    case indicators, map
+    
+    var id: Int {
+        hashValue
+    }
+}
+
 struct ProductView: View {
     
     let product: Product
     let category: Category?
     @StateObject var productsVM = ProductsViewModel()
-    @State var showSheet = false
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 49.623874, longitude: 6.052060), span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
+    @State private var activeSheet: ActiveSheet?
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 49.623874, longitude: 6.052060), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
     
     var body: some View {
         ScrollView (.vertical, showsIndicators: false) {
@@ -25,17 +33,23 @@ struct ProductView: View {
                     }
                     VStack (alignment: .leading, spacing: 15) {
                         Text(product.type)
-                        Text(product.provider)
+                        HStack {
+                            Text(product.provider)
+                            Button(action: {
+                                activeSheet = .map
+                            }, label: {
+                                Text("(voir sur la carte)")
+                            })
+                        }
                     }
                     Spacer()
                 }
-                Map(coordinateRegion: $region).frame(height: 150).cornerRadius(7)
                 HStack {
                     Text("Indicateurs").font(.title2).bold()
                     if category != nil {
                         Spacer()
                         Button(action: {
-                            showSheet.toggle()
+                            activeSheet = .indicators
                         }, label: {
                             Text("Voir plus")
                         })
@@ -64,25 +78,34 @@ struct ProductView: View {
                 }
             }
             .padding()
-            .sheet(isPresented: $showSheet) {
-                VStack (alignment: .leading, spacing: 15) {
-                    Text("Indicateurs").font(.title).bold()
-                    ScrollView(.vertical, showsIndicators: false) {
-                        ForEach(product.indicators, id: \.self) { productIndicator in
-                            if let indicator = productsVM.indicators.first(where: { $0.id == productIndicator.indicator_id }) {
-                                HStack (spacing: 15) {
-                                    Image(indicator.icon_name)
-                                    Text(productIndicator.indicator_description).fixedSize(horizontal: false, vertical: true)
-                                    Spacer(minLength: 0)
-                                }
-                                if productIndicator != product.indicators.last {
-                                    Divider()
+            .sheet(item: $activeSheet) { item in
+                if item == .indicators {
+                    VStack (alignment: .leading, spacing: 15) {
+                        Text("Indicateurs").font(.title).bold()
+                        ScrollView(.vertical, showsIndicators: false) {
+                            ForEach(product.indicators, id: \.self) { productIndicator in
+                                if let indicator = productsVM.indicators.first(where: { $0.id == productIndicator.indicator_id }) {
+                                    HStack (spacing: 15) {
+                                        Image(indicator.icon_name)
+                                        Text(productIndicator.indicator_description).fixedSize(horizontal: false, vertical: true)
+                                        Spacer(minLength: 0)
+                                    }
+                                    if productIndicator != product.indicators.last {
+                                        Divider()
+                                    }
                                 }
                             }
                         }
+                    }.padding()
+                    Spacer()
+                } else if item == .map {
+                    ZStack (alignment: .bottom) {
+                        Map(coordinateRegion: $region).frame(maxWidth: .infinity, maxHeight: .infinity).edgesIgnoringSafeArea(.all)
+                        BlueButton(label: "Fermer", action: {
+                            activeSheet = nil
+                        }).padding().offset(y: -25)
                     }
-                }.padding()
-                Spacer()
+                }
             }
             .navigationBarTitle("Produit")
             /*.navigationBarItems(trailing:
