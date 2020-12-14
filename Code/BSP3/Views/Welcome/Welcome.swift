@@ -15,9 +15,9 @@ struct Welcome_page1: View {
                 .padding(.bottom, 50)
                 .padding(.top, 30)
             
-            VStack (alignment: .center, spacing: 30) {
-                Text("Bienvenue dans GreenBot!").font(.title)
-                Text("Nous voulons être transparents et vous permettre d'acheter les produits qui vous correspondent. C'est pourquoi nous avons développé l'application GreenBot. Celle-ci vous permettra de consulter une multitude de données spécifiques à un produit et de le comparer à d'autres avant d'effectuer vos achats.")
+            VStack (alignment: .leading, spacing: 30) {
+                Text("Bienvenue dans Goodness Groceries!").font(.title)
+                Text("Nous voulons être transparents et vous permettre d'acheter les produits qui vous correspondent. C'est pourquoi nous avons développé l'application Goodness Groceries. Celle-ci vous permettra de consulter une multitude de données spécifiques à un produit et de le comparer à d'autres avant d'effectuer vos achats.")
                 BlueButton(label: "Suivant", action: {
                     withAnimation {
                         UserSettings.nextStep()

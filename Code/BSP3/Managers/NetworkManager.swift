@@ -9,7 +9,7 @@ class NetworkManager: ObservableObject {
     }
     
     func requestUserAccess(for participant_id: String) {
-        var request = URLRequest(url: URL(string: "http://ec2-35-156-126-224.eu-central-1.compute.amazonaws.com:8000/request_user_access/")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
+        var request = URLRequest(url: URL(string: "https://goodnessgroceries.com/request_user_access/")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         request.httpMethod = "POST"
         let parameters: [String: Any] = [
             "participant_id": participant_id,
@@ -28,7 +28,7 @@ class NetworkManager: ObservableObject {
     }
     
     func fetchUserStatus(for participant_id: String, completion: @escaping (Result<UserStatus,ResultError>) -> Void) {
-        let request = URLRequest(url: URL(string: "http://ec2-35-156-126-224.eu-central-1.compute.amazonaws.com:8000/fetch_user_status/\(participant_id)/")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
+        let request = URLRequest(url: URL(string: "https://goodnessgroceries.com/fetch_user_status/\(participant_id)/")!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if error != nil {

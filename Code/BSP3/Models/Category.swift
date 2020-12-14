@@ -7,3 +7,5 @@ struct Category: Identifiable, Hashable, Decodable {
     var description: String
     var color: String
 }
+
+
