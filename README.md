@@ -3,9 +3,6 @@
 This repository contains my Bachelor Semester Project 3 at the University of Luxembourg which is an eco-friendly mobile application for iOS. 
 The app was built using the latest SwiftUI framework.
 
-## Screenshots
-![Screenshots](screenshot.png?raw=true "Screenshots")
-
 ## Pre-requisites
 * XCode Version 12.0.1 (or higher)
 * iOS 14.0 (or higher) *(only required when building the app on a physical iPhone)*
