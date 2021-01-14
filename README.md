@@ -10,7 +10,7 @@ The app was built using the latest SwiftUI framework.
 ## Installation
 To clone the repository to your local computer execute the following line in the **Terminal** app:
 ```
-git clone https://github.com/Flavio8699/GreenBot.git
+git clone https://github.com/Flavio8699/Goodness-Groceries.git
 ```
 
 ## Usage
