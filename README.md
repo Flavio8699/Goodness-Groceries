@@ -1,6 +1,6 @@
 # Bachelor Semester Project 3 & 4
 
-This repository contains my Bachelor Semester Project 3 at the University of Luxembourg which is an eco-friendly mobile application for iOS. 
+This repository contains my Bachelor Semester Project 3 & 4 at the University of Luxembourg which is an eco-friendly mobile application for iOS. 
 The app was built using the latest SwiftUI framework.
 
 ## Pre-requisites
