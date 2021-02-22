@@ -7,7 +7,7 @@ struct Accueil: View {
     @State var search: String = ""
     @State var width: CGFloat = .infinity
     @State var showCancelButton: Bool = false
-    
+
     var body: some View {
         NavigationView {
             VStack (alignment: .leading, spacing: 15) {

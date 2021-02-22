@@ -2,9 +2,21 @@ import Foundation
 
 class UserSettings: ObservableObject {
     
-    @Published private var step: Int = 0
+    @Published var step: Int = 0 {
+        didSet {
+            UserDefaults.standard.set(step, forKey: "step")
+            self.handleShowWelcome()
+        }
+    }
     @Published var clientID: String = ""
-    @Published var statusRequested: Bool = false
+    @Published var statusRequested: Bool = false {
+        didSet {
+            UserDefaults.standard.set(statusRequested, forKey: "statusRequested")
+            if !clientID.isEmpty {
+                UserDefaults.standard.set(clientID, forKey: "clientID")
+            }
+        }
+    }
     @Published var showWelcome: Bool = true
     @Published var networkError: Bool = false
     @Published var loading: Bool = true
@@ -22,55 +34,42 @@ class UserSettings: ObservableObject {
         if !isKeyPresentInUserDefaults(key: "step") {
             UserDefaults.standard.set(0, forKey: "step")
         } else {
-            self.step = self.getStep()
+            self.step = UserDefaults.standard.integer(forKey: "step")
         }
         
         self.handleShowWelcome()
     }
     
     func signIn() {
-        self.NetworkManager.fetchUserStatus(for: clientID) {
-            switch $0 {
-            case let .success(status):
-                switch status.status {
+        self.NetworkManager.fetchUserStatus(for: clientID) { response in
+            switch response {
+            case .success(let status):
+                switch status {
                 case .requested:
                     self.statusRequested = true
+                    break
                 case .valid:
                     self.statusRequested = false
                     UserDefaults.standard.removeObject(forKey: "statusRequested")
+                    break
                 }
                 self.handleShowWelcome()
                 self.networkError = false
+                break
             case .failure(_):
                 self.networkError = true
+                break
             }
             self.loading = false
         }
     }
     
     func handleShowWelcome() {
-        if self.getStep() == 7 { // # of welcome pages
+        if step == 7 { // # of welcome pages
             self.showWelcome = false
         } else {
             self.showWelcome = true
         }
-    }
-    
-    func getStep() -> Int {
-        return UserDefaults.standard.integer(forKey: "step")
-    }
-    
-    func nextStep() {
-        self.step += 1
-        UserDefaults.standard.set(self.getStep()+1, forKey: "step")
-        self.handleShowWelcome()
-    }
-    
-    func requestAccess() {
-        self.statusRequested = true
-        UserDefaults.standard.set(true, forKey: "statusRequested")
-        UserDefaults.standard.set(clientID, forKey: "clientID")
-        NetworkManager.requestUserAccess(for: clientID)
     }
 }
 

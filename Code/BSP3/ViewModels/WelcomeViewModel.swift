@@ -1,8 +1,13 @@
 import Foundation
 import SwiftUI
+import Alamofire
 
 class WelcomeViewModel: ObservableObject {
+    
+    private var NetworkManager = BSP3.NetworkManager()
     @Published var productCategories = [ProductCategoryWelcome]()
+    static var selectedProductCategories = [String]()
+    static var selectedIndicatorCategories = [String]()
     
     init() {
         self.productCategories = [
@@ -13,4 +18,9 @@ class WelcomeViewModel: ObservableObject {
         ]
     }
     
+    func requestAccess(for clientID: String, completion: @escaping (Result<Void,AFError>) -> Void) {
+        NetworkManager.requestUserAccess(for: clientID, product_categories: WelcomeViewModel.selectedProductCategories, indicator_categories: WelcomeViewModel.selectedIndicatorCategories) {
+            completion($0)
+        }
+    }
 }

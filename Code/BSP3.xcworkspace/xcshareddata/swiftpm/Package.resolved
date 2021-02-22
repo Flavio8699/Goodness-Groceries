@@ -2,12 +2,30 @@
   "object": {
     "pins": [
       {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "eaf6e622dd41b07b251d8f01752eab31bc811493",
+          "version": "5.4.1"
+        }
+      },
+      {
         "package": "CarBode",
         "repositoryURL": "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI.git",
         "state": {
           "branch": null,
           "revision": "69aaaea54d2759b9f829161ece8d88136d50fca9",
           "version": "1.4.3"
+        }
+      },
+      {
+        "package": "KeychainSwift",
+        "repositoryURL": "https://github.com/evgenyneu/keychain-swift",
+        "state": {
+          "branch": null,
+          "revision": "96fb84f45a96630e7583903bd7e08cf095c7a7ef",
+          "version": "19.0.0"
         }
       },
       {
@@ -35,6 +53,15 @@
           "branch": null,
           "revision": "4c7f169e39bc35d6b80d42b8eb8301bee9cd0907",
           "version": "1.5.0"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
+          "version": "5.0.0"
         }
       }
     ]

@@ -10,6 +10,13 @@ struct WelcomeCategoryCell: View {
             withAnimation(.default) {
                 color = (color == Color.white) ? Color(category.color) : Color.white
             }
+            
+            if WelcomeViewModel.selectedIndicatorCategories.contains(category.name) {
+                WelcomeViewModel.selectedIndicatorCategories.removeAll { $0 == category.name }
+            } else {
+                WelcomeViewModel.selectedIndicatorCategories.append(category.name)
+            }
+            
         }, label: {
             ZStack (alignment: .top) {
                 color.cornerRadius(7)

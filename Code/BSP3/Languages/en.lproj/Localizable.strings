@@ -2,8 +2,8 @@
   Localizable.strings
   BSP3
 
-  Created by Flavio Matias on 10/11/2020.
-  Copyright © 2020 Flavio Matias. All rights reserved.
+  Created by Flavio Matias on 15/02/2021.
+  Copyright © 2021 Flavio Matias. All rights reserved.
 */
 
-"Test" = "Hello test!";
+"WELCOME_PAGE_1_TITLE" = "Welcome to Goodness Groceries!";

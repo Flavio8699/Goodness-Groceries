@@ -7,10 +7,10 @@ struct CategoryRowView: View {
     
     var body: some View {
         VStack (alignment: .leading, spacing: 12) {
-            HStack {
+            /*HStack {
                 Text(category.name).font(.title)
                 Image("arrow_right").padding(.top, 4)
-            }
+            }*/
             HStack (spacing: 20) {
                 Image(category.icon_name)
                 Text(category.description).font(.system(size: 14)).multilineTextAlignment(.leading).lineLimit(2)

@@ -7,7 +7,6 @@ struct ContentView: View {
     @State var surveyProducts = [String]()
     private var NetworkManager = BSP3.NetworkManager()
     
-    
     var body: some View {
         ZStack {
             if UserSettings.loading {
@@ -29,20 +28,29 @@ struct ContentView: View {
                         }
                     }
                 } else {
-                    if UserSettings.getStep() == 0 {
-                        Welcome_page1().transition(.viewTransition)
-                    } else if UserSettings.getStep() == 1 {
-                        Welcome_page2().transition(.viewTransition)
-                    } else if UserSettings.getStep() == 2 {
-                        Welcome_page3().transition(.viewTransition)
-                    } else if UserSettings.getStep() == 3 {
-                        Welcome_page4().transition(.viewTransition)
-                    } else if UserSettings.getStep() == 4 {
-                        Welcome_page5().transition(.viewTransition)
-                    } else if UserSettings.getStep() == 5 {
-                        Welcome_page6().transition(.viewTransition)
-                    } else if UserSettings.getStep() == 6 {
-                        Welcome_page7().transition(.viewTransition)
+                    if UserSettings.step >= 0 && UserSettings.step <= 4 {
+                        VStack {
+                            ZStack(alignment: .bottom) {
+                                Welcome()
+                            }
+                            Spacer()
+                            HStack(spacing: 8) {
+                                ForEach(0..<5) { index in
+                                    Bullet(isSelected: UserSettings.step == index, action: {
+                                        withAnimation {
+                                            UserSettings.step = index
+                                        }
+                                    })
+                                }
+                            }
+                            .padding(.bottom, 12)
+                        }
+                    } else {
+                        if UserSettings.step == 5 {
+                            Welcome_page6().transition(.viewTransition)
+                        } else {
+                            Welcome_page7().transition(.viewTransition)
+                        }
                     }
                 }
                 
@@ -79,7 +87,11 @@ struct ContentView: View {
                 UserSettings.loading = false
             }
             
-            DispatchQueue(label: "queue2").async(group: group) {
+            NetworkManager.checkInternet { av in
+                print("available:", av)
+            }
+            
+            /*DispatchQueue(label: "queue2").async(group: group) {
                 // set timer to execute this code at a precise time (fetch products, 9pm?)
                 NetworkManager.fetchProductsBought {
                     if let products = $0 {
@@ -91,7 +103,7 @@ struct ContentView: View {
                         //NotificationsManager().sendNotification(products: productsForSurvey)
                     }
                 }
-            }
+            }*/
             
             NotificationCenter.default.addObserver(forName: NSNotification.Name("Survey"), object: nil, queue: .main) { notif in
                 if let products = notif.userInfo!["products"] {
@@ -107,13 +119,3 @@ struct ContentView: View {
     }
 }
 
-
-struct ContentViewView_Previews: PreviewProvider {
-
-    static var previews: some View {
-        ForEach(["fr", "en", "hiufwhfew"], id: \.self) { id in
-            Text("Test")
-                .environment(\.locale, .init(identifier: id))
-        }
-    }
-}
