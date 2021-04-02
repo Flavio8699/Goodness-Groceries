@@ -23,7 +23,7 @@
 		7252D2C02615F279005AB58E /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7252D2BF2615F279005AB58E /* HapticFeedback.swift */; };
 		7262094525E3C0CC004A3693 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7262094425E3C0CC004A3693 /* Welcome.swift */; };
 		72651D0825E117C600DAA1A8 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 72651D0725E117C600DAA1A8 /* KeychainSwift */; };
-		7271B486261330A600CC0CA6 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271B485261330A600CC0CA6 /* Popup.swift */; };
+		7271B486261330A600CC0CA6 /* popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271B485261330A600CC0CA6 /* popup.swift */; };
 		7271B48A261332CF00CC0CA6 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271B489261332CF00CC0CA6 /* PopupManager.swift */; };
 		7271B48E26133B3A00CC0CA6 /* Popups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271B48D26133B3A00CC0CA6 /* Popups.swift */; };
 		7272E7952547006400A38A7D /* percentEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272E7942547006400A38A7D /* percentEncoded.swift */; };
@@ -101,7 +101,7 @@
 		7240CF2125ECEFC100E76683 /* NSLocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedString.swift; sourceTree = "<group>"; };
 		7252D2BF2615F279005AB58E /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		7262094425E3C0CC004A3693 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
-		7271B485261330A600CC0CA6 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		7271B485261330A600CC0CA6 /* popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popup.swift; sourceTree = "<group>"; };
 		7271B489261332CF00CC0CA6 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		7271B48D26133B3A00CC0CA6 /* Popups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popups.swift; sourceTree = "<group>"; };
 		7272E7942547006400A38A7D /* percentEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = percentEncoded.swift; sourceTree = "<group>"; };
@@ -173,12 +173,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		722353EC26147F1E000550AC /* Localizable.strings */ = {
+		722353EC26147F1E000550AC /* Languages */ = {
 			isa = PBXGroup;
 			children = (
 				722353F526147F4F000550AC /* Localizable.strings */,
 			);
-			path = Localizable.strings;
+			path = Languages;
 			sourceTree = "<group>";
 		};
 		724B4F40255C7C1500F0DF5D /* Json */ = {
@@ -254,22 +254,20 @@
 		72AC8ABC2512770B00C0887F /* GoodnessGroceries */ = {
 			isa = PBXGroup;
 			children = (
-				722353EC26147F1E000550AC /* Localizable.strings */,
+				722353EC26147F1E000550AC /* Languages */,
 				72D913DE2518EC6D00CA817D /* ViewModels */,
 				72D913D22518E66700CA817D /* Models */,
 				72AC8AD425127FB100C0887F /* Views */,
 				724B4F41255C7C2900F0DF5D /* Managers */,
 				72CCF07A251A338400460AF0 /* Extensions */,
 				724B4F40255C7C1500F0DF5D /* Json */,
+				72B4C54826172BE10063D06F /* Functions */,
 				72AC8AC82512770E00C0887F /* Preview Content */,
 				72AC8AC62512770E00C0887F /* Assets.xcassets */,
 				72AC8ADA25128B4A00C0887F /* UserSettings.swift */,
 				72AC8AC42512770B00C0887F /* ContentView.swift */,
 				72AC8ABD2512770B00C0887F /* AppDelegate.swift */,
 				72AC8ABF2512770B00C0887F /* SceneDelegate.swift */,
-				7271B485261330A600CC0CA6 /* Popup.swift */,
-				7240CF2125ECEFC100E76683 /* NSLocalizedString.swift */,
-				72D913DA2518E96900CA817D /* loadJson.swift */,
 				72AC8ACE2512770E00C0887F /* Info.plist */,
 				72AC8AC12512770B00C0887F /* GoodnessGroceries.xcdatamodeld */,
 				7238978C255C76AE00A12F38 /* GoodnessGroceries.entitlements */,
@@ -314,9 +312,19 @@
 			path = Extras;
 			sourceTree = "<group>";
 		};
+		72B4C54826172BE10063D06F /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				7240CF2125ECEFC100E76683 /* NSLocalizedString.swift */,
+				72D913DA2518E96900CA817D /* loadJson.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
 		72CCF07A251A338400460AF0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7271B485261330A600CC0CA6 /* popup.swift */,
 				72CCF07B251A339600460AF0 /* hideKeyboard.swift */,
 				7272E7942547006400A38A7D /* percentEncoded.swift */,
 				72B88C392550B7B600295F04 /* cornerRadius.swift */,
@@ -492,7 +500,7 @@
 				72771C17252B7830005245FB /* Indicator.swift in Sources */,
 				72AC8AC32512770B00C0887F /* GoodnessGroceries.xcdatamodeld in Sources */,
 				72E34AA925544EA20034B75B /* ProductCategoryWelcome.swift in Sources */,
-				7271B486261330A600CC0CA6 /* Popup.swift in Sources */,
+				7271B486261330A600CC0CA6 /* popup.swift in Sources */,
 				7285D35D255BEAF4004D6E14 /* WelcomeCategoryCell.swift in Sources */,
 				72D913E02518EC9D00CA817D /* ProductsViewModel.swift in Sources */,
 				72999F082524C8720018750E /* ProductScannedView.swift in Sources */,
