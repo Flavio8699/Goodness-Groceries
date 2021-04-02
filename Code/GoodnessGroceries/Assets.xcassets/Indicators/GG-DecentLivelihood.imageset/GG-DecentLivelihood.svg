@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45.407 45.281" style="enable-background:new 0 0 45.407 45.281;" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" y="0" width="45.407" height="45.281"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path style="clip-path:url(#SVGID_2_);fill:#F2E9A0;" d="M44.684,22.678c0,12.146-9.846,21.991-21.991,21.991
+		s-21.99-9.845-21.99-21.991c0-12.145,9.845-21.991,21.99-21.991S44.684,10.533,44.684,22.678"/>
+	<polyline style="clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;" points="
+		38.691,44.721 38.913,16.846 6.063,16.586 5.842,44.461 	"/>
+	<polygon style="clip-path:url(#SVGID_2_);" points="4.764,15.805 22.583,2.146 40.183,16.085 	"/>
+	<polygon style="clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:10;" points="
+		4.764,15.805 22.583,2.146 40.183,16.085 	"/>
+	<path style="clip-path:url(#SVGID_2_);" d="M16.859,31.009c0,1.325-1.074,2.399-2.399,2.399c-1.326,0-2.4-1.074-2.4-2.399
+		c0-1.325,1.074-2.399,2.4-2.399C15.785,28.61,16.859,29.684,16.859,31.009"/>
+	<path style="clip-path:url(#SVGID_2_);" d="M15.119,44.324h3.152v-7.658c0,0,0.201-2.525-3.812-2.525h-0.268
+		c-4.012,0-3.812,2.525-3.812,2.525v7.658h3.152"/>
+	<polygon style="clip-path:url(#SVGID_2_);" points="10.379,44.324 18.272,44.324 14.849,34.141 13.925,34.199 	"/>
+	<path style="clip-path:url(#SVGID_2_);" d="M25.816,32.298c0,1.187-0.962,2.148-2.148,2.148c-1.187,0-2.149-0.961-2.149-2.148
+		s0.962-2.148,2.149-2.148C24.854,30.15,25.816,31.111,25.816,32.298"/>
+	<path style="clip-path:url(#SVGID_2_);" d="M24.259,44.324h2.821v-6.856c0,0,0.18-2.261-3.413-2.261h-0.239
+		c-3.593,0-3.413,2.261-3.413,2.261v6.856h2.821"/>
+	<polygon style="clip-path:url(#SVGID_2_);" points="20.015,44.324 27.08,44.324 24.017,35.207 23.189,35.259 	"/>
+	<rect x="19.097" y="8.2" style="clip-path:url(#SVGID_2_);fill:#F2E9A0;" width="6.873" height="4.877"/>
+	<line style="clip-path:url(#SVGID_2_);fill:#E9E3D9;" x1="26.218" y1="10.735" x2="18.73" y2="10.735"/>
+	
+		<line style="clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;" x1="26.218" y1="10.735" x2="18.73" y2="10.735"/>
+	<line style="clip-path:url(#SVGID_2_);fill:#E9E3D9;" x1="22.533" y1="14.478" x2="22.533" y2="6.991"/>
+	
+		<line style="clip-path:url(#SVGID_2_);fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;" x1="22.533" y1="14.478" x2="22.533" y2="6.991"/>
+</g>
+</svg>

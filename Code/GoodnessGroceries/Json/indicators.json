@@ -1,0 +1,100 @@
+[
+  {
+    "id": "ind_animal",
+    "name": "IND_ANIMAL_NAME",
+    "category_id": "ind_cat_environment",
+    "icon_name": "GG-AnimalWelfare",
+    "general_description": "IND_ANIMAL_DESCRIPTION"
+  },
+  {
+    "id": "ind_biodiv",
+    "name": "IND_BIODIV_NAME",
+    "category_id": "ind_cat_environment",
+    "icon_name": "GG-Biodiversity",
+    "general_description": "IND_BIODIV_DESCRIPTION"
+  },
+  {
+    "id": "ind_flora",
+    "name": "IND_FLORA_NAME",
+    "category_id": "ind_cat_environment",
+    "icon_name": "GG-FloraFauna",
+    "general_description": "IND_FLORA_DESCRIPTION"
+  },
+  {
+    "id": "ind_soil",
+    "name": "IND_SOIL_NAME",
+    "category_id": "ind_cat_economic",
+    "icon_name": "GG-SoilFertility",
+    "general_description": "IND_SOIL_DESCRIPTION"
+  },
+  {
+    "id": "ind_decent",
+    "name": "IND_DECENT_NAME",
+    "category_id": "ind_cat_social",
+    "icon_name": "GG-DecentLivelihood",
+    "general_description": "IND_DECENT_DESCRIPTION"
+  },
+  {
+    "id": "ind_equity",
+    "name": "IND_EQUITY_NAME",
+    "category_id": "ind_cat_social",
+    "icon_name": "GG-Equity",
+    "general_description": "IND_EQUITY_DESCRIPTION"
+  },
+  {
+    "id": "ind_labour",
+    "name": "IND_LABOUR_NAME",
+    "category_id": "ind_cat_social",
+    "icon_name": "GG-LabourRights",
+    "general_description": "IND_LABOUR_DESCRIPTION"
+  },
+  {
+    "id": "ind_fair",
+    "name": "IND_FAIR_NAME",
+    "category_id": "ind_cat_social",
+    "icon_name": "GG-FairTradePractices",
+    "general_description": "IND_FAIR_DESCRIPTION"
+  },
+  {
+    "id": "ind_sovereignty",
+    "name": "IND_SOVEREIGNITY_NAME",
+    "category_id": "ind_cat_economic",
+    "icon_name": "GG-ProducerSovereignty",
+    "general_description": "IND_SOVEREIGNITY_DESCRIPTION"
+  },
+  {
+    "id": "ind_food",
+    "name": "IND_FOOD_NAME",
+    "category_id": "ind_cat_economic",
+    "icon_name": "GG-FoodMiles",
+    "general_description": "IND_FOOD_DESCRIPTION"
+  },
+  {
+    "id": "ind_localeco",
+    "name": "IND_LOCALECO_NAME",
+    "category_id": "ind_cat_economic",
+    "icon_name": "GG-LocalEconomy",
+    "general_description": "IND_LOCALECO_DESCRIPTION"
+  },
+  {
+    "id": "ind_transparency",
+    "name": "IND_TRANSPARENCY_NAME",
+    "category_id": "ind_cat_governance",
+    "icon_name": "GG-Transparency",
+    "general_description": "IND_TRANSPARENCY_DESCRIPTION"
+  },
+  {
+    "id": "ind_participation",
+    "name": "IND_PARTICIPATION_NAME",
+    "category_id": "ind_cat_governance",
+    "icon_name": "GG-Participation",
+    "general_description": "IND_PARTICIPATION_DESCRIPTION"
+  },
+  {
+    "id": "ind_sustainablemanagement",
+    "name": "IND_SUSTAINABLEMANAGEMENT_NAME",
+    "category_id": "ind_cat_governance",
+    "icon_name": "GG-SustainableManagement",
+    "general_description": "IND_SUSTAINABLEMANAGEMENT_DESCRIPTION"
+  }
+]

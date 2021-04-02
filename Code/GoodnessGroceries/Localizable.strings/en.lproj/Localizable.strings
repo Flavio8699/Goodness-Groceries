@@ -1,0 +1,196 @@
+
+/*  */
+"BACK" = "Back";
+
+/*  */
+"CANCEL" = "Cancel";
+
+
+"CLIENT_ID" = "Client ID";
+
+
+"CONTINUE" = "Continue";
+
+/*  */
+"HOME" = "Home";
+
+"HELP" = "Help";
+
+
+"INDICATORS" = "Indicators";
+
+
+"IND_ANIMAL_DESCRIPTION" = "The physical and psychological well-being of animals is monitored so that they may live in their species-specific way and be healthy, comfortable, safe, well-nourished, and exist without fear or suffering. This includes housing, rearing, transport, feed, and slaughter.";
+
+
+"IND_ANIMAL_NAME" = "Animal welfare";
+
+
+"IND_BIODIV_DESCRIPTION" = "Plants, animals and microorganisms in nature must exist in the greatest possible diversity, and have wide genetic variety within the various species to guarantee life in the long-term. In food production, the conservation and improvement of ecosystems is prioritised. Ancient varieties and breeds are reintroduced and the dominance of a limited number of varieties is avoided. The biodiversity of the surrounding natural landscape is conserved as much as possible.";
+
+
+"IND_BIODIV_NAME" = "Biodiversity";
+
+
+"IND_CAT_ECONOMIC_DESCRIPTION" = "All the people working in the food sector have present and future financial security. Societies as a whole prosper through their food production activities, which build not only financial gains but also social ones. To achieve this, more local, circular and solidarity-based food production is fostered.";
+
+
+"IND_CAT_ECONOMIC_NAME" = "Economic well-being";
+
+
+"IND_CAT_ENVIRONMENT_DESCRIPTION" = "Efforts are made, during the various phases of production, processing and consumption of food, to minimise negative impacts on nature and even create positive side effects. This makes our food system more ecologically sustainable.";
+
+
+"IND_CAT_ENVIRONMENT_NAME" = "Environment";
+
+
+"IND_CAT_GOVERNANCE_DESCRIPTION" = "The way companies conduct business, manage their resources and assets, shape their interactions and decision-making processes is directed towards increasing sustainability . All product information is transparent and easily accessible. Enterprises use participatory approaches and include producers in decisions. Ultimately, enterprises can be held accountable for their claims.";
+
+
+"IND_CAT_GOVERNANCE_NAME" = "Good governance";
+
+
+"IND_CAT_SOCIAL_DESCRIPTION" = "Every human being is able to fulfil their basic human needs, and has the right and freedom to pursue their aspirations for a better life, without compromising the ability of others and of future generations to do the same.";
+
+
+"IND_CAT_SOCIAL_NAME" = "Social well-being";
+
+
+"IND_DECENT_DESCRIPTION" = "People gaining their living by producing food are empowered to build safe, decent and resilient standards of living by increasing their assets, capabilities and activities. Ideally, the quality of their lives, and their families’ lives, both current and future, can be improved.";
+
+
+"IND_DECENT_NAME" = "Decent Livelihoods";
+
+
+"IND_EQUITY_DESCRIPTION" = "All people working in the food system are treated equally and without discrimination, regardless of gender, ethnic origin, age, religion, potential disabilities etc. All people are given equal opportunity to enter into food production, and are not excluded for any discriminatory reasons.";
+
+
+"IND_EQUITY_NAME" = "Social equity";
+
+
+"IND_FAIR_DESCRIPTION" = "Producers are fairly remunerated. They are paid a price that is stable, equitably negotiated and based on true costs, with long-term agreements that provide planning security. Producers are not forced – by any reason – to sell their products below value.  This applies especially, but not exclusively, to smallholders in marginal regions or those submitted to highly volatile world market prices.";
+
+
+"IND_FAIR_NAME" = "Fair trade practices";
+
+
+"IND_FLORA_DESCRIPTION" = "Plant pests and diseases are managed and controlled through the use of more natural methods (enhancing beneficial biota, maximising beneficial insects, recycling nutrients, or minimising disturbance to soil). Livestock is protected against diseases, ideally without excessive use of antibiotics and other drugs (as they can cause resistances, contaminate waters and diminish natural microorganism presence).";
+
+
+"IND_FLORA_NAME" = "Health of Flora and Fauna";
+
+
+"IND_FOOD_DESCRIPTION" = "The carbon footprint of a product’s transportation is measured by the distance between the places where food is produced and processed, and the place where it is eaten.";
+
+
+"IND_FOOD_NAME" = "Food miles";
+
+
+"IND_LABOUR_DESCRIPTION" = "Food producers are protected by international labour standards. They ensure transparent and legally-binding work contracts, protect from forced or child labour, and allow freedom of assembly and of bargaining. Food-system enterprises have to ensure these rights even in countries where international standards are difficult to control.";
+
+
+"IND_LABOUR_NAME" = "Labour rights";
+
+
+"IND_LOCALECO_DESCRIPTION" = "Producers and customers are brought closer together, by supporting local production and local markets. This can happen in classical economic circuits, but also in circular and solidarity economies where local needs, resources and capacities are prioritised, allowing for more equitable and sustainable markets, local development, and fair prices for both consumers and producers.";
+
+
+"IND_LOCALECO_NAME" = "Local economy";
+
+
+"IND_PARTICIPATION_DESCRIPTION" = "All people taking part in food production are empowered to join decision-making, knowledge sharing, and partnership building alongside each other. More vulnerable, less powerful or otherwise disadvantaged stakeholders have real possibilities to actively participate and with an equal voice. Enterprises must identify all the people taking part in the production process and make efforts to overcome barriers that may hinder their participation. People who live on land where food is produced and processed have the possibility to prevent potential negative impacts on their environment or health.";
+
+
+"IND_PARTICIPATION_NAME" = "Participation";
+
+
+"IND_SOIL_DESCRIPTION" = "Actions are taken to prevent land and soil degradation, and specific practices are used to improve physical, chemical and biological soil properties (such as bulk density, heavy metal concentration or the amount of microorganisms).";
+
+
+"IND_SOIL_NAME" = "Soil Fertility";
+
+
+"IND_SOVEREIGNITY_DESCRIPTION" = "Farmers are in control of their own economic and technical decisions. They are not dependent on limited crops or a narrow range of food products nor on external subsidies. To achieve producer sovereignty, farmers can build cooperatives to join their forces and interests and those of the communities they live in.";
+
+
+"IND_SOVEREIGNITY_NAME" = "Producer sovereignty";
+
+
+"IND_SUSTAINABLEMANAGEMENT_DESCRIPTION" = "All food actors engage in actions to improve the sustainability of their operations in the four sustainability categories (environment, economy, society and governance). Enterprises must have detailed action plans and are held accountable if they do not put these into practice. Independent bodies control the implementation and results of these action plans.";
+
+
+"IND_SUSTAINABLEMANAGEMENT_NAME" = "Sustainability management";
+
+
+"IND_TRANSPARENCY_DESCRIPTION" = "People within food production engage in trustful, open and respectful communication with each other, no matter their hierarchical status. Employees have access to procedures, policies, decisions and decision-making processes of their employers. Consumers can easily find verified publicly-accessible information about products.";
+
+
+"IND_TRANSPARENCY_NAME" = "Transparency";
+
+/*  */
+"LAST_STEP" = "Last step";
+
+
+"OR" = "or";
+
+/*  */
+"PRODUCT" = "Product";
+
+/*  */
+"PROFILE" = "Profile";
+
+/*  */
+"PROVIDER" = "Provider";
+
+/*  */
+"SCANNER" = "Scan";
+
+
+"SCAN_DIRECTLY" = "Scan directly";
+
+/*  */
+"SEARCH" = "Search";
+
+/*  */
+"SHOW_MORE" = "Show more";
+
+/*  */
+"TYPE" = "Type";
+
+
+"WELCOME_PAGE_1_TEXT" = "This app will allow you to compare the ethical and eco-responsible characteristics of selected food products available in Pall Center whilst you shop.";
+
+
+"WELCOME_PAGE_1_TITLE" = "Welcome to Goodness Groceries!";
+
+
+"WELCOME_PAGE_3_TEXT" = "Please tell us about your priorities, to personalise your experience.";
+
+
+"WELCOME_PAGE_3_TITLE" = "What is most important to you when you shop?";
+
+
+"WELCOME_PAGE_4_TITLE" = "What is closest to your heart when grocery shopping? (up to 4?)";
+
+
+"WELCOME_PAGE_5_TITLE" = "What types of products do you tend to buy? (up to 4)";
+
+
+"WELCOME_PAGE_6_TEXT" = "Use your smartphone while you shop to scan the QR codes on a selection of products.";
+
+
+"WELCOME_PAGE_6_TITLE" = "Scan a product";
+
+
+"WELCOME_PAGE_7_TEXT" = "Each product will be presented with its relevant sustainability indicators. Read more about each indicator by clicking on them, and make your purchases based on the information available.";
+
+
+"WELCOME_PAGE_7_TITLE" = "See indicators that matter to you";
+
+
+"WRONG_FORMAT_ALERT_TEXT" = "The client ID must have exactly 13 digits!";
+
+
+"WRONG_FORMAT_ALERT_TITLE" = "Incorrect format";
+
+"LANGUAGE" = "Language";

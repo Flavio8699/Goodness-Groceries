@@ -1,0 +1,121 @@
+[
+  {
+    "code": "2354896578459",
+    "name": "Miel d'Ourdaller",
+    "description": "Description du produit: miel d'Ourdaller",
+    "type": "Miel",
+    "category": "local_organic",
+    "provider": "Ourdaller",
+    "image_url": "https://euzoea.com/wp-content/uploads/2016/12/honey.jpg",
+    "indicators": [
+        {
+            "indicator_id": "ind_animal",
+            "indicator_description": "Les abeilles ont été bien traitées par leur producteur."
+        },
+        {
+            "indicator_id": "ind_salary",
+            "indicator_description": "ind_salary_description"
+        },
+        {
+            "indicator_id": "ind_localeco",
+            "indicator_description": "Le miel provient d'un producteur local."
+        }
+    ]
+  },
+  {
+    "code": "2354896578454",
+    "name": "Miel de Charles Reiffers",
+    "description": "Description du produit: miel de Charles Reiffers",
+    "type": "Miel",
+    "category": "local_conventional",
+    "provider": "Charles Reiffers",
+    "image_url": "https://euzoea.com/wp-content/uploads/2016/12/honey.jpg",
+    "indicators": [
+        {
+            "indicator_id": "ind_animal",
+            "indicator_description": "Les abeilles ont été bien traitées par leur producteur."
+        },
+        {
+            "indicator_id": "ind_salary",
+            "indicator_description": "Les producteurs ont eu une rémunération adéquate."
+        }
+    ]
+  },
+  {
+    "code": "2354896578499",
+    "name": "Chocolat de Genaveh",
+    "description": "Description du produit: chocolat de Genaveh",
+    "type": "Chocolat",
+    "category": "imported_organic",
+    "provider": "Genaveh",
+    "image_url":"https://www.irishtimes.com/polopoly_fs/1.3907332.1559058394!/image/image.jpg_gen/derivatives/box_620_330/image.jpg",
+    "indicators": [
+        {
+            "indicator_id": "ind_childlabor",
+            "indicator_description": "Chocolat produit dans un environnement où le travail des enfants est très actif."
+        }
+    ]
+  },
+  {
+        "code": "2354896578569",
+        "name": "Café de Knopes",
+        "description": "Description du produit: café de Knopes",
+        "type": "Coffee",
+        "category": "local_conventional",
+        "provider": "Knopes",
+        "image_url":"https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
+        "indicators": [
+            {
+                "indicator_id": "ind_fair",
+                "indicator_description": "Pratiques commerciales équitables utilisées."
+            },
+            {
+                "indicator_id": "ind_transparency",
+                "indicator_description": "Producteur transparent envers les clients."
+            },
+            {
+                "indicator_id": "ind_imported",
+                "indicator_description": "Produit importé."
+            }
+        ]
+      },
+  {
+          "code": "2354896578839",
+          "name": "Lait de Luxlait",
+          "description": "Description du produit: lait de Luxlait",
+          "type": "Lait",
+          "category": "local_organic",
+          "provider": "Luxlait",
+          "image_url":"https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/1/3/1/9/2389131-1-eng-GB/Will-the-value-of-milk-protein-continue-to-increase-Probably_wrbm_large.jpg",
+          "indicators": [
+              {
+                  "indicator_id": "ind_animal",
+                  "indicator_description": "Les vaches ont été bien traitées par leur producteur."
+              },
+              {
+                  "indicator_id": "ind_localeco",
+                  "indicator_description": "Le lait provient d'un producteur local."
+              },
+              {
+                  "indicator_id": "ind_biodiv",
+                  "indicator_description": "Règlement stricte adapté.1"
+              },
+              {
+                  "indicator_id": "ind_flora",
+                  "indicator_description": "lorem ipsum"
+              },
+              {
+                  "indicator_id": "ind_labour",
+                  "indicator_description": "test test test"
+              },
+              {
+                  "indicator_id": "ind_participation",
+                  "indicator_description": "test test test"
+              },
+              {
+                  "indicator_id": "ind_sustainablemanagement",
+                  "indicator_description": "test test test"
+              }
+          ]
+        },
+]
