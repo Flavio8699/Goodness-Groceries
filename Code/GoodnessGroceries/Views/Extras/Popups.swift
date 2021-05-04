@@ -39,26 +39,6 @@ struct MessagePopup: View {
     }
 }
 
-struct NetworkErrorPopup: View {
-    
-    @EnvironmentObject var PopupManager: PopupManager
-    
-    var body: some View {
-        PopupView {
-            HStack {
-                Image(systemName: "exclamationmark.triangle")
-                Text("Internet problem").font(.title)
-            }
-            Text("Please check your internet connection and try again later.")
-            BlueButton(label: "Ok", action: {
-                PopupManager.showPopup = false
-            }).padding(.top, 8)
-        }.onAppear {
-            notificationFeedback(.error)
-        }
-    }
-}
-
 struct IndicatorPopup: View {
     
     let indicator: Indicator
@@ -99,6 +79,48 @@ struct CategoryPopup: View {
                     PopupManager.showPopup = false
                 }).padding(.top, 8)
             }
+        }
+    }
+}
+
+struct NetworkErrorPopup: View {
+    
+    @EnvironmentObject var UserSettings: UserSettings
+    @EnvironmentObject var PopupManager: PopupManager
+    
+    var body: some View {
+        PopupView {
+            HStack {
+                Image(systemName: "exclamationmark.triangle")
+                Text(NSLocalizedString("POPUP_NETWORK_ERROR_TITLE", lang: UserSettings.language)).font(.title)
+            }
+            Text(NSLocalizedString("POPUP_NETWORK_ERROR_TEXT", lang: UserSettings.language))
+            BlueButton(label: "Ok", action: {
+                PopupManager.showPopup = false
+            }).padding(.top, 8)
+        }.onAppear {
+            notificationFeedback(.error)
+        }
+    }
+}
+
+struct GeneralErrorPopup: View {
+    
+    @EnvironmentObject var UserSettings: UserSettings
+    @EnvironmentObject var PopupManager: PopupManager
+    
+    var body: some View {
+        PopupView {
+            HStack {
+                Image(systemName: "exclamationmark.triangle")
+                Text("Oops..").font(.title)
+            }
+            Text(NSLocalizedString("POPUP_GENERAL_ERROR_TEXT", lang: UserSettings.language))
+            BlueButton(label: "Ok", action: {
+                PopupManager.showPopup = false
+            }).padding(.top, 8)
+        }.onAppear {
+            notificationFeedback(.error)
         }
     }
 }

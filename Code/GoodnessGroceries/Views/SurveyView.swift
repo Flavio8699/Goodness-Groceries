@@ -17,7 +17,7 @@ struct SurveyView: View {
                         Text(NSLocalizedString(product.name, lang: UserSettings.language)).font(.headline)
                         HStack (alignment: .top) {
                             ProductImageView(url: product.image_url)
-                            IndicatorsView(indicators: product.getIndicators())
+                            IndicatorIconsView(indicators: product.getIndicators())
                         }
                         Divider()
                         

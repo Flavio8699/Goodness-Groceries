@@ -2,7 +2,6 @@ import Foundation
 
 class SurveyViewModel: ObservableObject {
     
-    @Published var showAlert: Bool = false
     @Published var selected: Set<String> = []
     @Published var otherreason: String = "" {
         didSet {

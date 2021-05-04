@@ -232,3 +232,10 @@
 
 "COMPARE" = "Comparer";
 "SIMILAR_PRODUCTS" = "Produits similaires";
+
+"POPUP_GENERAL_ERROR_TEXT" = "Une erreur s'est produite. Veuillez réessayer plus tard.";
+
+"POPUP_NETWORK_ERROR_TITLE" = "Problème d'Internet";
+"POPUP_NETWORK_ERROR_TEXT" = "Veuillez vérifier votre connexion Internet et réessayer plus tard.";
+
+"NO_PRODUCTS_FOUND" = "Désolé, aucun produit trouvé";

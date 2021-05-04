@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct IndicatorsView: View {
+struct IndicatorIconsView: View {
     
     var indicators: [Indicator]
     @State private var totalHeight = CGFloat.zero

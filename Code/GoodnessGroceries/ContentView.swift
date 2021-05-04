@@ -88,11 +88,11 @@ struct ContentView: View {
             }
             
             if UserSettings.loading {
-                    ZStack {
-                        Color.white
-                        ProgressView()
-                    }.frame(maxWidth: .infinity, maxHeight: .infinity).ignoresSafeArea()
-                }
+                ZStack {
+                    Color.white
+                    ProgressView()
+                }.frame(maxWidth: .infinity, maxHeight: .infinity).ignoresSafeArea()
+            }
             
             if PopupManager.showPopup {
                 Color.black.opacity(0.35).ignoresSafeArea().onTapGesture {
@@ -102,6 +102,7 @@ struct ContentView: View {
         }
         .ignoresSafeArea(.keyboard, edges: .bottom)
         .onAppear {
+            PopupManager.currentPopup = .error(.network)
             NotificationCenter.default.addObserver(forName: NSNotification.Name("Products"), object: nil, queue: .main) { content in
                 withAnimation(.default) {
                     UserSettings.showSurvey = true
@@ -121,7 +122,7 @@ struct ContentView: View {
                         case .network:
                             NetworkErrorPopup()
                         case .general:
-                            Text("GENERAL")
+                            GeneralErrorPopup()
                     }
                 default:
                     Text("error")

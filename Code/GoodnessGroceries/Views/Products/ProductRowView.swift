@@ -16,7 +16,7 @@ struct ProductRowView: View {
             }
             HStack (alignment: .top) {
                 ProductImageView(url: product.image_url)
-                IndicatorsView(indicators: product.getIndicators(for: category))
+                IndicatorIconsView(indicators: product.getIndicators(for: category))
             }
         }
         .padding(.vertical, 5)

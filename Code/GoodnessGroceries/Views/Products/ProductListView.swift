@@ -4,6 +4,7 @@ struct ProductListView: View {
     
     let category: Category
     let product_category: ProductCategory
+    @EnvironmentObject var UserSettings: UserSettings
     @StateObject var productsVM = ProductsViewModel()
     
     var body: some View {
@@ -17,7 +18,7 @@ struct ProductListView: View {
                         Divider()
                     }
                 } else {
-                    Text("Sorry, no products found TT").padding(.vertical, 10)
+                    Text(NSLocalizedString("NO_PRODUCTS_FOUND", lang: UserSettings.language)).padding(.vertical, 10)
                 }
             }.padding(.horizontal).padding(.top, 5)
         }

@@ -3,6 +3,7 @@ import SwiftUI
 struct SearchView: View {
     
     let products: [Product]
+    @EnvironmentObject var UserSettings: UserSettings
     
     var body: some View {
         VStack (spacing: 0) {
@@ -16,7 +17,7 @@ struct SearchView: View {
                     Divider()
                 }
             } else {
-                Text("Sorry, no products found").padding(.vertical, 10)
+                Text(NSLocalizedString("NO_PRODUCTS_FOUND", lang: UserSettings.language)).padding(.vertical, 10)
             }
             Spacer(minLength: 0)
         }

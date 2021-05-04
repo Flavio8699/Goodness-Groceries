@@ -220,3 +220,10 @@
 
 "COMPARE" = "Compare";
 "SIMILAR_PRODUCTS" = "Similar products";
+
+"POPUP_GENERAL_ERROR_TEXT" = "An error has occurred. Please try again later.";
+
+"POPUP_NETWORK_ERROR_TITLE" = "Internet problem";
+"POPUP_NETWORK_ERROR_TEXT" = "Please check your internet connection and try again later.";
+
+"NO_PRODUCTS_FOUND" = "Sorry, no products found";

@@ -12,7 +12,7 @@ struct Bullet: View {
             Circle()
             .size(width: 12, height: 12)
             .frame(width: 10, height: 12)
-                .foregroundColor(self.isSelected ? Color("GG_D_Blue") : Color(.systemGray4))
+            .foregroundColor(self.isSelected ? Color("GG_D_Blue") : Color(.systemGray4))
         }
     }
 }
