@@ -1,8 +1,12 @@
 
 
-"AUTHENTICATION_REQUESTED_TITLE" = "Avant de commencer";
 "AUTHENTICATION_REQUESTED_TEXT_1" = "Finalisez votre inscription en cliquant sur le lien. Ce questionnaire vous prendra cinq minutes.";
+
+
 "AUTHENTICATION_REQUESTED_TEXT_2" = "Merci pour votre intérêt à participer à l’appli et l’étude Goodness Groceries!";
+
+
+"AUTHENTICATION_REQUESTED_TITLE" = "Avant de commencer";
 
 
 "BACK" = "Retour";
@@ -11,7 +15,13 @@
 "CANCEL" = "Annuler";
 
 
+"CATEGORY" = "Catégorie";
+
+
 "CLIENT_ID" = "Identifiant";
+
+
+"COMPARE" = "Comparer";
 
 
 "CONTINUE" = "Suivant";
@@ -140,15 +150,34 @@
 "LAST_STEP" = "Dernière étape";
 
 
+"NOTIFICATIONS" = "Notifications";
+
+
+"NO_PRODUCTS_FOUND" = "Désolé, aucun produit trouvé";
+
+
 "OPEN_FORM" = "Ouvrir le formulaire";
 
 
 "OR" = "ou";
 
 
+"POPUP_GENERAL_ERROR_TEXT" = "Une erreur s'est produite. Veuillez réessayer plus tard.";
+
+
+"POPUP_NETWORK_ERROR_TEXT" = "Veuillez vérifier votre connexion Internet et réessayer plus tard.";
+
+
+"POPUP_NETWORK_ERROR_TITLE" = "Problème d'Internet";
+
+
 "PRODUCT" = "Produit";
 
-"CATEGORY" = "Catégorie";
+
+"PRODUCTS" = "Produits";
+
+
+"PRODUCT_CATEGORIES" = "Catégories";
 
 /*  */
 "PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL" = "Conventionel importé";
@@ -178,9 +207,16 @@
 "SEARCH" = "Rechercher";
 
 
-"SHOW_MORE" = "Voir plus";
+"SETTINGS" = "Paramètres";
+
 
 "SHOW_LESS" = "Voir moins";
+
+
+"SHOW_MORE" = "Voir plus";
+
+
+"SIMILAR_PRODUCTS" = "Produits similaires";
 
 
 "TYPE" = "Type";
@@ -221,21 +257,8 @@
 
 "WRONG_FORMAT_ALERT_TITLE" = "Format incorrect";
 
-"PRODUCT_CATEGORIES" = "Catégories";
-"PRODUCTS" = "Produits";
 
-"fr" = "Français";
 "en" = "Anglais";
 
-"SETTINGS" = "Paramètres";
-"NOTIFICATIONS" = "Notifications";
 
-"COMPARE" = "Comparer";
-"SIMILAR_PRODUCTS" = "Produits similaires";
-
-"POPUP_GENERAL_ERROR_TEXT" = "Une erreur s'est produite. Veuillez réessayer plus tard.";
-
-"POPUP_NETWORK_ERROR_TITLE" = "Problème d'Internet";
-"POPUP_NETWORK_ERROR_TEXT" = "Veuillez vérifier votre connexion Internet et réessayer plus tard.";
-
-"NO_PRODUCTS_FOUND" = "Désolé, aucun produit trouvé";
+"fr" = "Français";

@@ -1,8 +1,12 @@
 
-"AUTHENTICATION_REQUESTED_TITLE" = "Before you start";
+
 "AUTHENTICATION_REQUESTED_TEXT_1" = "Finalise your registration for this study by clicking on the link. Taking this survey will take max. 5 minutes of your time.";
+
+
 "AUTHENTICATION_REQUESTED_TEXT_2" = "Thank you for your interest in participating in the Goodness Groceries app and study!";
-"OPEN_FORM" = "Open the form";
+
+
+"AUTHENTICATION_REQUESTED_TITLE" = "Before you start";
 
 /*  */
 "BACK" = "Back";
@@ -11,20 +15,25 @@
 "CANCEL" = "Cancel";
 
 
+"CATEGORY" = "Category";
+
+
 "CLIENT_ID" = "Client ID";
+
+
+"COMPARE" = "Compare";
 
 
 "CONTINUE" = "Continue";
 
-/*  */
-"HOME" = "Home";
 
 "HELP" = "Help";
 
+/*  */
+"HOME" = "Home";
+
 
 "INDICATORS" = "Indicators";
-
-"CATEGORY" = "Category";
 
 
 "IND_ANIMAL_DESCRIPTION" = "The physical and psychological well-being of animals is monitored so that they may live in their species-specific way and be healthy, comfortable, safe, well-nourished, and exist without fear or suffering. This includes housing, rearing, transport, feed, and slaughter.";
@@ -134,14 +143,53 @@
 
 "IND_TRANSPARENCY_NAME" = "Transparency";
 
+
+"LANGUAGE" = "Language";
+
 /*  */
 "LAST_STEP" = "Last step";
 
 
+"NOTIFICATIONS" = "Notifications";
+
+
+"NO_PRODUCTS_FOUND" = "Sorry, no products found";
+
+
+"OPEN_FORM" = "Open the form";
+
+
 "OR" = "or";
+
+
+"POPUP_GENERAL_ERROR_TEXT" = "An error has occurred. Please try again later.";
+
+
+"POPUP_NETWORK_ERROR_TEXT" = "Please check your internet connection and try again later.";
+
+
+"POPUP_NETWORK_ERROR_TITLE" = "Internet problem";
 
 /*  */
 "PRODUCT" = "Product";
+
+
+"PRODUCTS" = "Products";
+
+
+"PRODUCT_CATEGORIES" = "Categories";
+
+
+"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL" = "Imported conventional";
+
+
+"PRODUCT_CATEGORY_IMPORTED_ORGANIC" = "Imported organic";
+
+
+"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL" = "Local conventional";
+
+
+"PRODUCT_CATEGORY_LOCAL_ORGANIC" = "Local organic";
 
 /*  */
 "PROFILE" = "Profile";
@@ -158,10 +206,17 @@
 /*  */
 "SEARCH" = "Search";
 
+
+"SETTINGS" = "Settings";
+
+
+"SHOW_LESS" = "Show less";
+
 /*  */
 "SHOW_MORE" = "Show more";
 
-"SHOW_LESS" = "Show less";
+
+"SIMILAR_PRODUCTS" = "Similar products";
 
 /*  */
 "TYPE" = "Type";
@@ -202,28 +257,8 @@
 
 "WRONG_FORMAT_ALERT_TITLE" = "Incorrect format";
 
-"LANGUAGE" = "Language";
 
-"PRODUCT_CATEGORY_LOCAL_ORGANIC" = "Local organic";
-"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL" = "Local conventional";
-"PRODUCT_CATEGORY_IMPORTED_ORGANIC" = "Imported organic";
-"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL" = "Imported conventional";
-
-"PRODUCT_CATEGORIES" = "Categories";
-"PRODUCTS" = "Products";
-
-"fr" = "French";
 "en" = "English";
 
-"SETTINGS" = "Settings";
-"NOTIFICATIONS" = "Notifications";
 
-"COMPARE" = "Compare";
-"SIMILAR_PRODUCTS" = "Similar products";
-
-"POPUP_GENERAL_ERROR_TEXT" = "An error has occurred. Please try again later.";
-
-"POPUP_NETWORK_ERROR_TITLE" = "Internet problem";
-"POPUP_NETWORK_ERROR_TEXT" = "Please check your internet connection and try again later.";
-
-"NO_PRODUCTS_FOUND" = "Sorry, no products found";
+"fr" = "French";

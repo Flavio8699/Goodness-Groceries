@@ -102,7 +102,6 @@ struct ContentView: View {
         }
         .ignoresSafeArea(.keyboard, edges: .bottom)
         .onAppear {
-            PopupManager.currentPopup = .error(.network)
             NotificationCenter.default.addObserver(forName: NSNotification.Name("Products"), object: nil, queue: .main) { content in
                 withAnimation(.default) {
                     UserSettings.showSurvey = true
