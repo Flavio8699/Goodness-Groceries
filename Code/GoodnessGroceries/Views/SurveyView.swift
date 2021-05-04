@@ -1,5 +1,4 @@
 import SwiftUI
-import SDWebImageSwiftUI
 
 struct SurveyView: View {
     
@@ -11,41 +10,41 @@ struct SurveyView: View {
     var body: some View {
         if UserSettings.productsToReview.count > 0 {
             if let product = productsVM.products.filter({ $0.code == UserSettings.productsToReview.first }).first {
-                ScrollView (.vertical, showsIndicators: false) {
+                ScrollView (.vertical, showsIndicators: true) {
                     VStack (alignment: .leading, spacing: 15) {
                         Text("Quels indicateurs vous ont amenné à choisir le produit suivant?")
-                        
-                        HStack (alignment: .top, spacing: 15) {
-                            WebImage(url: URL(string: product.image_url)).resizable().frame(width: 100, height: 100).cornerRadius(7)
-                            VStack (alignment: .leading, spacing: 15) {
-                                Text(product.name).bold().font(.headline)
-                                GeometryReader { geometry in
-                                    IndicatorsView(geometry: geometry, indicators: product.getIndicators())
-                                }
-                            }
+    
+                        Text(NSLocalizedString(product.name, lang: UserSettings.language)).font(.headline)
+                        HStack (alignment: .top) {
+                            ProductImageView(url: product.image_url)
+                            IndicatorsView(indicators: product.getIndicators())
                         }
                         Divider()
                         
                         VStack (spacing: 30) {
                             VStack (spacing: 15) {
                                 ForEach(product.getIndicators(), id: \.self) { indicator in
-                                    Button(action: {
-                                        surveyVM.handleSelection(for: indicator.icon_name)
-                                        hideKeyboard()
-                                    }) {
-                                        HStack(alignment: .center, spacing: 40) {
-                                            Image(indicator.icon_name)
+                                    HStack(alignment: .center, spacing: 30) {
+                                        Image(indicator.icon_name).frame(width: 50)
+                                        .onTapGesture {
+                                            PopupManager.currentPopup = .indicator(indicator: indicator)
+                                            impactFeedback(.medium)
+                                        }
+                                        Button(action: {
+                                            surveyVM.handleSelection(for: indicator.id)
+                                            hideKeyboard()
+                                        }) {
                                             HStack {
                                                 Text(NSLocalizedString(indicator.name, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
                                                 Spacer(minLength: 0)
+                                                Image(systemName: surveyVM.selected.contains(indicator.id) ? "checkmark.square" : "square")
+                                                    .renderingMode(.original)
+                                                    .resizable()
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .frame(width: 20, height: 20)
                                             }
-                                            Image(systemName: surveyVM.selected.contains(indicator.icon_name) ? "checkmark.square" : "square")
-                                                .renderingMode(.original)
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fit)
-                                                .frame(width: 20, height: 20)
-                                        }.foregroundColor(Color.black)
-                                    }
+                                        }
+                                    }.foregroundColor(Color.black)
                                 }
                             }
                             
@@ -97,12 +96,11 @@ struct SurveyView: View {
                         BlueButton(label: NSLocalizedString("Suivant", lang: UserSettings.language), action: {
                             withAnimation(.default) {
                                 hideKeyboard()
-                                surveyVM.sendProductFeedback(for: UserSettings.clientID)
+                                surveyVM.sendProductFeedback(for: UserSettings.clientID, product: product.code)
                             }
                         }).padding(.vertical, 20)
                     }
-                    .padding(.top, 15)
-                    .padding(.horizontal)
+                    .padding()
                 }
             }
         } else {

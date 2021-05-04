@@ -1,25 +1,17 @@
 import SwiftUI
-import SDWebImageSwiftUI
 
 struct ProductScannedView: View {
     
     let product: Product
     
     var body: some View {
-        VStack {
-            HStack (alignment: .top) {
-                WebImage(url: URL(string: product.image_url)).resizable().frame(width: 100, height: 100).cornerRadius(7)
-                VStack (alignment: .leading) {
-                    Text(product.name).bold().font(.system(size: 18))
-                    Text(product.description).font(.system(size: 16)).fixedSize(horizontal: false, vertical: true)
-                }
-                Spacer()
+        HStack (alignment: .top) {
+            ProductImageView(url: product.image_url)
+            VStack (alignment: .leading, spacing: 3) {
+                Text(product.name).bold().font(.system(size: 18)).fixedSize(horizontal: false, vertical: true)
+                Image("GG-\(product.category.rawValue)").resizable().scaledToFit().frame(width: 45)
             }
-            .padding()
-            .background(Color(.white))
-            .foregroundColor(.black)
-            .cornerRadius(6)
-        }.padding(.horizontal, 20)
-        .shadow(color: Color.black.opacity(0.6), radius: 4, x: 3, y: 3)
+            Spacer()
+        }.padding()
     }
 }

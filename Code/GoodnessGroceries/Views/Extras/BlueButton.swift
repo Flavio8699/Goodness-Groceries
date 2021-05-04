@@ -4,9 +4,11 @@ struct BlueButton: View {
     
     private let label: String
     private let action : () -> Void
+    private var disabled: Bool = false
     
-    init(label: String, action: @escaping () -> Void) {
+    init(label: String, disabled: Bool = false, action: @escaping () -> Void) {
         self.label = label
+        self.disabled = disabled
         self.action = action
     }
     
@@ -21,8 +23,9 @@ struct BlueButton: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity)
-            .background(Color("GG_D_Blue"))
+            .background(disabled ? Color(.systemGray3) : Color("GG_D_Blue"))
             .cornerRadius(10)
         }
+        .disabled(disabled)
     }
 }

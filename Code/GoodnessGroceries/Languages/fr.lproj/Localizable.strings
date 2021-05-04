@@ -1,4 +1,8 @@
-"AUTHENTICATION_REQUESTED" = "Votre demande sera envoyée et traité dès que vous remplissez le formulaire dispobile sur le lien si-dessous. Merci pour votre compréhension.";
+
+
+"AUTHENTICATION_REQUESTED_TITLE" = "Avant de commencer";
+"AUTHENTICATION_REQUESTED_TEXT_1" = "Finalisez votre inscription en cliquant sur le lien. Ce questionnaire vous prendra cinq minutes.";
+"AUTHENTICATION_REQUESTED_TEXT_2" = "Merci pour votre intérêt à participer à l’appli et l’étude Goodness Groceries!";
 
 
 "BACK" = "Retour";
@@ -6,10 +10,12 @@
 
 "CANCEL" = "Annuler";
 
+
 "CLIENT_ID" = "Identifiant";
 
 
 "CONTINUE" = "Suivant";
+
 
 "HELP" = "Aide";
 
@@ -48,6 +54,7 @@
 
 /*  */
 "IND_CAT_GOVERNANCE_NAME" = "Bonne gouvernance";
+
 
 "IND_CAT_SOCIAL_DESCRIPTION" = "Chaque être humain est capable de satisfaire ses besoins humains fondamentaux et a le droit et la liberté de poursuivre ses aspirations à une vie meilleure, sans compromettre la capacité des autres et des générations futures à en faire de même.";
 
@@ -127,6 +134,9 @@
 "IND_TRANSPARENCY_NAME" = "Transparence";
 
 
+"LANGUAGE" = "Langue";
+
+
 "LAST_STEP" = "Dernière étape";
 
 
@@ -137,6 +147,20 @@
 
 
 "PRODUCT" = "Produit";
+
+"CATEGORY" = "Catégorie";
+
+/*  */
+"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL" = "Conventionel importé";
+
+/*  */
+"PRODUCT_CATEGORY_IMPORTED_ORGANIC" = "Bio importé";
+
+/*  */
+"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL" = "Conventionel local";
+
+/*  */
+"PRODUCT_CATEGORY_LOCAL_ORGANIC" = "Bio local";
 
 
 "PROFILE" = "Profil";
@@ -155,6 +179,9 @@
 
 
 "SHOW_MORE" = "Voir plus";
+
+"SHOW_LESS" = "Voir moins";
+
 
 "TYPE" = "Type";
 
@@ -194,4 +221,14 @@
 
 "WRONG_FORMAT_ALERT_TITLE" = "Format incorrect";
 
-"LANGUAGE" = "Langue";
+"PRODUCT_CATEGORIES" = "Catégories";
+"PRODUCTS" = "Produits";
+
+"fr" = "Français";
+"en" = "Anglais";
+
+"SETTINGS" = "Paramètres";
+"NOTIFICATIONS" = "Notifications";
+
+"COMPARE" = "Comparer";
+"SIMILAR_PRODUCTS" = "Produits similaires";

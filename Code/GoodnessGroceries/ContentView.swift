@@ -3,36 +3,35 @@ import SwiftUI
 struct ContentView: View {
     
     @EnvironmentObject var UserSettings: UserSettings
-    private var NetworkManager = GoodnessGroceries.NetworkManager()
     @EnvironmentObject var PopupManager: PopupManager
     
     var body: some View {
         ZStack {
             if UserSettings.showWelcome {
-                if UserSettings.step >= 0 && UserSettings.step <= 4 {
-                     VStack {
-                        ZStack(alignment: .bottom) {
-                            Welcome()
-                        }
-                        Spacer()
-                        HStack(spacing: 8) {
-                            ForEach(0..<5) { index in
-                                Bullet(isSelected: UserSettings.step == index, action: {
-                                    withAnimation {
-                                        UserSettings.step = index
-                                    }
-                                })
+                if !UserSettings.statusRequested {
+                    if UserSettings.step >= 0 && UserSettings.step <= 5 {
+                         VStack {
+                            ZStack(alignment: .bottom) {
+                                Welcome()
                             }
+                            Spacer()
+                            HStack(spacing: 8) {
+                                ForEach(0..<6) { index in
+                                    Bullet(isSelected: UserSettings.step == index, action: {
+                                        withAnimation {
+                                            UserSettings.step = index
+                                        }
+                                    })
+                                }
+                            }
+                            .padding(.bottom)
                         }
-                        .padding(.bottom)
+                    } else if UserSettings.step == 6 {
+                         Welcome_page7().transition(.viewTransition)
+                    } else if UserSettings.step == 7 {
+                         Welcome_page8().transition(.viewTransition)
                     }
-                } else if UserSettings.step == 5 {
-                     Welcome_page6().transition(.viewTransition)
-                } else if UserSettings.step == 6 {
-                     Welcome_page7().transition(.viewTransition)
-                }
-                
-                if UserSettings.statusRequested {
+                } else {
                     StatusRequestedView()
                 }
             } else {
@@ -42,21 +41,21 @@ struct ContentView: View {
                             Accueil().tabItem {
                                 Image(systemName: "house.fill").font(.system(size: 23))
                                 Text(NSLocalizedString("HOME", lang: UserSettings.language)).font(.system(size: 23))
-                            }.tag(0)
+                            }
                             Scanner().tabItem {
                                 Image(systemName: "qrcode.viewfinder").font(.system(size: 23))
                                 Text(NSLocalizedString("SCANNER", lang: UserSettings.language)).font(.system(size: 23))
-                            }.tag(1)
+                            }
                             Profile().tabItem {
                                 Image(systemName: "person.circle.fill").font(.system(size: 23))
                                 Text(NSLocalizedString("PROFILE", lang: UserSettings.language)).font(.system(size: 23))
-                            }.tag(2)
+                            }
                             Help().tabItem {
                                 Image(systemName: "info.circle.fill").font(.system(size: 23))
                                 Text(NSLocalizedString("HELP", lang: UserSettings.language)).font(.system(size: 23))
-                            }.tag(3)
+                            }
                         }.accentColor(Color("GG_D_Blue"))
-                        
+
                         ZStack {
                           Circle()
                             .foregroundColor(.red)
@@ -85,15 +84,15 @@ struct ContentView: View {
                             }
                         }
                     }
-                }
+                }.navigationViewStyle(StackNavigationViewStyle())
             }
             
             if UserSettings.loading {
-                ZStack {
-                    Color.white
-                    ProgressView()
-                }.frame(maxWidth: .infinity, maxHeight: .infinity).ignoresSafeArea()
-            }
+                    ZStack {
+                        Color.white
+                        ProgressView()
+                    }.frame(maxWidth: .infinity, maxHeight: .infinity).ignoresSafeArea()
+                }
             
             if PopupManager.showPopup {
                 Color.black.opacity(0.35).ignoresSafeArea().onTapGesture {
@@ -101,8 +100,9 @@ struct ContentView: View {
                 }
             }
         }
+        .ignoresSafeArea(.keyboard, edges: .bottom)
         .onAppear {
-            NotificationCenter.default.addObserver(forName: NSNotification.Name("Survey"), object: nil, queue: .main) { _ in
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("Products"), object: nil, queue: .main) { content in
                 withAnimation(.default) {
                     UserSettings.showSurvey = true
                 }
@@ -114,6 +114,8 @@ struct ContentView: View {
                     MessagePopup(title: title, text: text)
                 case .indicator(let indicator):
                     IndicatorPopup(indicator: indicator)
+                case .category(let category):
+                    CategoryPopup(category: category)
                 case .error(let error):
                     switch error {
                         case .network:

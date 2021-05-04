@@ -1,11 +1,3 @@
-//
-//  Popups.swift
-//  GoodnessGroceries
-//
-//  Created by Flavio Matias on 30/03/2021.
-//  Copyright © 2021 Flavio Matias. All rights reserved.
-//
-
 import SwiftUI
 
 struct PopupView<Content>: View where Content: View {
@@ -89,9 +81,24 @@ struct IndicatorPopup: View {
     }
 }
 
-struct Popups_Previews: PreviewProvider {
-    static var previews: some View {
-        NetworkErrorPopup()
-        MessagePopup(title: "title", text: "test")
+struct CategoryPopup: View {
+    
+    let category: Category
+    @EnvironmentObject var PopupManager: PopupManager
+    @EnvironmentObject var UserSettings: UserSettings
+    
+    var body: some View {
+        PopupView {
+            VStack (alignment: .leading) {
+                HStack {
+                    Image(category.icon_name)
+                    Text(NSLocalizedString(category.name, lang: UserSettings.language)).font(.headline)
+                }
+                Text(NSLocalizedString(category.description, lang: UserSettings.language))
+                BlueButton(label: "Ok", action: {
+                    PopupManager.showPopup = false
+                }).padding(.top, 8)
+            }
+        }
     }
 }

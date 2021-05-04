@@ -15,6 +15,7 @@ class Connectivity {
 }
 
 class NetworkManager: ObservableObject {
+    static let shared = NetworkManager()
     
     func requestUserAccess(for participant_id: String, product_categories: [String], indicator_categories: [String], completion: @escaping (Result<Void,PopupErrorType>) -> Void) {
         if !Connectivity.connected {

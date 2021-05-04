@@ -1,11 +1,3 @@
-//
-//  PopupManager.swift
-//  GoodnessGroceries
-//
-//  Created by Flavio Matias on 30/03/2021.
-//  Copyright © 2021 Flavio Matias. All rights reserved.
-//
-
 import Foundation
 
 class PopupManager: ObservableObject {
@@ -23,6 +15,7 @@ enum PopupType {
     case error(PopupErrorType)
     case message(title: String, message: String)
     case indicator(indicator: Indicator)
+    case category(category: Category)
 }
 
 enum PopupErrorType: Error {

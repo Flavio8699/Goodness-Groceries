@@ -10,9 +10,9 @@ struct Accueil: View {
     
     var body: some View {
         NavigationView {
-            VStack (alignment: .leading, spacing: 10) {
+            VStack (spacing: 0) {
                 HStack {
-                    Image("GG-Logo-2").resizable().frame(width: 60, height: 60)
+                    Image("GG-Logo-2").resizable().frame(width: 70, height: 70)
                     HStack { TextField(NSLocalizedString("SEARCH", lang: UserSettings.language), text: $search, onCommit: {
                         isSearching = false
                     }) }
@@ -30,7 +30,7 @@ struct Accueil: View {
                             Image(systemName: "magnifyingglass")
                             Spacer()
                             
-                            if(isSearching && search != "") {
+                            if(search != "") {
                                 Button(action: {
                                     search = ""
                                 }) {
@@ -54,22 +54,22 @@ struct Accueil: View {
                             Text(NSLocalizedString("CANCEL", lang: UserSettings.language)).foregroundColor(Color("GG_D_Blue"))
                         }
                         .transition(.move(edge: .trailing))
-                        .animation(.spring())
                     }
-                }
-
-                ScrollView (.vertical, showsIndicators: false) {
+                }.padding(.horizontal).padding(.bottom, 5)
+                Divider()
+                ScrollView (.vertical, showsIndicators: true) {
                     if(search != "") {
                         let productsFiltered = productsVM.products.filter { $0.name.lowercased().contains(search.lowercased()) }
                         
-                        SearchView(products: productsFiltered)
+                        SearchView(products: productsFiltered).padding(.horizontal)
                     } else {
-                        CategoryListView()
+                        CategoryListView().padding(.horizontal)
                     }
                 }
-            }.padding(.horizontal)
+            }
             .navigationBarTitle("", displayMode: .inline)
             .navigationBarHidden(true)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }

@@ -23,7 +23,7 @@
   {
     "id": "ind_soil",
     "name": "IND_SOIL_NAME",
-    "category_id": "ind_cat_economic",
+    "category_id": "ind_cat_environment",
     "icon_name": "GG-SoilFertility",
     "general_description": "IND_SOIL_DESCRIPTION"
   },

@@ -20,12 +20,12 @@
         }
       },
       {
-        "package": "QGrid",
-        "repositoryURL": "https://github.com/Q-Mobile/QGrid.git",
+        "package": "PermissionsSwiftUI",
+        "repositoryURL": "https://github.com/jevonmao/PermissionsSwiftUI",
         "state": {
-          "branch": null,
-          "revision": "804e59f8cb9f66b226685e9369fb82029742b83a",
-          "version": "0.1.4"
+          "branch": "main",
+          "revision": "e76ab0d45e7a892fe40f503256c65c99d8959967",
+          "version": null
         }
       },
       {
@@ -44,6 +44,15 @@
           "branch": null,
           "revision": "4c7f169e39bc35d6b80d42b8eb8301bee9cd0907",
           "version": "1.5.0"
+        }
+      },
+      {
+        "package": "Introspect",
+        "repositoryURL": "https://github.com/siteline/SwiftUI-Introspect",
+        "state": {
+          "branch": null,
+          "revision": "2e09be8af614401bc9f87d40093ec19ce56ccaf2",
+          "version": "0.1.3"
         }
       },
       {

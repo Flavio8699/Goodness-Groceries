@@ -14,26 +14,35 @@ struct Product: Hashable, Decodable {
         return lhs.code == rhs.code
     }
     
-    func getIndicators(for category: Category? = nil) -> [Indicator] {
+    func getIndicators(for category: Category? = nil, except ignoreCategory: Category? = nil) -> [Indicator] {
         let productsVM = ProductsViewModel()
         var result = [Indicator]()
         
         for productIndicator in indicators {
             if var indicator = productsVM.indicators.first(where: { $0.id == productIndicator.indicator_id }) {
-                if (category != nil && indicator.category_id == category!.id) || category == nil {
-                    indicator.product_description = productIndicator.indicator_description
-                    result.append(indicator)
+                if category != nil && indicator.category_id == category!.id || category == nil {
+                    if ignoreCategory != nil && indicator.category_id != ignoreCategory!.id || ignoreCategory == nil {
+                        indicator.product_description = productIndicator.indicator_description
+                        result.append(indicator)
+                    }
                 }
             }
         }
 
         return result
     }
-}
-
-enum ProductCategory: String, Codable {
-    case localOrganic = "local_organic"
-    case importedOrganic = "imported_organic"
-    case localConventional = "local_conventional"
-    case importedConventional = "imported_conventional"
+    
+    func getSimilarProducts() -> [Product]  {
+        let productsVM = ProductsViewModel()
+        var result = [Product]()
+        
+        for product in productsVM.products {
+            if product.type == type && product.name != name {
+                result.append(product)
+            }
+        }
+        
+        return result
+    }
+    
 }

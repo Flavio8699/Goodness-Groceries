@@ -1,4 +1,9 @@
 
+"AUTHENTICATION_REQUESTED_TITLE" = "Before you start";
+"AUTHENTICATION_REQUESTED_TEXT_1" = "Finalise your registration for this study by clicking on the link. Taking this survey will take max. 5 minutes of your time.";
+"AUTHENTICATION_REQUESTED_TEXT_2" = "Thank you for your interest in participating in the Goodness Groceries app and study!";
+"OPEN_FORM" = "Open the form";
+
 /*  */
 "BACK" = "Back";
 
@@ -18,6 +23,8 @@
 
 
 "INDICATORS" = "Indicators";
+
+"CATEGORY" = "Category";
 
 
 "IND_ANIMAL_DESCRIPTION" = "The physical and psychological well-being of animals is monitored so that they may live in their species-specific way and be healthy, comfortable, safe, well-nourished, and exist without fear or suffering. This includes housing, rearing, transport, feed, and slaughter.";
@@ -154,6 +161,8 @@
 /*  */
 "SHOW_MORE" = "Show more";
 
+"SHOW_LESS" = "Show less";
+
 /*  */
 "TYPE" = "Type";
 
@@ -164,13 +173,13 @@
 "WELCOME_PAGE_1_TITLE" = "Welcome to Goodness Groceries!";
 
 
-"WELCOME_PAGE_3_TEXT" = "Please tell us about your priorities, to personalise your experience.";
+"WELCOME_PAGE_3_TEXT" = "Please tell us about your priorities, in order to personalise your experience.";
 
 
 "WELCOME_PAGE_3_TITLE" = "What is most important to you when you shop?";
 
 
-"WELCOME_PAGE_4_TITLE" = "What is closest to your heart when grocery shopping? (up to 4?)";
+"WELCOME_PAGE_4_TITLE" = "What is closest to your heart when grocery shopping? (up to 4)";
 
 
 "WELCOME_PAGE_5_TITLE" = "What types of products do you tend to buy? (up to 4)";
@@ -194,3 +203,20 @@
 "WRONG_FORMAT_ALERT_TITLE" = "Incorrect format";
 
 "LANGUAGE" = "Language";
+
+"PRODUCT_CATEGORY_LOCAL_ORGANIC" = "Local organic";
+"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL" = "Local conventional";
+"PRODUCT_CATEGORY_IMPORTED_ORGANIC" = "Imported organic";
+"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL" = "Imported conventional";
+
+"PRODUCT_CATEGORIES" = "Categories";
+"PRODUCTS" = "Products";
+
+"fr" = "French";
+"en" = "English";
+
+"SETTINGS" = "Settings";
+"NOTIFICATIONS" = "Notifications";
+
+"COMPARE" = "Compare";
+"SIMILAR_PRODUCTS" = "Similar products";

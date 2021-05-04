@@ -8,3 +8,9 @@ struct Indicator: Identifiable, Hashable, Decodable {
     var general_description: String
     var product_description: String?
 }
+
+extension Indicator: Equatable {
+    static func == (lhs: Indicator, rhs: Indicator) -> Bool {
+        return lhs.id == rhs.id
+    }
+}

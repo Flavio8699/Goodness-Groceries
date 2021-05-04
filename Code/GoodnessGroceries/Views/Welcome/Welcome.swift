@@ -25,6 +25,8 @@ struct Welcome: View {
                                           height: geometry.size.height).contentShape(Rectangle())
                     Welcome_page5().frame(width: geometry.size.width,
                                           height: geometry.size.height).contentShape(Rectangle())
+                    Welcome_page6().frame(width: geometry.size.width,
+                                          height: geometry.size.height).contentShape(Rectangle())
                 }
             }
             .content
@@ -38,7 +40,7 @@ struct Welcome: View {
                         self.offset = value.translation.width + -geometry.size.width * CGFloat(UserSettings.step)
                     })
                     .onEnded({ value in
-                        if value.predictedEndTranslation.width < geometry.size.width / 2, UserSettings.step < 5 - 1 { // 5 = welcome pages before authentication request
+                        if value.predictedEndTranslation.width < geometry.size.width / 2, UserSettings.step < 6 - 1 { // 6 = welcome pages before authentication request
                             UserSettings.step += 1
                         }
                         if value.predictedEndTranslation.width > geometry.size.width / 2, UserSettings.step > 0 {
