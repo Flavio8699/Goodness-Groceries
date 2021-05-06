@@ -74,14 +74,16 @@ struct ContentView: View {
             if UserSettings.showSurvey {
                 NavigationView {
                     SurveyView()
-                        .navigationBarTitle("Retour client", displayMode: .inline)
+                    .navigationBarTitle("Retour client", displayMode: .inline)
                     .toolbar {
                         ToolbarItemGroup(placement: .navigationBarTrailing) {
-                            Button(NSLocalizedString("CANCEL", lang: UserSettings.language)) {
+                            Button(action: {
                                 withAnimation(.default) {
                                     UserSettings.showSurvey = false
                                 }
-                            }
+                            }, label: {
+                                Text(NSLocalizedString("CANCEL", lang: UserSettings.language)).foregroundColor(Color("GG_D_Blue"))
+                            })
                         }
                     }
                 }.navigationViewStyle(StackNavigationViewStyle())

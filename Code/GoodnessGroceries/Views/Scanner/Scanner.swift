@@ -15,7 +15,7 @@ struct Scanner: View {
         NavigationView {
             ZStack {
                 CameraNotAllowedView()
-                if AVCaptureDevice.authorizationStatus(for: AVMediaType.video) == .authorized {
+                if AVCaptureDevice.authorizationStatus(for: AVMediaType.video) == .authorized || !askPermissions {
                     CBScanner(supportBarcode: .constant([.qr]), mockBarCode: .constant(BarcodeData(value: "2354896578839", type: .qr)), isActive: $scannerIsActive) { search in
                         if let product = self.productsVM.products.first(where: { $0.code == search.value }) {
                             if self.product != product {
@@ -57,7 +57,6 @@ struct Scanner: View {
             .navigationBarTitle("", displayMode: .inline)
             .navigationBarHidden(true)
         }.navigationViewStyle(StackNavigationViewStyle())
-        
     }
 }
 

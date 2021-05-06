@@ -51,8 +51,12 @@
     "image_url":"https://www.irishtimes.com/polopoly_fs/1.3907332.1559058394!/image/image.jpg_gen/derivatives/box_620_330/image.jpg",
     "indicators": [
         {
-            "indicator_id": "ind_childlabor",
+            "indicator_id": "ind_localeco",
             "indicator_description": "Chocolat produit dans un environnement où le travail des enfants est très actif."
+        },
+        {
+            "indicator_id": "ind_sustainablemanagement",
+            "indicator_description": "description...."
         }
     ]
   },

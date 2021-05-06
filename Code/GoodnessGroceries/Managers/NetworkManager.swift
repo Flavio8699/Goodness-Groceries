@@ -22,6 +22,7 @@ class NetworkManager: ObservableObject {
             completion(.failure(.network))
             return;
         }
+        UserSettings.shared.loading = true
         
         let parameters: [String: Any] = [
             "participant_id": participant_id,
@@ -36,6 +37,7 @@ class NetworkManager: ObservableObject {
         ]
         
         Alamofire.request("https://goodnessgroceries.com/request_user_access/", method: .post, parameters: parameters).validate().responseJSON { response in
+            UserSettings.shared.loading = false
             switch response.result {
                 case .success(_):
                     completion(.success(()))
