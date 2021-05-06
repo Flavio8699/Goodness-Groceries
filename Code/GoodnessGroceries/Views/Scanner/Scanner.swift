@@ -59,9 +59,11 @@ struct Scanner: View {
             .setAccentColor(toPrimary: Color("GG_D_Blue"), toTertiary: Color(.systemRed))
             .onAppear {
                 scannerIsActive = true
+                product = nil
             }
             .onDisappear {
                 scannerIsActive = false
+                torchLightIsActive = false
             }
             .navigationBarTitle("", displayMode: .inline)
             .navigationBarHidden(true)
