@@ -12,7 +12,7 @@ struct SurveyView: View {
             if let product = productsVM.products.filter({ $0.code == UserSettings.productsToReview.first }).first {
                 ScrollView (.vertical, showsIndicators: true) {
                     VStack (alignment: .leading, spacing: 15) {
-                        Text("Quels indicateurs vous ont amenné à choisir le produit suivant?")
+                        Text(NSLocalizedString("SURVEY_PAGE_TEXT", lang: UserSettings.language))
     
                         Text(NSLocalizedString(product.name, lang: UserSettings.language)).font(.headline)
                         HStack (alignment: .top) {
@@ -93,7 +93,7 @@ struct SurveyView: View {
                             }
                         }
                             
-                        BlueButton(label: NSLocalizedString("Suivant", lang: UserSettings.language), action: {
+                        BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
                             withAnimation(.default) {
                                 hideKeyboard()
                                 surveyVM.sendProductFeedback(for: UserSettings.clientID, product: product.code)
@@ -105,7 +105,7 @@ struct SurveyView: View {
             }
         } else {
             ProgressView().onAppear {
-                PopupManager.currentPopup = .message(title: "Merci!", message: "thank you message...")
+                PopupManager.currentPopup = .message(title: NSLocalizedString("THANK_YOU", lang: UserSettings.language), message: NSLocalizedString("THANK_YOU_MESSAGE", lang: UserSettings.language))
                 UserSettings.showSurvey = false
             }
         }

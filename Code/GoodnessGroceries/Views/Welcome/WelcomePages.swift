@@ -2,6 +2,7 @@ import SwiftUI
 import CarBode
 import AVFoundation
 import PermissionsSwiftUI
+import QGrid
 
 struct Welcome_page1: View {
     
@@ -53,8 +54,13 @@ struct Welcome_page2: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 120)
-            }.padding(.bottom, 100)
+                Image("pall_center")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 100)
+            }.padding(.bottom, 120)
             
+
             TextField(NSLocalizedString("CLIENT_ID", lang: UserSettings.language), text: $UserSettings.clientID).keyboardType(.numberPad)
 
             Rectangle()
@@ -80,11 +86,6 @@ struct Welcome_page2: View {
             })
             
             Spacer()
-            
-            Image("partner")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding(.bottom, 30)
         }.padding()
         .sheet(isPresented: self.$isPresentingScanner) {
             ZStack {
@@ -99,8 +100,10 @@ struct Welcome_page2: View {
             }
             .edgesIgnoringSafeArea(.bottom)
             .JMModal(showModal: $askPermissions, for: [.camera], autoDismiss: true, autoCheckAuthorization: true)
-            .changeHeaderTo("Permissions")
-            .setPermissionComponent(for: .camera, image: AnyView(Image(systemName: "camera.fill")), title: "Camera", description: "Goodness Groceries needs access to your camera to scan QR-codes")
+            .changeHeaderTo(NSLocalizedString("PERMISSIONS_MODAL_TITLE", lang: UserSettings.language))
+            .changeHeaderDescriptionTo(NSLocalizedString("PERMISSIONS_MODAL_HEADER", lang: UserSettings.language))
+            .changeBottomDescriptionTo(NSLocalizedString("PERMISSIONS_MODAL_FOOTER", lang: UserSettings.language))
+            .setPermissionComponent(for: .camera, image: AnyView(Image(systemName: "camera.fill")), title: NSLocalizedString("PERMISSIONS_MODAL_CAMERA_TITLE", lang: UserSettings.language), description: NSLocalizedString("PERMISSIONS_MODAL_CAMERA_DESCRIPTION", lang: UserSettings.language))
             .setAccentColor(toPrimary: Color("GG_D_Blue"), toTertiary: Color(.systemRed))
         }
     }
@@ -122,6 +125,8 @@ struct Welcome_page2: View {
 struct Welcome_page3: View {
     
     @EnvironmentObject var UserSettings: UserSettings
+    @EnvironmentObject var PopupManager: PopupManager
+    @StateObject var categoriesVM = CategoriesViewModel()
     
     var body: some View {
         VStack {
@@ -136,19 +141,19 @@ struct Welcome_page3: View {
                     .frame(height: 120)
             }.padding(.bottom, 20)
             
-            VStack (alignment: .center, spacing: 30) {
+            VStack (alignment: .center, spacing: 0) {
                 Text(NSLocalizedString("WELCOME_PAGE_3_TITLE", lang: UserSettings.language)).font(.title)
-                Text(NSLocalizedString("WELCOME_PAGE_3_TEXT", lang: UserSettings.language))
-                Spacer(minLength: 0)
-                HStack {
-                    Spacer()
-                    Image("hand")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200)
-                    Spacer()
+                Text(NSLocalizedString("WELCOME_PAGE_3_TEXT", lang: UserSettings.language)).padding(.top, 30)
+                Spacer()
+                GeometryReader { geometry in
+                    QGrid(categoriesVM.categories, columns: 2) { category in
+                        Image(category.icon_name).resizable().frame(width: geometry.size.width*0.3, height: geometry.size.width*0.3).onTapGesture {
+                            PopupManager.currentPopup = .category(category: category)
+                            impactFeedback(.medium)
+                        }
+                    }
                 }
-                Spacer(minLength: 0)
+                Spacer()
                 BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
                     withAnimation {
                         UserSettings.step += 1
@@ -254,8 +259,9 @@ struct Welcome_page6: View {
             }.padding(.bottom, 40)
             
             VStack (alignment: .center, spacing: 30) {
-                Text("Notifications").font(.title)
-                Text("Please allow push notifications from Goodness Groceries in order to be informed when your account has been verified and to receive product surveys to fill out. - motivate the user to accept notifications by explaining the benefits - &&")
+                Text(NSLocalizedString("WELCOME_PAGE_NOTIFICATIONS_TITLE", lang: UserSettings.language)).font(.title)
+                Text(NSLocalizedString("WELCOME_PAGE_NOTIFICATIONS_TEXT_1", lang: UserSettings.language))
+                Text(NSLocalizedString("WELCOME_PAGE_NOTIFICATIONS_TEXT_2", lang: UserSettings.language))
                 Spacer(minLength: 0)
                 BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
                     UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { _,_  in
@@ -338,15 +344,16 @@ struct Welcome_page8: View {
             VStack (alignment: .center, spacing: 20) {
                 Text(NSLocalizedString("WELCOME_PAGE_7_TITLE", lang: UserSettings.language)).font(.title).fixedSize(horizontal: false, vertical: true)
                 Text(NSLocalizedString("WELCOME_PAGE_7_TEXT", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
-                HStack {
-                    ForEach(categoriesVM.categories) { category in
-                        Image(category.icon_name).frame(width: 60).onTapGesture {
+                Spacer()
+                GeometryReader { geometry in
+                    QGrid(categoriesVM.categories, columns: 2) { category in
+                        Image(category.icon_name).resizable().frame(width: geometry.size.width*0.3, height: geometry.size.width*0.3).onTapGesture {
                             PopupManager.currentPopup = .category(category: category)
                             impactFeedback(.medium)
                         }
                     }
                 }
-                Spacer(minLength: 0)
+                Spacer()
                 BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
                     withAnimation {
                         UserSettings.step += 1
@@ -354,42 +361,5 @@ struct Welcome_page8: View {
                 })
             }
         }.padding()
-    }
-}
-
-struct IndicatorsAnimation: View {
-    
-    @State var x1: CGFloat = -(UIScreen.main.bounds.size.width/2+25)
-    @State var x2: CGFloat = UIScreen.main.bounds.size.width-165
-    @State var x3: CGFloat = -(UIScreen.main.bounds.size.width/2+25)
-    @State var x4: CGFloat = UIScreen.main.bounds.size.width-165
-    
-    var body: some View {
-        GeometryReader { geometry in
-            VStack (spacing: 5) {
-                Spacer()
-                Image("GG-Environment").frame(width: 50, height: 50).offset(x: x1, y: 0.0).onAppear {
-                    withAnimation(Animation.linear(duration: 2.25).repeatForever(autoreverses: false)) {
-                        self.x1 = UIScreen.main.bounds.size.width-50
-                    }
-                }
-                Image("GG-EconomicWellBeing").frame(width: 50, height: 50).offset(x: x2, y: 0.0).onAppear {
-                    withAnimation(Animation.linear(duration: 2.5).repeatForever(autoreverses: false)) {
-                        self.x2 = -(UIScreen.main.bounds.size.width/2+50)
-                    }
-                }
-                Image("GG-SocialWellBeing").frame(width: 50, height: 50).offset(x: x3, y: 0.0).onAppear {
-                    withAnimation(Animation.linear(duration: 3).repeatForever(autoreverses: false)) {
-                        self.x3 = UIScreen.main.bounds.size.width-50
-                    }
-                }
-                Image("GG-GoodGovernance").frame(width: 50, height: 50).offset(x: x4, y: 0.0).onAppear {
-                    withAnimation(Animation.linear(duration: 2.75).repeatForever(autoreverses: false)) {
-                        self.x4 = -(UIScreen.main.bounds.size.width/2+50)
-                    }
-                }
-                Spacer()
-            }.frame(width: geometry.size.width, height: geometry.size.height)
-        }
     }
 }

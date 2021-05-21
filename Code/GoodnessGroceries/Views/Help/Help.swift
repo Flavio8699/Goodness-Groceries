@@ -2,6 +2,7 @@ import SwiftUI
 
 struct Help: View {
     
+    @Environment(\.openURL) var openURL
     @EnvironmentObject var UserSettings: UserSettings
 
     var body: some View {
@@ -18,17 +19,17 @@ struct Help: View {
                 Form {
                     Section(header: Text(NSLocalizedString("HELP", lang: UserSettings.language))) {
                         NavigationLink(destination: IndicatorsHelpView()) {
-                            Text("Indicator definitions TT")
+                            Text(NSLocalizedString("HELP_PAGE_BUTTON_1", lang: UserSettings.language))
                         }
                         Button(action: {
-                            
+                            openURL(URL(string: "http://food.daloos.uni.lu/projects/research-projects/sustainable-shopping-app/help-page/")!)
                         }, label: {
-                            Text("button 2").foregroundColor(.black)
+                            Text(NSLocalizedString("HELP_PAGE_BUTTON_2", lang: UserSettings.language)).foregroundColor(.black)
                         })
                         Button(action: {
-                            
+                            openURL(URL(string: "http://food.daloos.uni.lu/projects/research-projects/sustainable-shopping-app/contact-us/")!)
                         }, label: {
-                            Text("button 3").foregroundColor(.black)
+                            Text(NSLocalizedString("HELP_PAGE_BUTTON_3", lang: UserSettings.language)).foregroundColor(.black)
                         })
                     }
                 }

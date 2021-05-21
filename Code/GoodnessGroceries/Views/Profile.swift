@@ -30,7 +30,7 @@ struct Profile: View {
                             }
                         }, label: {
                             HStack {
-                                Text("Review products TT")
+                                Text(NSLocalizedString("REVIEW_PRODUCTS", lang: UserSettings.language))
                                 Spacer()
                                 ZStack {
                                   Circle()

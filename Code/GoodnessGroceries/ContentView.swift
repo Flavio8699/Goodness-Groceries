@@ -74,7 +74,7 @@ struct ContentView: View {
             if UserSettings.showSurvey {
                 NavigationView {
                     SurveyView()
-                    .navigationBarTitle("Retour client", displayMode: .inline)
+                    .navigationBarTitle(NSLocalizedString("SURVEY_PAGE_TITLE", lang: UserSettings.language), displayMode: .inline)
                     .toolbar {
                         ToolbarItemGroup(placement: .navigationBarTrailing) {
                             Button(action: {

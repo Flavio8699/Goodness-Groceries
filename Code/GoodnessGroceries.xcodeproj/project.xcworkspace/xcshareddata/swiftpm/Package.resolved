@@ -11,12 +11,12 @@
         }
       },
       {
-        "package": "KeychainSwift",
-        "repositoryURL": "https://github.com/evgenyneu/keychain-swift",
+        "package": "CarBode",
+        "repositoryURL": "https://github.com/Flavio8699/CarBode-Barcode-Scanner-For-SwiftUI.git",
         "state": {
-          "branch": null,
-          "revision": "96fb84f45a96630e7583903bd7e08cf095c7a7ef",
-          "version": "19.0.0"
+          "branch": "master",
+          "revision": "abb4ce29141b9668776d2a776c00b59d8037395f",
+          "version": null
         }
       },
       {
@@ -26,6 +26,15 @@
           "branch": "main",
           "revision": "e76ab0d45e7a892fe40f503256c65c99d8959967",
           "version": null
+        }
+      },
+      {
+        "package": "QGrid",
+        "repositoryURL": "https://github.com/Q-Mobile/QGrid",
+        "state": {
+          "branch": null,
+          "revision": "804e59f8cb9f66b226685e9369fb82029742b83a",
+          "version": "0.1.4"
         }
       },
       {
@@ -62,15 +71,6 @@
           "branch": null,
           "revision": "2b6054efa051565954e1d2b9da831680026cd768",
           "version": "5.0.0"
-        }
-      },
-      {
-        "package": "CarBode",
-        "repositoryURL": "https://github.com/Flavio8699/test.git",
-        "state": {
-          "branch": "main",
-          "revision": "b2d98b0ff0bebe6e96e4862e0946786241c0f687",
-          "version": null
         }
       }
     ]

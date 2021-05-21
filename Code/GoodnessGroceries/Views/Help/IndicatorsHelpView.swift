@@ -40,6 +40,6 @@ struct IndicatorsHelpView: View {
                     }
                 }
             }.padding()
-        }.navigationBarTitle("Indicator definitions TT", displayMode: .inline)
+        }.navigationBarTitle(NSLocalizedString("HELP_PAGE_BUTTON_1", lang: UserSettings.language), displayMode: .inline)
     }
 }

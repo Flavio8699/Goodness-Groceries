@@ -27,7 +27,6 @@
 		7240CF2225ECEFC100E76683 /* NSLocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7240CF2125ECEFC100E76683 /* NSLocalizedString.swift */; };
 		7252D2C02615F279005AB58E /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7252D2BF2615F279005AB58E /* HapticFeedback.swift */; };
 		7262094525E3C0CC004A3693 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7262094425E3C0CC004A3693 /* Welcome.swift */; };
-		72651D0825E117C600DAA1A8 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 72651D0725E117C600DAA1A8 /* KeychainSwift */; };
 		726A0830263AB170009B1F95 /* IndicatorsHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A082F263AB170009B1F95 /* IndicatorsHelpView.swift */; };
 		7271B486261330A600CC0CA6 /* popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271B485261330A600CC0CA6 /* popup.swift */; };
 		7271B48A261332CF00CC0CA6 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271B489261332CF00CC0CA6 /* PopupManager.swift */; };
@@ -45,7 +44,8 @@
 		7272E79825470BB000A38A7D /* StatusRequestedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272E79725470BB000A38A7D /* StatusRequestedView.swift */; };
 		7274B7572513EB8000867FDB /* WelcomePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7274B7562513EB8000867FDB /* WelcomePages.swift */; };
 		72771C17252B7830005245FB /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72771C16252B7830005245FB /* Indicator.swift */; };
-		727F204226039AFA00B99B92 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 727F204126039AFA00B99B92 /* CarBode */; };
+		727AC7BC264ADF240041CA43 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 727AC7BB264ADF240041CA43 /* QGrid */; };
+		727AC7BF264AE15F0041CA43 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 727AC7BE264AE15F0041CA43 /* CarBode */; };
 		7285D35D255BEAF4004D6E14 /* WelcomeCategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285D35C255BEAF4004D6E14 /* WelcomeCategoryCellView.swift */; };
 		72999EF025237A3C0018750E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 72999EEF25237A3C0018750E /* SDWebImageSwiftUI */; };
 		72999EF3252385810018750E /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72999EF2252385810018750E /* NotificationsManager.swift */; };
@@ -200,9 +200,9 @@
 				72D3CF7525DD6EBA00658C8E /* SwiftyJSON in Frameworks */,
 				721BEF19263C015800B02D90 /* PermissionsSwiftUI in Frameworks */,
 				72D3CF7125DD59E100658C8E /* Alamofire in Frameworks */,
-				72651D0825E117C600DAA1A8 /* KeychainSwift in Frameworks */,
+				727AC7BF264AE15F0041CA43 /* CarBode in Frameworks */,
+				727AC7BC264ADF240041CA43 /* QGrid in Frameworks */,
 				72999EF025237A3C0018750E /* SDWebImageSwiftUI in Frameworks */,
-				727F204226039AFA00B99B92 /* CarBode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,9 +487,9 @@
 				72999EEF25237A3C0018750E /* SDWebImageSwiftUI */,
 				72D3CF7025DD59E100658C8E /* Alamofire */,
 				72D3CF7425DD6EBA00658C8E /* SwiftyJSON */,
-				72651D0725E117C600DAA1A8 /* KeychainSwift */,
-				727F204126039AFA00B99B92 /* CarBode */,
 				721BEF18263C015800B02D90 /* PermissionsSwiftUI */,
+				727AC7BB264ADF240041CA43 /* QGrid */,
+				727AC7BE264AE15F0041CA43 /* CarBode */,
 			);
 			productName = BSP3;
 			productReference = 72AC8ABA2512770B00C0887F /* GoodnessGroceries.app */;
@@ -526,9 +526,9 @@
 				72999EEE25237A3C0018750E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				72D3CF6F25DD59E100658C8E /* XCRemoteSwiftPackageReference "Alamofire" */,
 				72D3CF7325DD6EBA00658C8E /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				72651D0625E117C600DAA1A8 /* XCRemoteSwiftPackageReference "keychain-swift" */,
-				727F204026039AFA00B99B92 /* XCRemoteSwiftPackageReference "test" */,
 				721BEF17263C015800B02D90 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */,
+				727AC7BA264ADF240041CA43 /* XCRemoteSwiftPackageReference "QGrid" */,
+				727AC7BD264AE15F0041CA43 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
 			);
 			productRefGroup = 72AC8ABB2512770B00C0887F /* Products */;
 			projectDirPath = "";
@@ -939,19 +939,19 @@
 				kind = branch;
 			};
 		};
-		72651D0625E117C600DAA1A8 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+		727AC7BA264ADF240041CA43 /* XCRemoteSwiftPackageReference "QGrid" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 19.0.0;
+				minimumVersion = 0.1.4;
 			};
 		};
-		727F204026039AFA00B99B92 /* XCRemoteSwiftPackageReference "test" */ = {
+		727AC7BD264AE15F0041CA43 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Flavio8699/test.git";
+			repositoryURL = "https://github.com/Flavio8699/CarBode-Barcode-Scanner-For-SwiftUI.git";
 			requirement = {
-				branch = main;
+				branch = master;
 				kind = branch;
 			};
 		};
@@ -987,14 +987,14 @@
 			package = 721BEF17263C015800B02D90 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
 			productName = PermissionsSwiftUI;
 		};
-		72651D0725E117C600DAA1A8 /* KeychainSwift */ = {
+		727AC7BB264ADF240041CA43 /* QGrid */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 72651D0625E117C600DAA1A8 /* XCRemoteSwiftPackageReference "keychain-swift" */;
-			productName = KeychainSwift;
+			package = 727AC7BA264ADF240041CA43 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
 		};
-		727F204126039AFA00B99B92 /* CarBode */ = {
+		727AC7BE264AE15F0041CA43 /* CarBode */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 727F204026039AFA00B99B92 /* XCRemoteSwiftPackageReference "test" */;
+			package = 727AC7BD264AE15F0041CA43 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
 			productName = CarBode;
 		};
 		72999EEF25237A3C0018750E /* SDWebImageSwiftUI */ = {

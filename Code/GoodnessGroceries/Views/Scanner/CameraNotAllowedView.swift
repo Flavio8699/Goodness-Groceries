@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct CameraNotAllowedView: View {
+    
+    @EnvironmentObject var UserSettings: UserSettings
+    
     var body: some View {
         VStack (spacing: 15) {
             Spacer()
@@ -9,11 +12,11 @@ struct CameraNotAllowedView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 120)
                 .padding(.bottom, 50)
-            Text("Goodness Groceries was not granted access to your camera in order to scan QR-codes. Please change that in your settings. Thank you.")
+            Text(NSLocalizedString("CAMERA_NOT_ALLOWED", lang: UserSettings.language))
             Button(action: {
                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
             }, label: {
-                Text("Open settings")
+                Text(NSLocalizedString("OPEN_SETTINGS", lang: UserSettings.language))
             })
             Spacer()
         }.padding(.horizontal, 25)

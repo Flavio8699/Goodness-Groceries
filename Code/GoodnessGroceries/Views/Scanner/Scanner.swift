@@ -50,12 +50,14 @@ struct Scanner: View {
                             Circle().foregroundColor(.white).frame(width: 50, height: 50)
                             Image(systemName: "flashlight.\(torchLightIsActive ? "on" : "off").fill").font(.system(size: 25, weight: .regular))
                         }
-                    }).offset(x: 15, y: 15)
+                    }).offset(x: 20, y: 20)
                 }
             }
             .JMModal(showModal: $askPermissions, for: [.camera], autoDismiss: true, autoCheckAuthorization: true)
-            .changeHeaderTo("Permissions")
-            .setPermissionComponent(for: .camera, image: AnyView(Image(systemName: "camera.fill")), title: "Camera", description: "Goodness Groceries needs access to your camera to scan QR-codes")
+            .changeHeaderTo(NSLocalizedString("PERMISSIONS_MODAL_TITLE", lang: UserSettings.language))
+            .changeHeaderDescriptionTo(NSLocalizedString("PERMISSIONS_MODAL_HEADER", lang: UserSettings.language))
+            .changeBottomDescriptionTo(NSLocalizedString("PERMISSIONS_MODAL_FOOTER", lang: UserSettings.language))
+            .setPermissionComponent(for: .camera, image: AnyView(Image(systemName: "camera.fill")), title: NSLocalizedString("PERMISSIONS_MODAL_CAMERA_TITLE", lang: UserSettings.language), description: NSLocalizedString("PERMISSIONS_MODAL_CAMERA_DESCRIPTION", lang: UserSettings.language))
             .setAccentColor(toPrimary: Color("GG_D_Blue"), toTertiary: Color(.systemRed))
             .onAppear {
                 scannerIsActive = true

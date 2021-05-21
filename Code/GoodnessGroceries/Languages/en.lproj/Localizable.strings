@@ -11,6 +11,9 @@
 /*  */
 "BACK" = "Back";
 
+
+"CAMERA_NOT_ALLOWED" = "Goodness Groceries was not granted access to your camera to scan QR-codes. Please change that in settings. Thank you.";
+
 /*  */
 "CANCEL" = "Cancel";
 
@@ -28,6 +31,15 @@
 
 
 "HELP" = "Help";
+
+
+"HELP_PAGE_BUTTON_1" = "Indicator definitions";
+
+
+"HELP_PAGE_BUTTON_2" = "Help";
+
+
+"HELP_PAGE_BUTTON_3" = "Contact us";
 
 /*  */
 "HOME" = "Home";
@@ -153,13 +165,43 @@
 "NOTIFICATIONS" = "Notifications";
 
 
+"NOTIFICATION_ACCOUNT_AUTHENTICATED_BODY" = "Your account has been authenticated, you can now access the app.";
+
+
+"NOTIFICATION_ACCOUNT_AUTHENTICATED_TITLE" = "Authentication completed";
+
+
+"NOTIFICATION_REVIEW_PRODUCTS_BODY" = "Take our short survey.";
+
+
+"NOTIFICATION_REVIEW_PRODUCTS_TITLE" = "Client feedback";
+
+
 "NO_PRODUCTS_FOUND" = "Sorry, no products found";
 
 
 "OPEN_FORM" = "Open the form";
 
 
+"OPEN_SETTINGS" = "Open settings";
+
+
 "OR" = "or";
+
+
+"PERMISSIONS_MODAL_CAMERA_DESCRIPTION" = "Goodness Groceries needs access to your camera to scan QR-codes.";
+
+
+"PERMISSIONS_MODAL_CAMERA_TITLE" = "Camera";
+
+
+"PERMISSIONS_MODAL_FOOTER" = "Permissions are necessary for all the features and functions to work properly. If not yet activated, you have to enable permissions in settings.";
+
+
+"PERMISSIONS_MODAL_HEADER" = "In order for you to use certain features of this app, you need to give permissions. See description for each permission.";
+
+
+"PERMISSIONS_MODAL_TITLE" = "Permissions";
 
 
 "POPUP_GENERAL_ERROR_TEXT" = "An error has occurred. Please try again later.";
@@ -197,11 +239,14 @@
 /*  */
 "PROVIDER" = "Provider";
 
+
+"REVIEW_PRODUCTS" = "Review products";
+
 /*  */
 "SCANNER" = "Scan";
 
 
-"SCAN_DIRECTLY" = "Scan directly";
+"SCAN_DIRECTLY" = "Scan your Pall Center customer card";
 
 /*  */
 "SEARCH" = "Search";
@@ -217,6 +262,18 @@
 
 
 "SIMILAR_PRODUCTS" = "Similar products";
+
+
+"SURVEY_PAGE_TEXT" = "Which indicators led you to choose the following product?";
+
+
+"SURVEY_PAGE_TITLE" = "Client feedback";
+
+
+"THANK_YOU" = "Thank you!";
+
+
+"THANK_YOU_MESSAGE" = "Thank you for reviewing the product(s) you purchased. Your feedback allows the research team to understand your food choices and to find out how grocery shopping can be made more sustainable.";
 
 /*  */
 "TYPE" = "Type";
@@ -250,6 +307,15 @@
 
 
 "WELCOME_PAGE_7_TITLE" = "See indicators that matter to you";
+
+
+"WELCOME_PAGE_NOTIFICATIONS_TEXT_1" = "Please authorise notifications from Goodness Groceries in order to be informed once your account will have been verified, and to receive feedback forms regarding products and the app.";
+
+
+"WELCOME_PAGE_NOTIFICATIONS_TEXT_2" = "Your feedback allows the research team to understand your food choices and to find out how grocery shopping can be made more sustainable. As this is a pilot app, we also need your feedback to improve the app in the future.";
+
+
+"WELCOME_PAGE_NOTIFICATIONS_TITLE" = "Notifications";
 
 
 "WRONG_FORMAT_ALERT_TEXT" = "The client ID must have exactly 13 digits!";
