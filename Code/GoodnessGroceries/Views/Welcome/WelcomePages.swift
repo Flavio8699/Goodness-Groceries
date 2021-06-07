@@ -341,9 +341,9 @@ struct Welcome_page8: View {
                     .frame(height: 120)
             }.padding(.bottom, 20)
             
-            VStack (alignment: .center, spacing: 20) {
+            VStack (alignment: .center, spacing: 0) {
                 Text(NSLocalizedString("WELCOME_PAGE_7_TITLE", lang: UserSettings.language)).font(.title).fixedSize(horizontal: false, vertical: true)
-                Text(NSLocalizedString("WELCOME_PAGE_7_TEXT", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                Text(NSLocalizedString("WELCOME_PAGE_7_TEXT", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true).padding(.top, 30)
                 Spacer()
                 GeometryReader { geometry in
                     QGrid(categoriesVM.categories, columns: 2) { category in
