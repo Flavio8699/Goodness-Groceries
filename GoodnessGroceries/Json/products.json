@@ -1,0 +1,217 @@
+[
+  {
+    "code": "1234569",
+    "name": "Café Sidamo Bio",
+    "description": "100% Arabica from Ethiopia. From organic farming, this coffee is very sweet; it grows in the Sidamo region in heights between 1400 and 2200 m. This fruity coffee is roasted at the Moulin J.P. Dieschbourg in Echternach (G-D du Luxembourg).",
+    "type": "Coffee",
+    "category": "local_organic",
+    "provider": "Moulin J.P. Dieschbourg",
+    "image_url": "https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
+    "indicators": [
+      {
+        "id": "ind_animal",
+        "applicable": false,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_biodiv",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+          "id": "ind_flora",
+          "applicable": true,
+          "sub_indicators": [
+              {
+                  "name": "Pesticides",
+                  "description": "Plant pests and diseases are controlled by using organic cropping techniques while pesticides are reduced to the minimum allowed by official EU organic regulation."
+              },
+              {
+                  "name": "Animal Drug Use",
+                  "description": "Not applicable"
+              }
+          ]
+      },
+      {
+          "id": "ind_soil",
+          "applicable": true,
+          "sub_indicators": []
+      },
+      {
+          "id": "ind_sovereignty",
+          "applicable": true,
+          "sub_indicators": [
+              {
+                  "name": "Community-supported",
+                  "description": "No evidence"
+              },
+              {
+                  "name": "Product Diversification",
+                  "description": "No evidence"
+              },
+              {
+                  "name": "Farmer Cooperative",
+                  "description": "Fairtrade® certification guidelines are followed to support producer sovereignty, specifically by working with farmer cooperatives as well as using the Fairtrade® guidelines to set up the price policy."
+              }
+          ]
+      },
+      {
+          "id": "ind_food",
+          "applicable": false,
+          "sub_indicators": []
+      },
+      {
+          "id": "ind_localeco",
+          "applicable": true,
+          "sub_indicators": [
+              {
+                  "name": "Community-investment",
+                  "description": "By following EU organic and Fairtrade® regulations at the coffee production sites, Moulin Dieschbourg supports the local economy in Sidoma, Ethiopia."
+              },
+              {
+                  "name": "Local Procurement",
+                  "description": "No evidence"
+              },
+              {
+                  "name": "Local Workforce",
+                  "description": "By following the criteria of the Label Made in Luxembourg, Moulin Dieschbourg guarantees a coffee that is 100% roasted in Echternach, Luxembourg, thus supporting local craftsmanship and employment. Furthermore, the company is part of the association Mellerdaler Regionalproduzenten."
+              }
+          ]
+      },
+      {
+        "id": "ind_transparency",
+        "applicable": false,
+        "sub_indicators": []
+      }
+    ]
+  },
+  {
+    "code": "1234568",
+    "name": "Coffee1",
+    "description": "Description",
+    "type": "Coffee",
+    "category": "imported_conventional",
+    "provider": "Douwe Egberts",
+    "image_url": "https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
+    "indicators": [
+        {
+          "id": "ind_animal",
+          "applicable": false,
+          "sub_indicators": []
+        },
+      {
+        "id": "ind_labour",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "Employment Relations",
+            "description": "Workers' rights and duties are embedded in internal management systems with right to information"
+          },
+          {
+            "name": "Right of Negotiation",
+            "description": "Coffee producers are organised in cooperations that meet every three months with Douwe Egberts country representatives to engage in discu"
+          },
+          {
+              "name": "Forced Labour",
+              "description": "Douwe Egberts installed an enterprise-unique, independently controlled policy to strictly forbid and punish all types of forced labour."
+          },
+          {
+              "name": "Child Labour",
+              "description": "National laws in the coffee production countries are followed to avoid child labour as much as possible."
+          }
+        ]
+      },
+      {
+        "id": "ind_transparency",
+        "applicable": false,
+        "sub_indicators": []
+      }
+    ]
+  },
+  {
+    "code": "12",
+    "name": "Coffee2",
+    "description": "Description",
+    "type": "Coffee",
+    "category": "imported_conventional",
+    "provider": "Douwe Egberts",
+    "image_url": "https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
+    "indicators": [
+        {
+          "id": "ind_animal",
+          "applicable": false,
+          "sub_indicators": []
+        },
+        {
+        "id": "ind_labour",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "Employment Relations",
+            "description": "Workers' rights and duties are embedded in internal management systems with right to information"
+          },
+          {
+            "name": "Right of Negotiation",
+            "description": "Coffee producers are organised in cooperations that meet every three months with Douwe Egberts country representatives to engage in discu"
+          },
+          {
+              "name": "Forced Labour",
+              "description": "Douwe Egberts installed an enterprise-unique, independently controlled policy to strictly forbid and punish all types of forced labour."
+          },
+          {
+              "name": "Child Labour",
+              "description": "National laws in the coffee production countries are followed to avoid child labour as much as possible."
+          }
+        ]
+      },
+      {
+        "id": "ind_transparency",
+        "applicable": false,
+        "sub_indicators": []
+      }
+    ]
+  },
+  {
+    "code": "123",
+    "name": "Coffee3",
+    "description": "Description",
+    "type": "Coffee",
+    "category": "imported_conventional",
+    "provider": "Douwe Egberts",
+    "image_url": "https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
+    "indicators": [
+        {
+          "id": "ind_animal",
+          "applicable": false,
+          "sub_indicators": []
+        },
+        {
+        "id": "ind_labour",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "Employment Relations",
+            "description": "Workers' rights and duties are embedded in internal management systems with right to information"
+          },
+          {
+            "name": "Right of Negotiation",
+            "description": "Coffee producers are organised in cooperations that meet every three months with Douwe Egberts country representatives to engage in discu"
+          },
+          {
+              "name": "Forced Labour",
+              "description": "Douwe Egberts installed an enterprise-unique, independently controlled policy to strictly forbid and punish all types of forced labour."
+          },
+          {
+              "name": "Child Labour",
+              "description": "National laws in the coffee production countries are followed to avoid child labour as much as possible."
+          }
+        ]
+      },
+      {
+        "id": "ind_transparency",
+        "applicable": false,
+        "sub_indicators": []
+      }
+    ]
+  }
+]
