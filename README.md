@@ -3,8 +3,8 @@ This repository contains my Bachelor Semester Project 3 & 4 at the University of
 The app was built using the SwiftUI framework.
 
 ## Pre-requisites
-* Xcode Version 12.0.1 (or higher)
-* iOS 14.0 (or higher)
+* Xcode version >= 12.0.1
+* iOS version >= 14.0
 
 ## Installation
 Clone the repository to your computer:
