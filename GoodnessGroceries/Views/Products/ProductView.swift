@@ -5,6 +5,7 @@ struct ProductView: View {
     let product: Product
     let category: Category?
     @EnvironmentObject var UserSettings: UserSettings
+    @EnvironmentObject var PopupManager: PopupManager
     @StateObject var productsVM = ProductsViewModel()
     @State private var showMore: Bool = false
     @State private var showCompare: Bool = false
@@ -14,10 +15,12 @@ struct ProductView: View {
             ScrollViewReader { value in
                 VStack (alignment: .leading, spacing: 12) {
                     HStack (alignment: .top, spacing: 15) {
-                        ProductImageView(url: product.image_url)
-                        Text(product.name).font(.title).bold().fixedSize(horizontal: false, vertical: true)
+                        ProductImageView(url: product.image_url).onTapGesture {
+                            PopupManager.currentPopup = .productImage(image: product.image_url)
+                        }
+                        Text(NSLocalizedString(product.name, lang: UserSettings.language)).font(.title).bold().fixedSize(horizontal: false, vertical: true)
                     }
-                    Text(product.description).fixedSize(horizontal: false, vertical: true)
+                    Text(NSLocalizedString(product.description, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
                     Divider()
                     HStack (spacing: 15) {
                         VStack (alignment: .leading, spacing: 12) {
@@ -26,7 +29,7 @@ struct ProductView: View {
                                     Text(NSLocalizedString("TYPE", lang: UserSettings.language)).bold()
                                     Spacer()
                                 }.frame(width: 120)
-                                Text(product.type).fixedSize(horizontal: false, vertical: true)
+                                Text(NSLocalizedString(product.type, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
                                 Spacer()
                             }
                             HStack (alignment: .top) {

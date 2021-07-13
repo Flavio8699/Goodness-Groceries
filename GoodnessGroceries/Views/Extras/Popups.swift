@@ -167,7 +167,7 @@ struct LanguagePopup: View {
     var body: some View {
         PopupView {
             VStack (alignment: .leading) {
-                Text("Language").font(.title)
+                Text(NSLocalizedString("LANGUAGE", lang: UserSettings.language)).font(.title)
                 HStack {
                     Spacer()
                     Button(action: {
@@ -186,7 +186,7 @@ struct LanguagePopup: View {
                     })
                     Spacer()
                 }
-                Text("You can change the language in the settings later.").font(.footnote)
+                Text(NSLocalizedString("LANGUAGE_CHANGE_LATER", lang: UserSettings.language)).font(.footnote)
                 BlueButton(label: "Ok", action: {
                     PopupManager.showPopup = false
                 }).padding(.top, 8)
@@ -194,3 +194,15 @@ struct LanguagePopup: View {
         }
     }
 }
+
+struct ProductImagePopup: View {
+    
+    let image: String
+    
+    var body: some View {
+        PopupView {
+            Image(image).resizable().scaledToFit().frame(maxWidth: 400)
+        }
+    }
+}
+

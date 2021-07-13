@@ -17,8 +17,9 @@ struct ProductImageView: View {
     
     var body: some View {
         ZStack {
-            Image("placeholder").resizable().frame(width: width, height: height).cornerRadius(cornerRadius).redacted(reason: .placeholder)
-            WebImage(url: URL(string: url)).resizable().frame(width: width, height: height).cornerRadius(cornerRadius)
+            /*Image("placeholder").resizable().frame(width: width, height: height).cornerRadius(cornerRadius).redacted(reason: .placeholder)
+            WebImage(url: URL(string: url)).resizable().frame(width: width, height: height).cornerRadius(cornerRadius)*/
+            Image(url).resizable().frame(width: width, height: height).cornerRadius(cornerRadius)
         }
     }
 }

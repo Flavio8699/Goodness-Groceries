@@ -22,7 +22,10 @@ struct CompareView: View {
                         Divider()
                         VStack (spacing: 10) {
                             ProductImageView(url: product.image_url, width: cellWidth-20, height: cellWidth-20).padding(.top, 10)
-                            Text(product.name).font(.system(size: 12)).fixedSize(horizontal: false, vertical: true)
+                                .onTapGesture {
+                                PopupManager.currentPopup = .productImage(image: product.image_url)
+                            }
+                            Text(NSLocalizedString(product.name, lang: UserSettings.language)).font(.system(size: 12)).multilineTextAlignment(.center)
                             Spacer(minLength: 0)
                         }.padding(.horizontal, 5).frame(width: cellWidth, height: cellWidth*1.5)
                     }
@@ -40,7 +43,7 @@ struct CompareView: View {
                                 Divider()
                                 VStack (spacing: 10) {
                                     Image("GG-\(product.category.rawValue)").resizable().scaledToFit().frame(width: cellWidth-20, height: cellWidth-20).padding(.top, 10)
-                                    Text(NSLocalizedString(product.category.description, lang: UserSettings.language)).font(.system(size: 12)).fixedSize(horizontal: false, vertical: true)
+                                    Text(NSLocalizedString(product.category.description, lang: UserSettings.language)).font(.system(size: 12)).multilineTextAlignment(.center)
                                     Spacer(minLength: 0)
                                 }.padding(.horizontal, 5).frame(width: cellWidth, height: cellWidth*1.5)
                             }
@@ -94,7 +97,7 @@ struct CompareView: View {
                                                 case .not_applicable:
                                                     if product == products.last {
                                                         Divider()
-                                                        Text("Not applicable").frame(width: cellWidth*4)
+                                                        Text(NSLocalizedString("NOT_APPLICABLE", lang: UserSettings.language)).frame(width: cellWidth*4)
                                                     }
                                             }
                                         }

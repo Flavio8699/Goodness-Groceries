@@ -127,6 +127,8 @@ struct ContentView: View {
                         case .general:
                             GeneralErrorPopup()
                     }
+                case .productImage(let image):
+                    ProductImagePopup(image: image)
                 case .language:
                     LanguagePopup()
                 default:
