@@ -46,6 +46,7 @@
 		72771C17252B7830005245FB /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72771C16252B7830005245FB /* Indicator.swift */; };
 		727AC7BF264AE15F0041CA43 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 727AC7BE264AE15F0041CA43 /* CarBode */; };
 		7285D35D255BEAF4004D6E14 /* WelcomeCategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285D35C255BEAF4004D6E14 /* WelcomeCategoryCellView.swift */; };
+		7296DA1E269DDCB700B80725 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 7296DA1D269DDCB700B80725 /* Introspect */; };
 		72999EF025237A3C0018750E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 72999EEF25237A3C0018750E /* SDWebImageSwiftUI */; };
 		72999EF3252385810018750E /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72999EF2252385810018750E /* NotificationsManager.swift */; };
 		72999EF82524C6FE0018750E /* Accueil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72999EF72524C6FD0018750E /* Accueil.swift */; };
@@ -198,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72D3CF7525DD6EBA00658C8E /* SwiftyJSON in Frameworks */,
+				7296DA1E269DDCB700B80725 /* Introspect in Frameworks */,
 				721BEF19263C015800B02D90 /* PermissionsSwiftUI in Frameworks */,
 				72D3CF7125DD59E100658C8E /* Alamofire in Frameworks */,
 				727AC7BF264AE15F0041CA43 /* CarBode in Frameworks */,
@@ -489,6 +491,7 @@
 				72D3CF7425DD6EBA00658C8E /* SwiftyJSON */,
 				721BEF18263C015800B02D90 /* PermissionsSwiftUI */,
 				727AC7BE264AE15F0041CA43 /* CarBode */,
+				7296DA1D269DDCB700B80725 /* Introspect */,
 			);
 			productName = BSP3;
 			productReference = 72AC8ABA2512770B00C0887F /* GoodnessGroceries.app */;
@@ -527,6 +530,7 @@
 				72D3CF7325DD6EBA00658C8E /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				721BEF17263C015800B02D90 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */,
 				727AC7BD264AE15F0041CA43 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
+				7296DA1C269DDCB700B80725 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = 72AC8ABB2512770B00C0887F /* Products */;
 			projectDirPath = "";
@@ -690,7 +694,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZP7B8QNG2;
 				INFOPLIST_FILE = "push-notifications/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -712,7 +716,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZP7B8QNG2;
 				INFOPLIST_FILE = "push-notifications/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -945,6 +949,14 @@
 				kind = branch;
 			};
 		};
+		7296DA1C269DDCB700B80725 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
 		72999EEE25237A3C0018750E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -981,6 +993,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 727AC7BD264AE15F0041CA43 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
 			productName = CarBode;
+		};
+		7296DA1D269DDCB700B80725 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7296DA1C269DDCB700B80725 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
 		};
 		72999EEF25237A3C0018750E /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;

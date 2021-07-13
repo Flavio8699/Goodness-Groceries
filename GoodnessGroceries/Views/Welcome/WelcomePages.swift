@@ -2,6 +2,7 @@ import SwiftUI
 import CarBode
 import AVFoundation
 import PermissionsSwiftUI
+import Introspect
 
 struct Welcome_page1: View {
     
@@ -66,7 +67,16 @@ struct Welcome_page2: View {
             
             VStack (alignment: .center, spacing: 20) {
                 VStack (spacing: 10) {
-                    TextField(NSLocalizedString("CLIENT_ID", lang: UserSettings.language), text: $UserSettings.clientID).keyboardType(.numberPad)
+                    TextField(NSLocalizedString("CLIENT_ID", lang: UserSettings.language), text: $UserSettings.clientID).introspectTextField { textField in
+                        let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: textField.frame.size.width, height: 44))
+                        let flexButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+                        let doneButton = UIBarButtonItem(title: NSLocalizedString("DONE", lang: UserSettings.language), style: .done, target: self, action: #selector(textField.doneButtonTapped(button:)))
+                        doneButton.tintColor = .systemBlue
+                        toolBar.items = [flexButton, doneButton]
+                        toolBar.setItems([flexButton, doneButton], animated: true)
+                        textField.inputAccessoryView = toolBar
+                        textField.keyboardType = .numberPad
+                    }
                     Rectangle()
                         .frame(height: 1.0, alignment: .bottom)
                         .foregroundColor(.gray)
@@ -351,4 +361,10 @@ struct Welcome_page8: View {
             }
         }.padding()
     }
+}
+
+extension  UITextField {
+   @objc func doneButtonTapped(button:UIBarButtonItem) -> Void {
+      self.resignFirstResponder()
+   }
 }
