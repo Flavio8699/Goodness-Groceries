@@ -28,6 +28,7 @@ sudo gem install rubustrings
 * [Alamofire](https://github.com/Alamofire/Alamofire.git): HTTP networking library
 * [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON.git): deal with JSON data in Swift
 * [PermissionsSwiftUI](https://github.com/jevonmao/PermissionsSwiftUI): display and handle permissions in SwiftUI
+* [Introspect](https://github.com/siteline/SwiftUI-Introspect): get the underlying UIKit or AppKit element of a SwiftUI view
 
 ## Contact
 * [Benoît Ries](mailto:benoit.ries@uni.lu) (Tutor)
