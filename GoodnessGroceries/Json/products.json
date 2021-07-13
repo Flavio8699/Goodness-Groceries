@@ -1,12 +1,12 @@
 [
   {
-    "code": "1234569",
-    "name": "Café Sidamo Bio",
-    "description": "100% Arabica from Ethiopia. From organic farming, this coffee is very sweet; it grows in the Sidamo region in heights between 1400 and 2200 m. This fruity coffee is roasted at the Moulin J.P. Dieschbourg in Echternach (G-D du Luxembourg).",
-    "type": "Coffee",
+    "code": "1",
+    "name": "PRODUCT_COFFEE_LO_NAME",
+    "description": "PRODUCT_COFFEE_LO_DESCRIPTION",
+    "type": "TYPE_COFFEE",
     "category": "local_organic",
     "provider": "Moulin J.P. Dieschbourg",
-    "image_url": "https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
+    "image_url": "1",
     "indicators": [
       {
         "id": "ind_animal",
@@ -19,198 +19,614 @@
         "sub_indicators": []
       },
       {
-          "id": "ind_flora",
-          "applicable": true,
-          "sub_indicators": [
-              {
-                  "name": "Pesticides",
-                  "description": "Plant pests and diseases are controlled by using organic cropping techniques while pesticides are reduced to the minimum allowed by official EU organic regulation."
-              },
-              {
-                  "name": "Animal Drug Use",
-                  "description": "Not applicable"
-              }
-          ]
-      },
-      {
-          "id": "ind_soil",
-          "applicable": true,
-          "sub_indicators": []
-      },
-      {
-          "id": "ind_sovereignty",
-          "applicable": true,
-          "sub_indicators": [
-              {
-                  "name": "Community-supported",
-                  "description": "No evidence"
-              },
-              {
-                  "name": "Product Diversification",
-                  "description": "No evidence"
-              },
-              {
-                  "name": "Farmer Cooperative",
-                  "description": "Fairtrade® certification guidelines are followed to support producer sovereignty, specifically by working with farmer cooperatives as well as using the Fairtrade® guidelines to set up the price policy."
-              }
-          ]
-      },
-      {
-          "id": "ind_food",
-          "applicable": false,
-          "sub_indicators": []
-      },
-      {
-          "id": "ind_localeco",
-          "applicable": true,
-          "sub_indicators": [
-              {
-                  "name": "Community-investment",
-                  "description": "By following EU organic and Fairtrade® regulations at the coffee production sites, Moulin Dieschbourg supports the local economy in Sidoma, Ethiopia."
-              },
-              {
-                  "name": "Local Procurement",
-                  "description": "No evidence"
-              },
-              {
-                  "name": "Local Workforce",
-                  "description": "By following the criteria of the Label Made in Luxembourg, Moulin Dieschbourg guarantees a coffee that is 100% roasted in Echternach, Luxembourg, thus supporting local craftsmanship and employment. Furthermore, the company is part of the association Mellerdaler Regionalproduzenten."
-              }
-          ]
-      },
-      {
-        "id": "ind_transparency",
-        "applicable": false,
-        "sub_indicators": []
-      }
-    ]
-  },
-  {
-    "code": "1234568",
-    "name": "Coffee1",
-    "description": "Description",
-    "type": "Coffee",
-    "category": "imported_conventional",
-    "provider": "Douwe Egberts",
-    "image_url": "https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
-    "indicators": [
-        {
-          "id": "ind_animal",
-          "applicable": false,
-          "sub_indicators": []
-        },
-      {
-        "id": "ind_labour",
+        "id": "ind_flora",
         "applicable": true,
         "sub_indicators": [
           {
-            "name": "Employment Relations",
-            "description": "Workers' rights and duties are embedded in internal management systems with right to information"
+            "name": "IND_FLORA_SUBIND_PESTICIDES_NAME",
+            "description": "IND_FLORA_SUBIND_PESTICIDES_COFFEE_LO_DESCRIPTION"
           },
           {
-            "name": "Right of Negotiation",
-            "description": "Coffee producers are organised in cooperations that meet every three months with Douwe Egberts country representatives to engage in discu"
+            "name": "IND_FLORA_SUBIND_ANIMALDRUGUSE_NAME",
+            "description": "NOT_APPLICABLE"
+          }
+        ]
+      },
+      {
+        "id": "ind_soil",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_sovereignty",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_SOVEREIGNTY_SUBIND_COMMUNITYSUPPORTED_NAME",
+            "description": "NO_EVIDENCE"
           },
           {
-              "name": "Forced Labour",
-              "description": "Douwe Egberts installed an enterprise-unique, independently controlled policy to strictly forbid and punish all types of forced labour."
+            "name": "IND_SOVEREIGNTY_SUBIND_PRODUCTDIVERSIFICATION_NAME",
+            "description": "NO_EVIDENCE"
           },
           {
-              "name": "Child Labour",
-              "description": "National laws in the coffee production countries are followed to avoid child labour as much as possible."
+            "name": "IND_SOVEREIGNTY_SUBIND_FARMERCOOPERATIVE_NAME",
+            "description": "IND_SOVEREIGNTY_SUBIND_FARMERCOOPERATIVE_COFFEE_LO_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_food",
+        "applicable": false,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_localeco",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_LOCALECO_SUBIND_COMMUNITYINVESTMENT_NAME",
+            "description": "IND_LOCALECO_SUBIND_COMMUNITYINVESTMENT_COFFEE_LO_DESCRIPTION"
+          },
+          {
+            "name": "IND_LOCALECO_SUBIND_LOCALPROCUREMENT_NAME",
+            "description": "NO_EVIDENCE"
+          },
+          {
+            "name": "IND_LOCALECO_SUBIND_LOCALWORKFORCE_NAME",
+            "description": "IND_LOCALECO_SUBIND_LOCALWORKFORCE_COFFEE_LO_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_decent",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_DECENT_SUBIND_QUALITYOFLIFE_NAME",
+            "description": "IND_DECENT_SUBIND_QUALITYOFLIFE_COFFEE_LO_DESCRIPTION"
+          },
+          {
+            "name": "IND_DECENT_SUBIND_CAPACITYDEVELOPMENT_NAME",
+            "description": "NO_EVIDENCE"
+          },
+          {
+            "name": "IND_DECENT_SUBIND_FAIRACCESSTOMEANSOFPRODUCTIONANDTOLAND_NAME",
+            "description": "NO_EVIDENCE"
+          }
+        ]
+      },
+      {
+        "id": "ind_equity",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_labour",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_fair",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_NAME",
+            "description": "IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_COFFEE_LO_DESCRIPTION"
+          },
+          {
+            "name": "IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_NAME",
+            "description": "IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_COFFEE_LO_DESCRIPTION"
+          },
+          {
+            "name": "IND_FAIR_SUBIND_WAGELEVEL_NAME",
+            "description": "NO_EVIDENCE"
+          },
+          {
+            "name": "IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_NAME",
+            "description": "IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_COFFEE_LO_DESCRIPTION"
           }
         ]
       },
       {
         "id": "ind_transparency",
-        "applicable": false,
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_NAME",
+            "description": "IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_COFFEE_LO_DESCRIPTION"
+          },
+          {
+            "name": "IND_TRANSPARENCY_SUBIND_SPECIFICATIONS_NAME",
+            "description": "NO_EVIDENCE"
+          },
+          {
+            "name": "IND_TRANSPARENCY_SUBIND_PRODUCTINFORMATION_NAME",
+            "description": "NO_EVIDENCE"
+          }
+        ]
+      },
+      {
+        "id": "ind_participation",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_sustainablemanagement",
+        "applicable": true,
         "sub_indicators": []
       }
     ]
   },
   {
-    "code": "12",
-    "name": "Coffee2",
-    "description": "Description",
-    "type": "Coffee",
-    "category": "imported_conventional",
-    "provider": "Douwe Egberts",
-    "image_url": "https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
+    "code": "2",
+    "name": "PRODUCT_COFFEE_LC_NAME",
+    "description": "PRODUCT_COFFEE_LC_DESCRIPTION",
+    "type": "TYPE_COFFEE",
+    "category": "local_conventional",
+    "provider": "Knopes SARL",
+    "image_url": "2",
     "indicators": [
-        {
-          "id": "ind_animal",
-          "applicable": false,
-          "sub_indicators": []
-        },
-        {
+      {
+        "id": "ind_animal",
+        "applicable": false,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_biodiv",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_flora",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_soil",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_sovereignty",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_food",
+        "applicable": false,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_localeco",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_decent",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_equity",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
         "id": "ind_labour",
         "applicable": true,
-        "sub_indicators": [
-          {
-            "name": "Employment Relations",
-            "description": "Workers' rights and duties are embedded in internal management systems with right to information"
-          },
-          {
-            "name": "Right of Negotiation",
-            "description": "Coffee producers are organised in cooperations that meet every three months with Douwe Egberts country representatives to engage in discu"
-          },
-          {
-              "name": "Forced Labour",
-              "description": "Douwe Egberts installed an enterprise-unique, independently controlled policy to strictly forbid and punish all types of forced labour."
-          },
-          {
-              "name": "Child Labour",
-              "description": "National laws in the coffee production countries are followed to avoid child labour as much as possible."
-          }
-        ]
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_fair",
+        "applicable": true,
+        "sub_indicators": []
       },
       {
         "id": "ind_transparency",
-        "applicable": false,
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_participation",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_sustainablemanagement",
+        "applicable": true,
         "sub_indicators": []
       }
     ]
   },
   {
-    "code": "123",
-    "name": "Coffee3",
-    "description": "Description",
-    "type": "Coffee",
-    "category": "imported_conventional",
-    "provider": "Douwe Egberts",
-    "image_url": "https://mobilebrewcafe.com/wp-content/uploads/2019/10/coffee.jpg",
+    "code": "3",
+    "name": "PRODUCT_COFFEE_IO_NAME",
+    "description": "PRODUCT_COFFEE_IO_DESCRIPTION",
+    "type": "TYPE_COFFEE",
+    "category": "imported_organic",
+    "provider": "Ethiquable",
+    "image_url": "3",
     "indicators": [
-        {
-          "id": "ind_animal",
-          "applicable": false,
-          "sub_indicators": []
-        },
-        {
+      {
+        "id": "ind_animal",
+        "applicable": false,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_biodiv",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_flora",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_FLORA_SUBIND_PESTICIDES_NAME",
+            "description": "IND_FLORA_SUBIND_PESTICIDES_COFFEE_IO_DESCRIPTION"
+          },
+          {
+            "name": "IND_FLORA_SUBIND_ANIMALDRUGUSE_NAME",
+            "description": "NOT_APPLICABLE"
+          }
+        ]
+      },
+      {
+        "id": "ind_soil",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_SOIL_SUBIND_SOILIMPROVEMENTPRACTICES_NAME",
+            "description": "IND_SOIL_SUBIND_SOILIMPROVEMENTPRACTICES_COFFEE_IO_DESCRIPTION"
+          },
+          {
+            "name": "IND_SOIL_SUBIND_LANDCONSERVATIONANDREHABILITATION_NAME",
+            "description": "NO_EVIDENCE"
+          }
+        ]
+      },
+      {
+        "id": "ind_sovereignty",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_food",
+        "applicable": false,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_localeco",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_decent",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_DECENT_SUBIND_QUALITYOFLIFE_NAME",
+            "description": "IND_DECENT_SUBIND_QUALITYOFLIFE_COFFEE_IO_DESCRIPTION"
+          },
+          {
+            "name": "IND_DECENT_SUBIND_CAPACITYDEVELOPMENT_NAME",
+            "description": "NO_EVIDENCE"
+          },
+          {
+            "name": "IND_DECENT_SUBIND_FAIRACCESSTOMEANSOFPRODUCTIONANDTOLAND_NAME",
+            "description": "NO_EVIDENCE"
+          }
+        ]
+      },
+      {
+        "id": "ind_equity",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
         "id": "ind_labour",
         "applicable": true,
         "sub_indicators": [
           {
-            "name": "Employment Relations",
-            "description": "Workers' rights and duties are embedded in internal management systems with right to information"
+            "name": "IND_LABOUR_SUBIND_EMPLOYMENTRELATIONS_NAME",
+            "description": "IND_LABOUR_SUBIND_EMPLOYMENTRELATIONS_COFFEE_IO_DESCRIPTION"
           },
           {
-            "name": "Right of Negotiation",
-            "description": "Coffee producers are organised in cooperations that meet every three months with Douwe Egberts country representatives to engage in discu"
+            "name": "IND_LABOUR_SUBIND_RIGHTSOFNEGOTIATION_NAME",
+            "description": "IND_LABOUR_SUBIND_RIGHTSOFNEGOTIATION_COFFEE_IO_DESCRIPTION"
           },
           {
-              "name": "Forced Labour",
-              "description": "Douwe Egberts installed an enterprise-unique, independently controlled policy to strictly forbid and punish all types of forced labour."
+            "name": "IND_LABOUR_SUBIND_FORCEDLABOUR_NAME",
+            "description": "IND_LABOUR_SUBIND_FORCEDLABOUR_COFFEE_IO_DESCRIPTION"
           },
           {
-              "name": "Child Labour",
-              "description": "National laws in the coffee production countries are followed to avoid child labour as much as possible."
+            "name": "IND_LABOUR_SUBIND_CHILDLABOUR_NAME",
+            "description": "IND_LABOUR_SUBIND_CHILDLABOUR_COFFEE_IO_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_fair",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_NAME",
+            "description": "IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_COFFEE_IO_DESCRIPTION"
+          },
+          {
+            "name": "IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_NAME",
+            "description": "IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_COFFEE_IO_DESCRIPTION"
+          },
+          {
+            "name": "IND_FAIR_SUBIND_WAGELEVEL_NAME",
+            "description": "IND_FAIR_SUBIND_WAGELEVEL_COFFEE_IO_DESCRIPTION"
+          },
+          {
+            "name": "IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_NAME",
+            "description": "IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_COFFEE_IO_DESCRIPTION"
           }
         ]
       },
       {
         "id": "ind_transparency",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_participation",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_sustainablemanagement",
+        "applicable": true,
+        "sub_indicators": []
+      }
+    ]
+  },
+  {
+    "code": "4",
+    "name": "PRODUCT_COFFEE_IC_NAME",
+    "description": "PRODUCT_COFFEE_IC_DESCRIPTION",
+    "type": "TYPE_COFFEE",
+    "category": "imported_conventional",
+    "provider": "Douwe Egberts",
+    "image_url": "4",
+    "indicators": [
+      {
+        "id": "ind_animal",
         "applicable": false,
         "sub_indicators": []
+      },
+      {
+        "id": "ind_biodiv",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_BIODIV_SUBIND_LANDCONSERVATIONANDREHABILITATION_NAME",
+            "description": "IND_BIODIV_SUBIND_LANDCONSERVATIONANDREHABILITATION_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_BIODIV_SUBIND_SAVINGOFSEEDSANDBREEDS_NAME",
+            "description": "IND_BIODIV_SUBIND_SAVINGOFSEEDSANDBREEDS_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_BIODIV_SUBIND_DIVERSITYOFPRODUCTION_NAME",
+            "description": "IND_BIODIV_SUBIND_DIVERSITYOFPRODUCTION_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_flora",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_FLORA_SUBIND_PESTICIDES_NAME",
+            "description": "IND_FLORA_SUBIND_PESTICIDES_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_FLORA_SUBIND_ANIMALDRUGUSE_NAME",
+            "description": "NOT_APPLICABLE"
+          },
+          {
+            "name": "IND_FLORA_SUBIND_FURTHEREFFORTS_NAME",
+            "description": "IND_FLORA_SUBIND_FURTHEREFFORTS_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_soil",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_SOIL_SUBIND_SOILIMPROVEMENTPRACTICES_NAME",
+            "description": "IND_SOIL_SUBIND_SOILIMPROVEMENTPRACTICES_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_SOIL_SUBIND_LANDCONSERVATIONANDREHABILITATION_NAME",
+            "description": "IND_SOIL_SUBIND_LANDCONSERVATIONANDREHABILITATION_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_sovereignty",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_SOVEREIGNTY_SUBIND_COMMUNITYSUPPORTED_NAME",
+            "description": "IND_SOVEREIGNTY_SUBIND_COMMUNITYSUPPORTED_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_SOVEREIGNTY_SUBIND_PRODUCTDIVERSIFICATION_NAME",
+            "description": "IND_SOVEREIGNTY_SUBIND_PRODUCTDIVERSIFICATION_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_SOVEREIGNTY_SUBIND_FARMERCOOPERATIVE_NAME",
+            "description": "IND_SOVEREIGNTY_SUBIND_FARMERCOOPERATIVE_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_food",
+        "applicable": false,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_localeco",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_LOCALECO_SUBIND_COMMUNITYINVESTMENT_NAME",
+            "description": "IND_LOCALECO_SUBIND_COMMUNITYINVESTMENT_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_LOCALECO_SUBIND_LOCALPROCUREMENT_NAME",
+            "description": "IND_LOCALECO_SUBIND_LOCALPROCUREMENT_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_LOCALECO_SUBIND_LOCALWORKFORCE_NAME",
+            "description": "IND_LOCALECO_SUBIND_LOCALWORKFORCE_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_decent",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_DECENT_SUBIND_QUALITYOFLIFE_NAME",
+            "description": "IND_DECENT_SUBIND_QUALITYOFLIFE_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_DECENT_SUBIND_CAPACITYDEVELOPMENT_NAME",
+            "description": "IND_DECENT_SUBIND_CAPACITYDEVELOPMENT_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_DECENT_SUBIND_FAIRACCESSTOMEANSOFPRODUCTIONANDTOLAND_NAME",
+            "description": "IND_DECENT_SUBIND_FAIRACCESSTOMEANSOFPRODUCTIONANDTOLAND_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_equity",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_EQUITY_SUBIND_SUPPORTTOVULNERABLEPEOPLE_NAME",
+            "description": "IND_EQUITY_SUBIND_SUPPORTTOVULNERABLEPEOPLE_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_EQUITY_SUBIND_GENDEREQUALITY_NAME",
+            "description": "IND_EQUITY_SUBIND_GENDEREQUALITY_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_labour",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_LABOUR_SUBIND_EMPLOYMENTRELATIONS_NAME",
+            "description": "IND_LABOUR_SUBIND_EMPLOYMENTRELATIONS_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_LABOUR_SUBIND_RIGHTSOFNEGOTIATION_NAME",
+            "description": "IND_LABOUR_SUBIND_RIGHTSOFNEGOTIATION_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_LABOUR_SUBIND_FORCEDLABOUR_NAME",
+            "description": "IND_LABOUR_SUBIND_FORCEDLABOUR_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_LABOUR_SUBIND_CHILDLABOUR_NAME",
+            "description": "IND_LABOUR_SUBIND_CHILDLABOUR_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_fair",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_NAME",
+            "description": "IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_NAME",
+            "description": "IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_FAIR_SUBIND_WAGELEVEL_NAME",
+            "description": "IND_FAIR_SUBIND_WAGELEVEL_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_NAME",
+            "description": "IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_transparency",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_NAME",
+            "description": "IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_TRANSPARENCY_SUBIND_SPECIFICATIONS_NAME",
+            "description": "IND_TRANSPARENCY_SUBIND_SPECIFICATIONS_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_TRANSPARENCY_SUBIND_PRODUCTINFORMATION_NAME",
+            "description": "IND_TRANSPARENCY_SUBIND_PRODUCTINFORMATION_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_participation",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_PARTICIPATION_SUBIND_STAKEHOLDERENGAGEMENT_NAME",
+            "description": "IND_PARTICIPATION_SUBIND_STAKEHOLDERENGAGEMENT_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_PARTICIPATION_SUBIND_ENGAGEMENTBARRIERS_NAME",
+            "description": "IND_PARTICIPATION_SUBIND_ENGAGEMENTBARRIERS_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_PARTICIPATION_SUBIND_EFFECTIVEPARTICIPATION_NAME",
+            "description": "IND_PARTICIPATION_SUBIND_EFFECTIVEPARTICIPATION_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_PARTICIPATION_SUBIND_CONFLICTRESOLUTION_NAME",
+            "description": "IND_PARTICIPATION_SUBIND_CONFLICTRESOLUTION_COFFEE_IC_DESCRIPTION"
+          }
+        ]
+      },
+      {
+        "id": "ind_sustainablemanagement",
+        "applicable": true,
+        "sub_indicators": [
+          {
+            "name": "IND_SUSTAINABLEMANAGEMENT_SUBIND_SUSTAINABILITYMANAGEMENTPLAN_NAME",
+            "description": "IND_SUSTAINABLEMANAGEMENT_SUBIND_SUSTAINABILITYMANAGEMENTPLAN_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_SUSTAINABLEMANAGEMENT_SUBIND_CIVICRESPONSIBILITY_NAME",
+            "description": "IND_SUSTAINABLEMANAGEMENT_SUBIND_CIVICRESPONSIBILITY_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_SUSTAINABLEMANAGEMENT_SUBIND_DUEDILIGENCE_NAME",
+            "description": "IND_SUSTAINABLEMANAGEMENT_SUBIND_DUEDILIGENCE_COFFEE_IC_DESCRIPTION"
+          },
+          {
+            "name": "IND_SUSTAINABLEMANAGEMENT_SUBIND_HOLISTICAUDITS_NAME",
+            "description": "IND_SUSTAINABLEMANAGEMENT_SUBIND_HOLISTICAUDITS_COFFEE_IC_DESCRIPTION"
+          }
+        ]
       }
     ]
   }

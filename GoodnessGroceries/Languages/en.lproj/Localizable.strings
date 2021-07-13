@@ -60,6 +60,24 @@
 "IND_BIODIV_NAME" = "Biodiversity";
 
 
+"IND_BIODIV_SUBIND_DIVERSITYOFPRODUCTION_COFFEE_IC_DESCRIPTION" = "Coffee is grown in agroforestry systems with other cash crops (like bananas) and self-sufficiency crops (like manioc).";
+
+
+"IND_BIODIV_SUBIND_DIVERSITYOFPRODUCTION_NAME" = "Diversity of Production";
+
+
+"IND_BIODIV_SUBIND_LANDCONSERVATIONANDREHABILITATION_COFFEE_IC_DESCRIPTION" = "There is no production in protected zones.";
+
+
+"IND_BIODIV_SUBIND_LANDCONSERVATIONANDREHABILITATION_NAME" = "Land Conservation and Rehabilitation";
+
+
+"IND_BIODIV_SUBIND_SAVINGOFSEEDSANDBREEDS_COFFEE_IC_DESCRIPTION" = "The production of different varieties is mandatory, plus at least one ancient variety.";
+
+
+"IND_BIODIV_SUBIND_SAVINGOFSEEDSANDBREEDS_NAME" = "Saving of Seeds and Breeds";
+
+
 "IND_CAT_ECONOMIC_DESCRIPTION" = "All the people working in the food sector have present and future financial security. Societies as a whole prosper through their food production activities, which build not only financial gains but also social ones. To achieve this, more local, circular and solidarity-based food production is fostered.";
 
 
@@ -90,10 +108,46 @@
 "IND_DECENT_NAME" = "Decent Livelihoods";
 
 
+"IND_DECENT_SUBIND_CAPACITYDEVELOPMENT_COFFEE_IC_DESCRIPTION" = "Training in farming, financial and literacy is offered to every producer.";
+
+
+"IND_DECENT_SUBIND_CAPACITYDEVELOPMENT_NAME" = "Capacity Development";
+
+
+"IND_DECENT_SUBIND_FAIRACCESSTOMEANSOFPRODUCTIONANDTOLAND_COFFEE_IC_DESCRIPTION" = "Local authority agreements are encouraged to ensure that producers own their land. Farm equipment is supplied to producers.";
+
+
+"IND_DECENT_SUBIND_FAIRACCESSTOMEANSOFPRODUCTIONANDTOLAND_NAME" = "Fair Access to Means of Production and to Land";
+
+
+"IND_DECENT_SUBIND_QUALITYOFLIFE_COFFEE_IC_DESCRIPTION" = "Clean, safe and decent accommodation is provided on-farm or near processing facilities. Children have free access to quality education.";
+
+
+"IND_DECENT_SUBIND_QUALITYOFLIFE_COFFEE_IO_DESCRIPTION" = "Fairtrade® certification guidelines are followed to pursue better livelihoods for producers.";
+
+
+"IND_DECENT_SUBIND_QUALITYOFLIFE_COFFEE_LO_DESCRIPTION" = "Fairtrade® certification guidelines are followed to pursue better livelihoods for producers.";
+
+
+"IND_DECENT_SUBIND_QUALITYOFLIFE_NAME" = "Quality of Life";
+
+
 "IND_EQUITY_DESCRIPTION" = "All people working in the food system are treated equally and without discrimination, regardless of gender, ethnic origin, age, religion, potential disabilities etc. All people are given equal opportunity to enter into food production, and are not excluded for any discriminatory reasons.";
 
 
 "IND_EQUITY_NAME" = "Social equity";
+
+
+"IND_EQUITY_SUBIND_GENDEREQUALITY_COFFEE_IC_DESCRIPTION" = "Policies are in place for gender discrimination and women empowerment.";
+
+
+"IND_EQUITY_SUBIND_GENDEREQUALITY_NAME" = "Gender Equality";
+
+
+"IND_EQUITY_SUBIND_SUPPORTTOVULNERABLEPEOPLE_COFFEE_IC_DESCRIPTION" = "Special projects push the inclusion of young farmers and female-led households.";
+
+
+"IND_EQUITY_SUBIND_SUPPORTTOVULNERABLEPEOPLE_NAME" = "Support to Vulnerable People";
 
 
 "IND_FAIR_DESCRIPTION" = "Producers are fairly remunerated. They are paid a price that is stable, equitably negotiated and based on true costs, with long-term agreements that provide planning security. Producers are not forced – by any reason – to sell their products below value.  This applies especially, but not exclusively, to smallholders in marginal regions or those submitted to highly volatile world market prices.";
@@ -102,10 +156,76 @@
 "IND_FAIR_NAME" = "Fair trade practices";
 
 
+"IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_COFFEE_IC_DESCRIPTION" = "UTZ™ and Rain Forest Alliance™ standards are followed to set price policies.";
+
+
+"IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations and practices are followed.";
+
+
+"IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_COFFEE_LO_DESCRIPTION" = "Fairtrade® regulations support producers in gaining fair wages.";
+
+
+"IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_NAME" = "Fair Pricing and Transparent Contracts";
+
+
+"IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_COFFEE_IC_DESCRIPTION" = "International agreements are applied to ensure producers’ freedom of association and right to bargaining.";
+
+
+"IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations and practices are followed.";
+
+
+"IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_COFFEE_LO_DESCRIPTION" = "Fairtrade® regulations support producers in their right to freedom of association.";
+
+
+"IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_NAME" = "Freedom of Association and Right to Bargaining";
+
+
+"IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_COFFEE_IC_DESCRIPTION" = "Farm production systems are preferably based on local indigenous knowledge.";
+
+
+"IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations and practices are followed.";
+
+
+"IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_COFFEE_LO_DESCRIPTION" = "Fairtrade® regulations protect the knowledge and property rights of indigenous communities.";
+
+
+"IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_NAME" = "Indigenous Knowledge";
+
+
+"IND_FAIR_SUBIND_WAGELEVEL_COFFEE_IC_DESCRIPTION" = "Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.";
+
+
+"IND_FAIR_SUBIND_WAGELEVEL_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations and practices are followed.";
+
+
+"IND_FAIR_SUBIND_WAGELEVEL_NAME" = "Wage Level";
+
+
 "IND_FLORA_DESCRIPTION" = "Plant pests and diseases are managed and controlled through the use of more natural methods (enhancing beneficial biota, maximising beneficial insects, recycling nutrients, or minimising disturbance to soil). Livestock is protected against diseases, ideally without excessive use of antibiotics and other drugs (as they can cause resistances, contaminate waters and diminish natural microorganism presence).";
 
 
 "IND_FLORA_NAME" = "Health of Flora and Fauna";
+
+
+"IND_FLORA_SUBIND_ANIMALDRUGUSE_NAME" = "Animal Drug Use";
+
+
+"IND_FLORA_SUBIND_FURTHEREFFORTS_COFFEE_IC_DESCRIPTION" = "Wastewater is not discharged into aquatic ecosystems or drainage systems unless treated to remove toxins and reduce acidity.";
+
+
+"IND_FLORA_SUBIND_FURTHEREFFORTS_NAME" = "Further efforts";
+
+
+"IND_FLORA_SUBIND_PESTICIDES_COFFEE_IC_DESCRIPTION" = "Pesticides are reduced by using Integrated Pest Management and other agroecological cropping practices.";
+
+
+"IND_FLORA_SUBIND_PESTICIDES_COFFEE_IO_DESCRIPTION" = "Plant pests and diseases controlled by appropriated cropping techniques, pesticides reduced to minimum allowed by EU organic regulation.";
+
+
+"IND_FLORA_SUBIND_PESTICIDES_COFFEE_LO_DESCRIPTION" = "Plant pests and diseases controlled by using organic cropping techniques, pesticides reduced to the minimum allowed by EU organic regulation.";
+
+
+"IND_FLORA_SUBIND_PESTICIDES_NAME" = "Pesticides";
 
 
 "IND_FOOD_DESCRIPTION" = "The carbon footprint of a product’s transportation is measured by the distance between the places where food is produced and processed, and the place where it is eaten.";
@@ -120,10 +240,70 @@
 "IND_LABOUR_NAME" = "Labour rights";
 
 
+"IND_LABOUR_SUBIND_CHILDLABOUR_COFFEE_IC_DESCRIPTION" = "National laws are followed to avoid child labour.";
+
+
+"IND_LABOUR_SUBIND_CHILDLABOUR_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations are followed to avoid child labour.";
+
+
+"IND_LABOUR_SUBIND_CHILDLABOUR_NAME" = "Child Labour";
+
+
+"IND_LABOUR_SUBIND_EMPLOYMENTRELATIONS_COFFEE_IC_DESCRIPTION" = "Workers' rights and duties are written in employment contracts.";
+
+
+"IND_LABOUR_SUBIND_EMPLOYMENTRELATIONS_COFFEE_IO_DESCRIPTION" = "In addition to ILO Standards, Fairtrade® regulations are followed and written contracts assure producers’ rights.";
+
+
+"IND_LABOUR_SUBIND_EMPLOYMENTRELATIONS_NAME" = "Employment Relations";
+
+
+"IND_LABOUR_SUBIND_FORCEDLABOUR_COFFEE_IC_DESCRIPTION" = "Enterprise-unique, independently controlled policy to forbid all types of forced labour.";
+
+
+"IND_LABOUR_SUBIND_FORCEDLABOUR_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations are followed to avoid exploitation.";
+
+
+"IND_LABOUR_SUBIND_FORCEDLABOUR_NAME" = "Forced Labour";
+
+
+"IND_LABOUR_SUBIND_RIGHTSOFNEGOTIATION_COFFEE_IC_DESCRIPTION" = "Quarterly meetings with farmer cooperatives review contracts according to producers’ realities, including compensations in case of natural disasters.";
+
+
+"IND_LABOUR_SUBIND_RIGHTSOFNEGOTIATION_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations are followed to assure producers’ right to negotiate the terms of their employment.";
+
+
+"IND_LABOUR_SUBIND_RIGHTSOFNEGOTIATION_NAME" = "Rights of Negotiation";
+
+
 "IND_LOCALECO_DESCRIPTION" = "Producers and customers are brought closer together, by supporting local production and local markets. This can happen in classical economic circuits, but also in circular and solidarity economies where local needs, resources and capacities are prioritised, allowing for more equitable and sustainable markets, local development, and fair prices for both consumers and producers.";
 
 
 "IND_LOCALECO_NAME" = "Local economy";
+
+
+"IND_LOCALECO_SUBIND_COMMUNITYINVESTMENT_COFFEE_IC_DESCRIPTION" = "Credit to start small non-farm businesses and craft to multiplying household income sources is provided to producers.";
+
+
+"IND_LOCALECO_SUBIND_COMMUNITYINVESTMENT_COFFEE_LO_DESCRIPTION" = "By following EU organic and Fairtrade® regulations at the coffee production sites, Moulin Dieschbourg supports the local economy in Sidoma, Ethiopia.";
+
+
+"IND_LOCALECO_SUBIND_COMMUNITYINVESTMENT_NAME" = "Community Investment";
+
+
+"IND_LOCALECO_SUBIND_LOCALPROCUREMENT_COFFEE_IC_DESCRIPTION" = "Coffee processing facilities are built in the producer regions to broaden local procurement.";
+
+
+"IND_LOCALECO_SUBIND_LOCALPROCUREMENT_NAME" = "Local Procurement";
+
+
+"IND_LOCALECO_SUBIND_LOCALWORKFORCE_COFFEE_IC_DESCRIPTION" = "All employees in production, collecting, packaging and shipping processes are local people including supervision.";
+
+
+"IND_LOCALECO_SUBIND_LOCALWORKFORCE_COFFEE_LO_DESCRIPTION" = "The coffee is 100% roasted in Echternach (Label Made in Luxembourg), using local craftsmanship and employment, and supporting the Mellerdaler Regionalproduzenten.";
+
+
+"IND_LOCALECO_SUBIND_LOCALWORKFORCE_NAME" = "Local Workforce";
 
 
 "IND_PARTICIPATION_DESCRIPTION" = "All people taking part in food production are empowered to join decision-making, knowledge sharing, and partnership building alongside each other. More vulnerable, less powerful or otherwise disadvantaged stakeholders have real possibilities to actively participate and with an equal voice. Enterprises must identify all the people taking part in the production process and make efforts to overcome barriers that may hinder their participation. People who live on land where food is produced and processed have the possibility to prevent potential negative impacts on their environment or health.";
@@ -132,10 +312,49 @@
 "IND_PARTICIPATION_NAME" = "Participation";
 
 
+"IND_PARTICIPATION_SUBIND_CONFLICTRESOLUTION_COFFEE_IC_DESCRIPTION" = "Local anthropologists help identifying conflict addressing strategies.";
+
+
+"IND_PARTICIPATION_SUBIND_CONFLICTRESOLUTION_NAME" = "Conflict Resolution";
+
+
+"IND_PARTICIPATION_SUBIND_EFFECTIVEPARTICIPATION_COFFEE_IC_DESCRIPTION" = "Cooperation leaders are replaced yearly, via a democratic electoral system.";
+
+
+"IND_PARTICIPATION_SUBIND_EFFECTIVEPARTICIPATION_NAME" = "Effective Participation";
+
+
+"IND_PARTICIPATION_SUBIND_ENGAGEMENTBARRIERS_COFFEE_IC_DESCRIPTION" = "Producers are represented in cooperatives regardless of their social status in the community.";
+
+
+"IND_PARTICIPATION_SUBIND_ENGAGEMENTBARRIERS_NAME" = "Engagement Barriers";
+
+
+"IND_PARTICIPATION_SUBIND_STAKEHOLDERENGAGEMENT_COFFEE_IC_DESCRIPTION" = "The needs of all producers are heard and power consolidation by village leaders avoided when building producer cooperatives.";
+
+
+"IND_PARTICIPATION_SUBIND_STAKEHOLDERENGAGEMENT_NAME" = "Stakeholder Engagement";
+
+
 "IND_SOIL_DESCRIPTION" = "Actions are taken to prevent land and soil degradation, and specific practices are used to improve physical, chemical and biological soil properties (such as bulk density, heavy metal concentration or the amount of microorganisms).";
 
 
 "IND_SOIL_NAME" = "Soil Fertility";
+
+
+"IND_SOIL_SUBIND_LANDCONSERVATIONANDREHABILITATION_COFFEE_IC_DESCRIPTION" = "Previous mono-cropping land is reconverted into secondary forests or into agroforestry-based coffee production.";
+
+
+"IND_SOIL_SUBIND_LANDCONSERVATIONANDREHABILITATION_NAME" = "Land Conservation and Rehabilitation";
+
+
+"IND_SOIL_SUBIND_SOILIMPROVEMENTPRACTICES_COFFEE_IC_DESCRIPTION" = "Agroecological techniques based on indigenous knowledge are favoured and mineral fertilisers reduced to a minimum.";
+
+
+"IND_SOIL_SUBIND_SOILIMPROVEMENTPRACTICES_COFFEE_IO_DESCRIPTION" = "Fertilisers approved by EU organic regulation. Efforts made to use agroecological techniques and favour farmer-farmer and farmer-agronomist exchanges to find locally-adapted soil protection measures.";
+
+
+"IND_SOIL_SUBIND_SOILIMPROVEMENTPRACTICES_NAME" = "Soil Improvement Practices";
 
 
 "IND_SOVEREIGNITY_DESCRIPTION" = "Farmers are in control of their own economic and technical decisions. They are not dependent on limited crops or a narrow range of food products nor on external subsidies. To achieve producer sovereignty, farmers can build cooperatives to join their forces and interests and those of the communities they live in.";
@@ -144,10 +363,70 @@
 "IND_SOVEREIGNITY_NAME" = "Producer sovereignty";
 
 
+"IND_SOVEREIGNTY_SUBIND_COMMUNITYSUPPORTED_COFFEE_IC_DESCRIPTION" = "Farmer cooperatives represent the needs of the entire community.";
+
+
+"IND_SOVEREIGNTY_SUBIND_COMMUNITYSUPPORTED_NAME" = "Community-supported";
+
+
+"IND_SOVEREIGNTY_SUBIND_FARMERCOOPERATIVE_COFFEE_IC_DESCRIPTION" = "Producers are organised in cooperatives and benefit from varied training, including financial management.";
+
+
+"IND_SOVEREIGNTY_SUBIND_FARMERCOOPERATIVE_COFFEE_LO_DESCRIPTION" = "Fairtrade® certification guidelines support producer sovereignty, specifically by working with farmer cooperatives and the use of Fairtrade® guidelines for price policy.";
+
+
+"IND_SOVEREIGNTY_SUBIND_FARMERCOOPERATIVE_NAME" = "Farmer Cooperative";
+
+
+"IND_SOVEREIGNTY_SUBIND_PRODUCTDIVERSIFICATION_COFFEE_IC_DESCRIPTION" = "Producers are encouraged to reduce single crop dependency by combining coffee plants with banana trees and others, like manioc and maize.";
+
+
+"IND_SOVEREIGNTY_SUBIND_PRODUCTDIVERSIFICATION_NAME" = "Product Diversification";
+
+
 "IND_SUSTAINABLEMANAGEMENT_DESCRIPTION" = "All food actors engage in actions to improve the sustainability of their operations in the four sustainability categories (environment, economy, society and governance). Enterprises must have detailed action plans and are held accountable if they do not put these into practice. Independent bodies control the implementation and results of these action plans.";
 
 
 "IND_SUSTAINABLEMANAGEMENT_NAME" = "Sustainability management";
+
+
+"IND_SUSTAINABLEMANAGEMENT_SUBIND_CIVICRESPONSIBILITY_COFFEE_IC_DESCRIPTION" = "Douwe Egberts pushes stringent standards in coffee production, especially environmental and social.";
+
+
+"IND_SUSTAINABLEMANAGEMENT_SUBIND_CIVICRESPONSIBILITY_NAME" = "Civic Responsibility";
+
+
+"IND_SUSTAINABLEMANAGEMENT_SUBIND_DUEDILIGENCE_COFFEE_IC_DESCRIPTION" = "Douwe Egberts agrees to be held responsible by law for any claimed goals not met.";
+
+
+"IND_SUSTAINABLEMANAGEMENT_SUBIND_DUEDILIGENCE_NAME" = "Due Diligence";
+
+
+"IND_SUSTAINABLEMANAGEMENT_SUBIND_HOLISTICAUDITS_COFFEE_IC_DESCRIPTION" = "All claims are annually controlled by external, independent auditors.";
+
+
+"IND_SUSTAINABLEMANAGEMENT_SUBIND_HOLISTICAUDITS_NAME" = "Holistic Audits";
+
+
+"IND_SUSTAINABLEMANAGEMENT_SUBIND_SUSTAINABILITYMANAGEMENTPLAN_COFFEE_IC_DESCRIPTION" = "The Common Grounds strategy aims for 100% Responsibly Sourced Coffee by 2025.";
+
+
+"IND_SUSTAINABLEMANAGEMENT_SUBIND_SUSTAINABILITYMANAGEMENTPLAN_NAME" = "Sustainability Management Plan";
+
+
+"IND_TRANSPARENCY_SUBIND_PRODUCTINFORMATION_COFFEE_IC_DESCRIPTION" = "Fact-based documentaries of producers’ daily life are published bi-annually.";
+
+
+"IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_COFFEE_IC_DESCRIPTION" = "UTZ™ and Rain Forest Alliance™ country reports are published once a year.";
+
+
+"IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_COFFEE_LO_DESCRIPTION" = "Official controlling mechanisms of EU organic and international Fairtrade® regulations benefit customers indirectly by the transparency provided by these labels.";
+
+
+"IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_NAME" = "Public Communication";
+
+
+"IND_TRANSPARENCY_SUBIND_SPECIFICATIONS_COFFEE_IC_DESCRIPTION" = "Specification sheets are publicly available on a website.";
 
 
 "IND_TRANSPARENCY_DESCRIPTION" = "People within food production engage in trustful, open and respectful communication with each other, no matter their hierarchical status. Employees have access to procedures, policies, decisions and decision-making processes of their employers. Consumers can easily find verified publicly-accessible information about products.";
@@ -156,7 +435,16 @@
 "IND_TRANSPARENCY_NAME" = "Transparency";
 
 
+"IND_TRANSPARENCY_SUBIND_PRODUCTINFORMATION_NAME" = "Product Information";
+
+
+"IND_TRANSPARENCY_SUBIND_SPECIFICATIONS_NAME" = "Specifications";
+
+
 "LANGUAGE" = "Language";
+
+
+"LANGUAGE_CHANGE_LATER" = "You can change the language in the settings later.";
 
 /*  */
 "LAST_STEP" = "Last step";
@@ -177,10 +465,16 @@
 "NOTIFICATION_REVIEW_PRODUCTS_TITLE" = "Client feedback";
 
 
+"NOT_APPLICABLE" = "Not applicable";
+
+
+"NO_EVIDENCE" = "No evidence";
+
+
 "NO_PRODUCTS_FOUND" = "Sorry, no products found";
 
 
-"OPEN_FORM" = "Open the form";
+"OPEN_FORM" = "Letz go";
 
 
 "OPEN_SETTINGS" = "Open settings";
@@ -233,11 +527,35 @@
 
 "PRODUCT_CATEGORY_LOCAL_ORGANIC" = "Local organic";
 
+
+"PRODUCT_COFFEE_IC_DESCRIPTION" = "Composition of Robusta and Arabica coffees with beans from Rainforest Alliance and UTZ Certified™ farms only.  Coffee does not contain any additives.";
+
+
+"PRODUCT_COFFEE_IC_NAME" = "Aroma Rood Ground Coffee, 250g";
+
+
+"PRODUCT_COFFEE_IO_DESCRIPTION" = "Bean coffee from Congo from organic farming and fair trade";
+
+
+"PRODUCT_COFFEE_IO_NAME" = "Café Kivu en grains";
+
+
+"PRODUCT_COFFEE_LC_DESCRIPTION" = "Origin 100% Brazil Isidro Pereira, ground, 250g";
+
+
+"PRODUCT_COFFEE_LC_NAME" = "Roasted coffee 1936";
+
+
+"PRODUCT_COFFEE_LO_DESCRIPTION" = "100% organic and Fairtrade certified Arabica coffee from Ethiopia, grown in the Sidamo region in heights between 1400 and 2200 m, and roasted at the Moulin J.P. Dieschbourg in Echternach, Luxembourg.";
+
+
+"PRODUCT_COFFEE_LO_NAME" = "Café Sidamo Bio";
+
 /*  */
 "PROFILE" = "Profile";
 
 /*  */
-"PROVIDER" = "Provider";
+"PROVIDER" = "Company";
 
 
 "REVIEW_PRODUCTS" = "Review products";
@@ -277,6 +595,9 @@
 
 /*  */
 "TYPE" = "Type";
+
+
+"TYPE_COFFEE" = "Coffee";
 
 
 "WELCOME_PAGE_1_TEXT" = "This app will allow you to compare the ethical and eco-responsible characteristics of selected food products available in Pall Center whilst you shop.";

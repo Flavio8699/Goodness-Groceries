@@ -28,6 +28,27 @@
     "general_description": "IND_SOIL_DESCRIPTION"
   },
   {
+    "id": "ind_sovereignty",
+    "name": "IND_SOVEREIGNITY_NAME",
+    "category_id": "ind_cat_economic",
+    "icon_name": "GG-ProducerSovereignty",
+    "general_description": "IND_SOVEREIGNITY_DESCRIPTION"
+  },
+  {
+    "id": "ind_food",
+    "name": "IND_FOOD_NAME",
+    "category_id": "ind_cat_economic",
+    "icon_name": "GG-FoodMiles",
+    "general_description": "IND_FOOD_DESCRIPTION"
+  },
+  {
+    "id": "ind_localeco",
+    "name": "IND_LOCALECO_NAME",
+    "category_id": "ind_cat_economic",
+    "icon_name": "GG-LocalEconomy",
+    "general_description": "IND_LOCALECO_DESCRIPTION"
+  },
+  {
     "id": "ind_decent",
     "name": "IND_DECENT_NAME",
     "category_id": "ind_cat_social",
@@ -54,27 +75,6 @@
     "category_id": "ind_cat_social",
     "icon_name": "GG-FairTradePractices",
     "general_description": "IND_FAIR_DESCRIPTION"
-  },
-  {
-    "id": "ind_sovereignty",
-    "name": "IND_SOVEREIGNITY_NAME",
-    "category_id": "ind_cat_economic",
-    "icon_name": "GG-ProducerSovereignty",
-    "general_description": "IND_SOVEREIGNITY_DESCRIPTION"
-  },
-  {
-    "id": "ind_food",
-    "name": "IND_FOOD_NAME",
-    "category_id": "ind_cat_economic",
-    "icon_name": "GG-FoodMiles",
-    "general_description": "IND_FOOD_DESCRIPTION"
-  },
-  {
-    "id": "ind_localeco",
-    "name": "IND_LOCALECO_NAME",
-    "category_id": "ind_cat_economic",
-    "icon_name": "GG-LocalEconomy",
-    "general_description": "IND_LOCALECO_DESCRIPTION"
   },
   {
     "id": "ind_transparency",
