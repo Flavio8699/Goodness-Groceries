@@ -1,6 +1,6 @@
 import Foundation
 
 struct ProductBought: Decodable {
-    var product: Int
+    var product_ean: Int
     var timestamp: String
 }

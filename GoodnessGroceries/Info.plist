@@ -65,7 +65,7 @@
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
 	<key>NSCameraUsageDescription</key>
-	<string>QR-codes</string>
+	<string>Scan QR-codes</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Not in use</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>

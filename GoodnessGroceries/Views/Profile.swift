@@ -14,7 +14,7 @@ struct Profile: View {
                     VStack (alignment: .leading, spacing: 10) {
                         Text(NSLocalizedString("CLIENT_ID", lang: UserSettings.language)).font(.title)
                         Text(UserSettings.clientID)
-                    }.offset(y: 15)
+                    }
                     Spacer()
                 }.padding()
                 Divider()

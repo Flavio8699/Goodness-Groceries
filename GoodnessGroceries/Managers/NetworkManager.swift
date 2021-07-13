@@ -16,7 +16,7 @@ class Connectivity {
 
 class NetworkManager: ObservableObject {
     static let shared = NetworkManager()
-    let BASE_URL: String = "https://3b6e27fcfac2.ngrok.io/"
+    let BASE_URL: String = "https://f93378532f3a.ngrok.io/"
     
     func requestUserAccess(for participant_id: String, product_categories: [String], indicator_categories: [String], completion: @escaping (Result<Void,PopupErrorType>) -> Void) {
         if !Connectivity.connected {

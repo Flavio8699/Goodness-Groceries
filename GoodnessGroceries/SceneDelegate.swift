@@ -60,7 +60,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                             if let products = products {
                                 UserSettings.shared.productsToReview.removeAll()
                                 for product in products {
-                                    let code = String(product.product)
+                                    let code = String(product.product_ean)
                                     UserSettings.shared.productsToReview.append(code)
                                 }
                             }
