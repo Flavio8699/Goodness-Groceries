@@ -44,9 +44,6 @@ struct Welcome_page1: View {
                 })
             }
         }.padding()
-        .onAppear {
-            //PopupManager.currentPopup = .language
-        }
     }
 }
 
@@ -293,21 +290,26 @@ struct Welcome_page7: View {
     
     var body: some View {
         VStack {
-            HStack (spacing: 25) {
+            HStack {
                 Image("GG-Logo-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 120)
-                Image("uni_logo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 120)
-            }.padding(.bottom, 20)
+            }.padding(.bottom, 15)
             
-            VStack (alignment: .center, spacing: 30) {
-                Text(NSLocalizedString("WELCOME_PAGE_6_TITLE", lang: UserSettings.language)).font(.title)
-                Text(NSLocalizedString("WELCOME_PAGE_6_TEXT", lang: UserSettings.language))
-                CBBarcodeView(data: $dataString, barcodeType: $barcodeType, orientation: $rotate, onGenerated: nil).frame(width: 205, height: 210).opacity(0.9)
+            VStack (alignment: .leading, spacing: 20) {
+                HStack (spacing: 0) {
+                    Spacer()
+                    Text(NSLocalizedString("WELCOME_PAGE_6_TITLE", lang: UserSettings.language)).font(.title).fixedSize(horizontal: false, vertical: true).multilineTextAlignment(.center)
+                    Spacer()
+                }
+                Text(NSLocalizedString("WELCOME_PAGE_6_TEXT", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                Spacer(minLength: 0)
+                HStack (spacing: 0) {
+                    Spacer()
+                    CBBarcodeView(data: $dataString, barcodeType: $barcodeType, orientation: $rotate, onGenerated: nil).frame(width: 205, height: 210).opacity(0.9)
+                    Spacer()
+                }
                 Spacer(minLength: 0)
                 BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
                     withAnimation {
@@ -325,20 +327,20 @@ struct Welcome_page8: View {
     
     var body: some View {
         VStack {
-            HStack (spacing: 25) {
+            HStack {
                 Image("GG-Logo-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 120)
-                Image("uni_logo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 120)
-            }.padding(.bottom, 20)
+            }.padding(.bottom, 15)
             
-            VStack (alignment: .center, spacing: 0) {
-                Text(NSLocalizedString("WELCOME_PAGE_7_TITLE", lang: UserSettings.language)).font(.title).fixedSize(horizontal: false, vertical: true)
-                Text(NSLocalizedString("WELCOME_PAGE_7_TEXT", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true).padding(.top, 30)
+            VStack (alignment: .leading, spacing: 0) {
+                HStack (spacing: 0) {
+                    Spacer()
+                    Text(NSLocalizedString("WELCOME_PAGE_7_TITLE", lang: UserSettings.language)).font(.title).fixedSize(horizontal: false, vertical: true).multilineTextAlignment(.center)
+                    Spacer()
+                }
+                Text(NSLocalizedString("WELCOME_PAGE_7_TEXT", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true).padding(.top, 20)
                 CategoryIconsGridView()
                 Spacer(minLength: 0)
                 BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {

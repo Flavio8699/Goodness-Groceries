@@ -7,6 +7,7 @@ import SwiftUI
 struct Welcome: View {
     
     @EnvironmentObject var UserSettings: UserSettings
+    @EnvironmentObject var PopupManager: PopupManager
     @State private var offset: CGFloat = 0
     @State private var isUserSwiping: Bool = false
     @State private var canSwipe: Bool = true
@@ -63,6 +64,11 @@ struct Welcome: View {
                         }
                     })
             )
+            .onAppear {
+                if UserSettings.step == 0 {
+                    PopupManager.currentPopup = .language
+                }
+            }
         }
     }
 }

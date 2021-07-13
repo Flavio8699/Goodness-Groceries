@@ -13,11 +13,7 @@ struct StatusRequestedView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 120)
-                Image("uni_logo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 120)
-            }.padding(.bottom, 40)
+            }.padding(.bottom, 15)
             
             VStack (alignment: .center, spacing: 30) {
                 Text(NSLocalizedString("AUTHENTICATION_REQUESTED_TITLE", lang: UserSettings.language)).font(.title)
@@ -26,7 +22,7 @@ struct StatusRequestedView: View {
                     Text(NSLocalizedString("AUTHENTICATION_REQUESTED_TEXT_2", lang: UserSettings.language))
                 }
                 BlueButton(label: NSLocalizedString("OPEN_FORM", lang: UserSettings.language), action: {
-                    openURL(URL(string: "https://www.apple.com")!)
+                    openURL(URL(string: "https://food.uni.lu/projects/goodness-groceries/")!)
                 }).padding(.top, 20)
                 Spacer(minLength: 0)
             }
