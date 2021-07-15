@@ -26,6 +26,18 @@ sudo gem install rubustrings
 3. Connect your ***iPhone*** with a USB cable to your computer or select the desired ***simulator*** on the top left corner
 4. Tap the *Run* button (or <kbd>Command</kbd> + <kbd>R</kbd>) and wait until all the tasks are finished
 
+## Distribute to AppStore
+1. Open the project file ***GoodnessGroceries.xcodeproj***
+2. The build number **must** be incremented. _NB: the version number may remain untouched. Also note that the build and version number are not related_.
+3. Goto menu : Product / Destination / Any iOS Device (arm64)
+4. Build the project: goto menu "Project / Build". _NB: there are warnings, but there should not be any errors._
+5. Archive the project: goto menu "Project / Archive".
+6. Goto Window / Organizer.
+7. Select the build to deploy to the App Store and click on the "Distribute App" button.
+8. Then choose "App Store Connect", then "Upload", then click on "Next" with default options until "Upload" button.
+9. Goto the app store connect website : https://appstoreconnect.apple.com/apps
+10. [TODO] finalise the app store steps on the website (currently it seems down)
+
 ## Swift Packages used
 * [SDWebImageSwiftUI](https://github.com/SDWebImage/SDWebImageSwiftUI): display images from URLs
 * [CarBode](https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI): barcode scanner for SwiftUI
