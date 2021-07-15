@@ -39,6 +39,7 @@ sudo gem install rubustrings
 10. You should see the new build appearing, maybe with a warning "Missing Compliance", if so, then click on the "Manage" link. Then choose Yes, then Yes. Then finally click on "Start Internal Testing".
 11. Now that your new build is available for beta-testing. You may add some "Individual Testers", by clicking on the build number, then "Add Testers to Build".
 12. Choose Add existing testers, and select all. Finally enter a text "Please test this new beta-version". 
+13. You should wait for Apple to review this new build. This may take up-to 48 hours.
 
 ## Swift Packages used
 * [SDWebImageSwiftUI](https://github.com/SDWebImage/SDWebImageSwiftUI): display images from URLs
