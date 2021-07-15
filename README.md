@@ -26,7 +26,7 @@ sudo gem install rubustrings
 3. Connect your ***iPhone*** with a USB cable to your computer or select the desired ***simulator*** on the top left corner
 4. Tap the *Run* button (or <kbd>Command</kbd> + <kbd>R</kbd>) and wait until all the tasks are finished
 
-## Distribute to AppStore
+## Distribute to AppStore with TestFlight (beta-testing)
 1. Open the project file ***GoodnessGroceries.xcodeproj***
 2. The build number **must** be incremented. _NB: the version number may remain untouched. Also note that the build and version number are not related_.
 3. Goto menu : Product / Destination / Any iOS Device (arm64)
@@ -35,8 +35,10 @@ sudo gem install rubustrings
 6. Goto Window / Organizer.
 7. Select the build to deploy to the App Store and click on the "Distribute App" button.
 8. Then choose "App Store Connect", then "Upload", then click on "Next" with default options until "Upload" button.
-9. Goto the app store connect website : https://appstoreconnect.apple.com/apps
-10. [TODO] finalise the app store steps on the website (currently it seems down)
+9. Goto the app store connect website : https://appstoreconnect.apple.com/apps/1565971371/testflight/ios
+10. You should see the new build appearing, maybe with a warning "Missing Compliance", if so, then click on the "Manage" link. Then choose Yes, then Yes. Then finally click on "Start Internal Testing".
+11. Now that your new build is available for beta-testing. You may add some "Individual Testers", by clicking on the build number, then "Add Testers to Build".
+12. Choose Add existing testers, and select all. Finally enter a text "Please test this new beta-version". 
 
 ## Swift Packages used
 * [SDWebImageSwiftUI](https://github.com/SDWebImage/SDWebImageSwiftUI): display images from URLs
