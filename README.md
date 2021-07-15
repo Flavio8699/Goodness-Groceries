@@ -6,7 +6,7 @@ The app was built using the SwiftUI framework.
 ![Screenshots 1](screenshot1.png)
 ![Screenshots 2](screenshot2.png)
 
-## Pre-requisites
+## Requirements
 * Xcode version >= 12.0.1
 * iOS version >= 14.0
 
