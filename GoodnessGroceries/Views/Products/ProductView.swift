@@ -50,7 +50,7 @@ struct ProductView: View {
                             }
                         }
                         Spacer(minLength: 0)
-                        Image("GG-\(product.category.rawValue)")
+                        Image("GG_\(product.category.rawValue)")
                     }
                     Divider()
                     Text(NSLocalizedString("INDICATORS", lang: UserSettings.language)).font(.title2).bold()

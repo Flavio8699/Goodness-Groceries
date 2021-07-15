@@ -89,7 +89,7 @@ class UserSettings: ObservableObject {
             switch response {
             case .success(let status):
                 switch status {
-                case .requested:
+                case .requested, .archived:
                     self.statusRequested = true
                     break
                 case .valid:

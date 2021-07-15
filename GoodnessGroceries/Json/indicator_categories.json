@@ -2,25 +2,25 @@
   {
     "id": "ind_cat_environment",
     "name": "IND_CAT_ENVIRONMENT_NAME",
-    "icon_name": "GG-Environment",
+    "icon_name": "GG_Environment",
     "description": "IND_CAT_ENVIRONMENT_DESCRIPTION"
   },
   {
     "id": "ind_cat_economic",
     "name": "IND_CAT_ECONOMIC_NAME",
-    "icon_name": "GG-EconomicWellBeing",
+    "icon_name": "GG_EconomicWellBeing",
     "description": "IND_CAT_ECONOMIC_DESCRIPTION"
   },
   {
     "id": "ind_cat_social",
     "name": "IND_CAT_SOCIAL_NAME",
-    "icon_name": "GG-SocialWellBeing",
+    "icon_name": "GG_SocialWellBeing",
     "description": "IND_CAT_SOCIAL_DESCRIPTION"
   },
   {
     "id": "ind_cat_governance",
     "name": "IND_CAT_GOVERNANCE_NAME",
-    "icon_name": "GG-GoodGovernance",
+    "icon_name": "GG_GoodGovernance",
     "description": "IND_CAT_GOVERNANCE_DESCRIPTION"
   }
 ]

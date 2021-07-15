@@ -13,7 +13,7 @@ struct WelcomeProductCategoryCellView: View {
             VStack (alignment: .leading) {
                 HStack {
                     HStack {
-                        Image("GG-\(category.rawValue)").frame(width: 60)
+                        Image("GG_\(category.rawValue)").frame(width: 60)
                         Text(NSLocalizedString(category.description, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
                         Spacer(minLength: 0)
                     }

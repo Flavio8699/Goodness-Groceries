@@ -8,7 +8,7 @@ struct ProductCategoryRowView: View {
     var body: some View {
         VStack (alignment: .leading) {
             HStack (spacing: 15) {
-                Image("GG-\(product_category.rawValue)").frame(width: 60)
+                Image("GG_\(product_category.rawValue)").frame(width: 60)
                 Text(NSLocalizedString(product_category.description, lang: UserSettings.language)).font(.headline)
                 Spacer(minLength: 0)
                 Image("arrow_right").padding(.top, 4)

@@ -42,7 +42,7 @@ struct CompareView: View {
                             ForEach(products, id: \.self) { product in
                                 Divider()
                                 VStack (spacing: 10) {
-                                    Image("GG-\(product.category.rawValue)").resizable().scaledToFit().frame(width: cellWidth-20, height: cellWidth-20).padding(.top, 10)
+                                    Image("GG_\(product.category.rawValue)").resizable().scaledToFit().frame(width: cellWidth-20, height: cellWidth-20).padding(.top, 10)
                                     Text(NSLocalizedString(product.category.description, lang: UserSettings.language)).font(.system(size: 12)).multilineTextAlignment(.center)
                                     Spacer(minLength: 0)
                                 }.padding(.horizontal, 5).frame(width: cellWidth, height: cellWidth*1.5)

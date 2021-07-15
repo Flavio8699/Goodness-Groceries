@@ -86,10 +86,5 @@
 	<string>Not in use</string>
 	<key>NSContactsUsageDescription</key>
 	<string>Not in use</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>

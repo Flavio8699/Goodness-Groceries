@@ -59,9 +59,9 @@ struct Accueil: View {
                 Divider()
                 ScrollView (.vertical, showsIndicators: true) {
                     if(search != "") {
-                        let productsFiltered = productsVM.products.filter { $0.name.lowercased().contains(search.lowercased()) }
+                        let productsFiltered = productsVM.products.filter { NSLocalizedString($0.name, lang: UserSettings.language).lowercased().contains(search.lowercased()) }
                         
-                        SearchView(products: productsFiltered).padding(.horizontal)
+                        SearchView(products: productsFiltered).padding(.horizontal).animation(.linear)
                     } else {
                         CategoryListView().padding(.horizontal)
                     }

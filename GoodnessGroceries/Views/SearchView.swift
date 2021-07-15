@@ -12,7 +12,6 @@ struct SearchView: View {
                     NavigationLink(destination: ProductView(product: product, category: nil)) {
                         ProductRowView(product: product, category: nil)
                             .foregroundColor(.black)
-                            .animation(Animation.default)
                     }
                     Divider()
                 }

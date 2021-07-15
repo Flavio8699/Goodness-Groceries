@@ -17,7 +17,7 @@ struct Scanner: View {
             ZStack (alignment: .topLeading) {
                 CameraNotAllowedView()
                 if AVCaptureDevice.authorizationStatus(for: AVMediaType.video) == .authorized || !askPermissions {
-                    CBScanner(supportBarcode: .constant([.qr]), torchLightIsOn: $torchLightIsActive, mockBarCode: .constant(BarcodeData(value: "1234569", type: .qr)), isActive: $scannerIsActive) { search in
+                    CBScanner(supportBarcode: .constant([.qr]), torchLightIsOn: $torchLightIsActive, mockBarCode: .constant(BarcodeData(value: productsVM.products[0].code, type: .qr)), isActive: $scannerIsActive) { search in
                         if let product = self.productsVM.products.first(where: { $0.code == search.value }) {
                             if self.product != product {
                                 self.product = product
