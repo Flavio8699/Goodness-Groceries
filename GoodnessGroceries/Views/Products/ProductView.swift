@@ -53,38 +53,41 @@ struct ProductView: View {
                         Image("GG_\(product.category.rawValue)")
                     }
                     Divider()
-                    Text(NSLocalizedString("INDICATORS", lang: UserSettings.language)).font(.title2).bold()
                     let indicators = product.getIndicators(for: category)
-                    ForEach(indicators, id: \.self) { indicator in
-                        if let productIndicator = product.indicators.first(where: { $0.id == indicator.id }) {
-                            if productIndicator.applicable && productIndicator.sub_indicators.count > 0 {
-                                ProductIndicatorRowView(productIndicator: productIndicator).id(indicator.id)
+                    if indicators.count > 0 {
+                        Text(NSLocalizedString("INDICATORS", lang: UserSettings.language)).font(.title2).bold()
+                        
+                        ForEach(indicators, id: \.self) { indicator in
+                            if let productIndicator = product.indicators.first(where: { $0.id == indicator.id }) {
+                                if productIndicator.applicable && productIndicator.sub_indicators.count > 0 {
+                                    ProductIndicatorRowView(productIndicator: productIndicator).id(indicator.id)
+                                }
                             }
                         }
-                    }
-                    let otherIndicators = product.getIndicators(except: category)
-                    if category != nil && otherIndicators.count > 0 {
-                        Button(action: {
-                            withAnimation(.linear(duration: 0.15)) {
-                                showMore.toggle()
-                            }
-                        }, label: {
-                            HStack {
-                                Text(NSLocalizedString(showMore ? "SHOW_LESS" : "SHOW_MORE", lang: UserSettings.language))
-                                Spacer()
-                                Image("arrow_right").rotationEffect(.degrees(showMore ? 90 : 0))
-                            }
-                        })
-                        if showMore {
-                            ForEach(otherIndicators, id: \.self) { indicator in
-                                if let productIndicator = product.indicators.first(where: { $0.id == indicator.id }) {
-                                    if productIndicator.applicable && productIndicator.sub_indicators.count > 0 {
-                                        ProductIndicatorRowView(productIndicator: productIndicator).id(indicator.id)
-                                    }
+                        let otherIndicators = product.getIndicators(except: category)
+                        if category != nil && otherIndicators.count > 0 {
+                            Button(action: {
+                                withAnimation(.linear(duration: 0.15)) {
+                                    showMore.toggle()
                                 }
-                            }.onAppear {
-                                withAnimation(.default) {
-                                    value.scrollTo(otherIndicators.last?.id, anchor: .bottom)
+                            }, label: {
+                                HStack {
+                                    Text(NSLocalizedString(showMore ? "SHOW_LESS" : "SHOW_MORE", lang: UserSettings.language))
+                                    Spacer()
+                                    Image("arrow_right").rotationEffect(.degrees(showMore ? 90 : 0))
+                                }
+                            })
+                            if showMore {
+                                ForEach(otherIndicators, id: \.self) { indicator in
+                                    if let productIndicator = product.indicators.first(where: { $0.id == indicator.id }) {
+                                        if productIndicator.applicable && productIndicator.sub_indicators.count > 0 {
+                                            ProductIndicatorRowView(productIndicator: productIndicator).id(indicator.id)
+                                        }
+                                    }
+                                }.onAppear {
+                                    withAnimation(.default) {
+                                        value.scrollTo(otherIndicators.last?.id, anchor: .bottom)
+                                    }
                                 }
                             }
                         }

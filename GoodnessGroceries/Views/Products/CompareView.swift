@@ -85,7 +85,6 @@ struct CompareView: View {
                                             PopupManager.currentPopup = .indicator(indicator: indicator)
                                             impactFeedback(.medium)
                                         }
-                                        Spacer(minLength: 0)
                                         ForEach(products, id: \.self) { product in
                                             switch product.hasIndicator(indicator: indicator) {
                                                 case .yes:
@@ -93,15 +92,20 @@ struct CompareView: View {
                                                     Image(systemName: "checkmark").foregroundColor(Color("GG_D_Green")).frame(width: cellWidth).font(Font.system(size: 20, weight: .bold))
                                                 case .no:
                                                     Divider()
-                                                    Image(systemName: "xmark").frame(width: cellWidth).font(Font.system(size: 20, weight: .bold)).foregroundColor(Color(.systemRed))
+                                                    Text("Ø").frame(width: cellWidth).font(Font.system(size: 20, weight: .bold)).foregroundColor(Color(.systemRed))
                                                 case .not_applicable:
                                                     if product == products.last {
                                                         Divider()
-                                                        Text(NSLocalizedString("NOT_APPLICABLE", lang: UserSettings.language)).frame(width: cellWidth*4)
+                                                        HStack (spacing: 0) {
+                                                            Text(NSLocalizedString("NOT_APPLICABLE", lang: UserSettings.language))
+                                                                .foregroundColor(Color(.systemGray))
+                                                                .font(.system(size: 14))
+                                                                .padding(.leading)
+                                                            Spacer()
+                                                        }.frame(width: cellWidth*4)
                                                     }
                                             }
                                         }
-                                        Spacer(minLength: 0)
                                     }
                                     Divider()
                                 }

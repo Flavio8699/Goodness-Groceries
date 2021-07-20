@@ -90,7 +90,7 @@
 "IND_CAT_ENVIRONMENT_NAME" = "Environment";
 
 
-"IND_CAT_GOVERNANCE_DESCRIPTION" = "The way companies conduct business, manage their resources and assets, shape their interactions and decision-making processes is directed towards increasing sustainability . All product information is transparent and easily accessible. Enterprises use participatory approaches and include producers in decisions. Ultimately, enterprises can be held accountable for their claims.";
+"IND_CAT_GOVERNANCE_DESCRIPTION" = "The way companies conduct business, manage their resources and assets, shape their interactions and decision-making processes is directed towards increasing sustainability. All product information is transparent and easily accessible. Enterprises use participatory approaches and include producers in decisions. Ultimately, enterprises can be held accountable for their claims.";
 
 
 "IND_CAT_GOVERNANCE_NAME" = "Good governance";
@@ -465,7 +465,7 @@
 "NOTIFICATION_REVIEW_PRODUCTS_TITLE" = "Client feedback";
 
 
-"NOT_APPLICABLE" = "Not applicable";
+"NOT_APPLICABLE" = "not applicable";
 
 
 "NO_EVIDENCE" = "No evidence";
@@ -474,7 +474,7 @@
 "NO_PRODUCTS_FOUND" = "Sorry, no products found";
 
 
-"OPEN_FORM" = "Letz go";
+"OPEN_FORM" = "Let's go!";
 
 
 "OPEN_SETTINGS" = "Open settings";
@@ -492,7 +492,7 @@
 "PERMISSIONS_MODAL_FOOTER" = "Permissions are necessary for all the features and functions to work properly. If not yet activated, you have to enable permissions in settings.";
 
 
-"PERMISSIONS_MODAL_HEADER" = "In order for you to use certain features of this app, you need to give permissions. See description for each permission.";
+"PERMISSIONS_MODAL_HEADER" = "In order for you to use certain features of this app, you need to give permissions.";
 
 
 "PERMISSIONS_MODAL_TITLE" = "Permissions";
@@ -582,7 +582,7 @@
 "SIMILAR_PRODUCTS" = "Similar products";
 
 
-"SURVEY_PAGE_TEXT" = "Which indicators led you to choose the following product?";
+"SURVEY_PAGE_TEXT" = "You recently bought the following product, which indicators led you to choose it?";
 
 
 "SURVEY_PAGE_TITLE" = "Client feedback";
@@ -648,6 +648,6 @@
 "en" = "English";
 
 
-"fr" = "French";
+"fr" = "Français";
 
 "DONE" = "Done";

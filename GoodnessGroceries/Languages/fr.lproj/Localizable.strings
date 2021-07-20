@@ -465,7 +465,7 @@
 "NOTIFICATION_REVIEW_PRODUCTS_TITLE" = "Retour client";
 
 /*  */
-"NOT_APPLICABLE" = "Non applicable";
+"NOT_APPLICABLE" = "non applicable";
 
 /*  */
 "NO_EVIDENCE" = "Pas de données";
@@ -474,7 +474,7 @@
 "NO_PRODUCTS_FOUND" = "Désolé, aucun produit trouvé";
 
 
-"OPEN_FORM" = "Letz go";
+"OPEN_FORM" = "Let's go!";
 
 
 "OPEN_SETTINGS" = "Ouvrir les paramètres";
@@ -492,7 +492,7 @@
 "PERMISSIONS_MODAL_FOOTER" = "Les autorisations sont nécessaires afin que toutes les fonctionnalités de l’application marchent correctement. Si non activées, vous devez activer les autorisations dans les paramètres.";
 
 
-"PERMISSIONS_MODAL_HEADER" = "Afin que vous puissiez utiliser certaines fonctions de cette application, vous devez accorder des autorisations. Voir la description de chaque autorisation.";
+"PERMISSIONS_MODAL_HEADER" = "Afin que vous puissiez utiliser certaines fonctions de cette application, vous devez accorder des autorisations.";
 
 
 "PERMISSIONS_MODAL_TITLE" = "Permissions";
@@ -582,7 +582,7 @@
 "SIMILAR_PRODUCTS" = "Produits similaires";
 
 
-"SURVEY_PAGE_TEXT" = "Quels indicateurs vous ont amené à choisir le produit suivant?";
+"SURVEY_PAGE_TEXT" = "Vous avez récemment acheté le produit suivant, quels indicateurs vous ont amené à le choisir?";
 
 
 "SURVEY_PAGE_TITLE" = "Retour client";
@@ -645,7 +645,7 @@
 "WRONG_FORMAT_ALERT_TITLE" = "Format incorrect";
 
 
-"en" = "Anglais";
+"en" = "English";
 
 
 "fr" = "Français";

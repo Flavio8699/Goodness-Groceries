@@ -48,7 +48,6 @@
 		7285D35D255BEAF4004D6E14 /* WelcomeCategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285D35C255BEAF4004D6E14 /* WelcomeCategoryCellView.swift */; };
 		7296DA1E269DDCB700B80725 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 7296DA1D269DDCB700B80725 /* Introspect */; };
 		72999EF025237A3C0018750E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 72999EEF25237A3C0018750E /* SDWebImageSwiftUI */; };
-		72999EF3252385810018750E /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72999EF2252385810018750E /* NotificationsManager.swift */; };
 		72999EF82524C6FE0018750E /* Accueil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72999EF72524C6FD0018750E /* Accueil.swift */; };
 		72999EFD2524C7850018750E /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72999EFC2524C7850018750E /* CategoryListView.swift */; };
 		72999F012524C79F0018750E /* CategoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72999F002524C79F0018750E /* CategoryRowView.swift */; };
@@ -147,7 +146,6 @@
 		7274B7562513EB8000867FDB /* WelcomePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePages.swift; sourceTree = "<group>"; };
 		72771C16252B7830005245FB /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		7285D35C255BEAF4004D6E14 /* WelcomeCategoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCategoryCellView.swift; sourceTree = "<group>"; };
-		72999EF2252385810018750E /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 		72999EF72524C6FD0018750E /* Accueil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accueil.swift; sourceTree = "<group>"; };
 		72999EFC2524C7850018750E /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
 		72999F002524C79F0018750E /* CategoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRowView.swift; sourceTree = "<group>"; };
@@ -249,7 +247,6 @@
 		724B4F41255C7C2900F0DF5D /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				72999EF2252385810018750E /* NotificationsManager.swift */,
 				72B7F3E7252F6B4B00231772 /* NetworkManager.swift */,
 				7271B489261332CF00CC0CA6 /* PopupManager.swift */,
 				7252D2BF2615F279005AB58E /* HapticFeedback.swift */,
@@ -655,7 +652,6 @@
 				72D913D42518E69A00CA817D /* Product.swift in Sources */,
 				72FF6F49255334B500E6D95E /* viewTransition.swift in Sources */,
 				7252D2C02615F279005AB58E /* HapticFeedback.swift in Sources */,
-				72999EF3252385810018750E /* NotificationsManager.swift in Sources */,
 				72AC8AC02512770B00C0887F /* SceneDelegate.swift in Sources */,
 				72D913DB2518E96900CA817D /* loadJson.swift in Sources */,
 				7274B7572513EB8000867FDB /* WelcomePages.swift in Sources */,

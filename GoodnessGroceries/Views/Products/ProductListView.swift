@@ -28,7 +28,7 @@ struct ProductListView: View {
         return self.productsVM.products.filter { product in
             for productIndicator in product.indicators {
                 if let indicator = self.productsVM.indicators.first(where: { $0.id == productIndicator.id }) {
-                    if indicator.category_id == category.id && product.category == product_category {
+                    if indicator.category_id == category.id && product.category == product_category && productIndicator.sub_indicators.count > 0 {
                         return true
                     }
                 }

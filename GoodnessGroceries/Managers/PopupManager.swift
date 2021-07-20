@@ -8,7 +8,6 @@ class PopupManager: ObservableObject {
             self.showPopup = true
         }
     }
-    
 }
 
 enum PopupType {
@@ -19,6 +18,7 @@ enum PopupType {
     case category(category: Category)
     case productImage(image: String)
     case language
+    case thankyou
 }
 
 enum PopupErrorType: Error {

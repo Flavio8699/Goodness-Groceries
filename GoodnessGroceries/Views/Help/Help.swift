@@ -8,12 +8,22 @@ struct Help: View {
     var body: some View {
         NavigationView {
             VStack (alignment: .leading, spacing: 0) {
-                VStack {
+                VStack (spacing: 10) {
                     Image("GG-Logo-1")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 120)
                     Text(NSLocalizedString("WELCOME_PAGE_1_TEXT", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                    HStack (spacing: 10) {
+                        Image("uni_logo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 120)
+                        Image("pall_center")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 120)
+                    }
                 }.padding()
                 Divider()
                 Form {
@@ -34,7 +44,8 @@ struct Help: View {
                     }
                 }
             }
-            .navigationBarTitle(NSLocalizedString("HELP", lang: UserSettings.language))
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }

@@ -16,9 +16,9 @@ class Connectivity {
 
 class NetworkManager: ObservableObject {
     static let shared = NetworkManager()
-    let BASE_URL: String = "https://goodnessgroceries.com/"
+    let BASE_URL: String = "https://87616d4bcefa.ngrok.io/"
     
-    func requestUserAccess(for participant_id: String, product_categories: [String], indicator_categories: [String], completion: @escaping (Result<Void,PopupErrorType>) -> Void) {
+    func requestUserAccess(for participant_id: String, product_categories: [String], indicator_categories: [String], completion: @escaping (Result<UserStatus,PopupErrorType>) -> Void) {
         if !Connectivity.connected {
             completion(.failure(.network))
             return;
@@ -42,7 +42,9 @@ class NetworkManager: ObservableObject {
             UserSettings.shared.loading = false
             switch response.result {
                 case .success(_):
-                    completion(.success(()))
+                    let json = JSON(response.data!)
+                    let status = UserStatus(rawValue: json["status"].rawValue as! String)!
+                    completion(.success(status))
                     break
                     
                 case .failure(_):
@@ -129,10 +131,10 @@ class NetworkManager: ObservableObject {
     func sendDeviceToken(for participant_id: String, device_token: String) {
         
         let parameters: [String: Any] = [
-            "participant": participant_id,
-            "device_token": device_token
+            "name": participant_id,
+            "registration_id": device_token
         ]
         
-        Alamofire.request(BASE_URL + "post_device_token/", method: .post, parameters: parameters).validate().responseJSON { _ in }
+        Alamofire.request(BASE_URL + "device/apns/", method: .post, parameters: parameters).validate().responseJSON { _ in }
     }
 }

@@ -25,6 +25,18 @@ struct StatusRequestedView: View {
                     openURL(URL(string: "https://food.uni.lu/projects/goodness-groceries/")!)
                 }).padding(.top, 20)
                 Spacer(minLength: 0)
+                HStack (spacing: 10) {
+                    Spacer(minLength: 0)
+                    Image("uni_logo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 120)
+                    Image("pall_center")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 120)
+                    Spacer(minLength: 0)
+                }
             }
         }.padding()
     }

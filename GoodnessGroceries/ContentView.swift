@@ -105,8 +105,10 @@ struct ContentView: View {
         .ignoresSafeArea(.keyboard, edges: .bottom)
         .onAppear {
             NotificationCenter.default.addObserver(forName: NSNotification.Name("Products"), object: nil, queue: .main) { content in
-                withAnimation(.default) {
-                    UserSettings.showSurvey = true
+                if UserSettings.productsToReview.count > 0 {
+                    withAnimation(.default) {
+                        UserSettings.showSurvey = true
+                    }
                 }
             }
         }
@@ -131,6 +133,8 @@ struct ContentView: View {
                     ProductImagePopup(image: image)
                 case .language:
                     LanguagePopup()
+                case .thankyou:
+                    ThankYouPopup()
                 default:
                     Text("error")
             }

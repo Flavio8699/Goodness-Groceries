@@ -174,7 +174,7 @@ struct LanguagePopup: View {
                         UserSettings.language = "fr"
                         impactFeedback(.soft)
                     }, label: {
-                        Image("fr").resizable().aspectRatio(contentMode: .fit).frame(width: 70).border(Color.black, width: UserSettings.language == "fr" ? 2.5 : 0)
+                        Image("fr").resizable().aspectRatio(contentMode: .fit).frame(width: 70).border(UserSettings.language == "fr" ? Color.black : Color.white, width: 2.5)
                     })
                     Spacer()
                     Spacer()
@@ -182,7 +182,7 @@ struct LanguagePopup: View {
                         UserSettings.language = "en"
                         impactFeedback(.soft)
                     }, label: {
-                        Image("en").resizable().aspectRatio(contentMode: .fit).frame(width: 70).border(Color.black, width: UserSettings.language == "en" ? 2.5 : 0)
+                        Image("en").resizable().aspectRatio(contentMode: .fit).frame(width: 70).border(UserSettings.language == "en" ? Color.black : Color.white, width: 2.5)
                     })
                     Spacer()
                 }
@@ -206,3 +206,34 @@ struct ProductImagePopup: View {
     }
 }
 
+struct ThankYouPopup: View {
+    
+    @EnvironmentObject var UserSettings: UserSettings
+    @EnvironmentObject var PopupManager: PopupManager
+    
+    var body: some View {
+        PopupView {
+            HStack {
+                Spacer()
+                Image("GG-Logo-2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 80)
+                Image("uni_logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 80)
+                Spacer()
+            }
+            HStack {
+                Spacer()
+                Text(NSLocalizedString("THANK_YOU", lang: UserSettings.language)).font(.title)
+                Spacer()
+            }
+            Text(NSLocalizedString("THANK_YOU_MESSAGE", lang: UserSettings.language))
+            BlueButton(label: "Ok", action: {
+                PopupManager.showPopup = false
+            }).padding(.top, 8)
+        }
+    }
+}

@@ -35,9 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         DispatchQueue.main.async {
             if content.userInfo["products"] != nil {
                 if let products = content.userInfo["products"] as? [String] {
-                    UserSettings.shared.productsToReview.removeAll()
-                    for product in products {
-                        UserSettings.shared.productsToReview.append(product)
+                    if products.count > 0 {
+                        UserSettings.shared.productsToReview.removeAll()
+                        for product in products {
+                            UserSettings.shared.productsToReview.append(product)
+                        }
                     }
                 }
             }
@@ -53,10 +55,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         DispatchQueue.main.async {
             if content.userInfo["products"] != nil {
                 if let products = content.userInfo["products"] as? [String] {
-                    
-                    UserSettings.shared.productsToReview.removeAll()
-                    for product in products {
-                        UserSettings.shared.productsToReview.append(product)
+                    if products.count > 0 {
+                        UserSettings.shared.productsToReview.removeAll()
+                        for product in products {
+                            UserSettings.shared.productsToReview.append(product)
+                        }
                     }
                 }
 

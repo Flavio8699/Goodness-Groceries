@@ -51,17 +51,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if UserSettings.shared.statusRequested == true {
             UserSettings.shared.signIn()
         }
-
+        
         if !UserSettings.shared.showWelcome {
             DispatchQueue.main.async {
                 NetworkManager.shared.fetchProductsBought(for: UserSettings.shared.clientID) { result in
                     switch result {
                         case .success(let products):
                             if let products = products {
-                                UserSettings.shared.productsToReview.removeAll()
-                                for product in products {
-                                    let code = String(product.product_ean)
-                                    UserSettings.shared.productsToReview.append(code)
+                                if products.count > 0 {
+                                    UserSettings.shared.productsToReview.removeAll()
+                                    for product in products {
+                                        let code = String(product.product_ean)
+                                        UserSettings.shared.productsToReview.append(code)
+                                    }
                                 }
                             }
                             break

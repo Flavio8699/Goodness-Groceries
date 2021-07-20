@@ -18,13 +18,18 @@ struct Welcome_page1: View {
                     .frame(height: 120)
             }.padding(.bottom, 15)
             
-            VStack (alignment: .leading, spacing: 20) {
+            VStack (alignment: .leading, spacing: 30) {
                 HStack (spacing: 0) {
                     Spacer()
                     Text(NSLocalizedString("WELCOME_PAGE_1_TITLE", lang: UserSettings.language)).font(.title).fixedSize(horizontal: false, vertical: true).multilineTextAlignment(.center)
                     Spacer()
                 }
                 Text(NSLocalizedString("WELCOME_PAGE_1_TEXT", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
+                    withAnimation {
+                        UserSettings.step += 1
+                    }
+                })
                 Spacer(minLength: 0)
                 HStack (spacing: 10) {
                     Spacer(minLength: 0)
@@ -38,11 +43,6 @@ struct Welcome_page1: View {
                         .frame(height: 120)
                     Spacer(minLength: 0)
                 }
-                BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
-                    withAnimation {
-                        UserSettings.step += 1
-                    }
-                })
             }
         }.padding()
     }
@@ -65,7 +65,7 @@ struct Welcome_page2: View {
                     .frame(height: 120)
             }.padding(.bottom, 50)
             
-            VStack (alignment: .center, spacing: 20) {
+            VStack (alignment: .center, spacing: 30) {
                 VStack (spacing: 10) {
                     TextField(NSLocalizedString("CLIENT_ID", lang: UserSettings.language), text: $UserSettings.clientID).introspectTextField { textField in
                         let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: textField.frame.size.width, height: 44))
@@ -88,6 +88,9 @@ struct Welcome_page2: View {
                     Image(systemName: "qrcode.viewfinder").foregroundColor(Color("GG_D_Blue"))
                     Text(NSLocalizedString("SCAN_DIRECTLY", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true).foregroundColor(Color("GG_D_Blue"))
                 }).padding()
+                BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
+                    login()
+                })
                 Spacer(minLength: 0)
                 HStack (spacing: 10) {
                     Spacer(minLength: 0)
@@ -101,9 +104,6 @@ struct Welcome_page2: View {
                         .frame(height: 120)
                     Spacer(minLength: 0)
                 }
-                BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
-                    login()
-                })
             }
         }.padding()
         .sheet(isPresented: self.$isPresentingScanner) {
@@ -256,15 +256,18 @@ struct Welcome_page6: View {
                     .frame(height: 120)
             }.padding(.bottom, 15)
             
-            VStack (alignment: .leading, spacing: 20) {
+            VStack (alignment: .leading, spacing: 10) {
                 HStack {
                     Spacer(minLength: 0)
                     Text(NSLocalizedString("WELCOME_PAGE_NOTIFICATIONS_TITLE", lang: UserSettings.language)).font(.title)
                     Spacer(minLength: 0)
                 }
-                Text(NSLocalizedString("WELCOME_PAGE_NOTIFICATIONS_TEXT_1", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
-                Text(NSLocalizedString("WELCOME_PAGE_NOTIFICATIONS_TEXT_2", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
-                Spacer(minLength: 0)
+                ScrollView(.vertical, showsIndicators: true) {
+                    VStack (spacing: 10) {
+                        Text(NSLocalizedString("WELCOME_PAGE_NOTIFICATIONS_TEXT_1", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                        Text(NSLocalizedString("WELCOME_PAGE_NOTIFICATIONS_TEXT_2", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                    }
+                }
                 BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
                     UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { _,_  in
                         DispatchQueue.main.async {
@@ -272,6 +275,19 @@ struct Welcome_page6: View {
                         }
                     }
                 })
+                Spacer(minLength: 0)
+                HStack (spacing: 10) {
+                    Spacer(minLength: 0)
+                    Image("uni_logo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 120)
+                    Image("pall_center")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 120)
+                    Spacer(minLength: 0)
+                }
             }
         }.padding()
     }

@@ -105,7 +105,7 @@ struct SurveyView: View {
             }
         } else {
             ProgressView().onAppear {
-                PopupManager.currentPopup = .message(title: NSLocalizedString("THANK_YOU", lang: UserSettings.language), message: NSLocalizedString("THANK_YOU_MESSAGE", lang: UserSettings.language))
+                PopupManager.currentPopup = .thankyou
                 UserSettings.showSurvey = false
             }
         }
