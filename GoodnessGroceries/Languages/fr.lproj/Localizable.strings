@@ -30,6 +30,9 @@
 "CONTINUE" = "Suivant";
 
 
+"DONE" = "Ok";
+
+
 "HELP" = "Aide";
 
 
@@ -52,6 +55,15 @@
 
 /*  */
 "IND_ANIMAL_NAME" = "Bien-être animal";
+
+/*  */
+"IND_ANIMAL_SUBIND_HUSBANDRYCONDITIONS_NAME" = "Conditions d'Elevage";
+
+/*  */
+"IND_ANIMAL_SUBIND_SLAUGHTERINGCONDITIONS_NAME" = "Conditions d'Abattage";
+
+/*  */
+"IND_ANIMAL_SUBIND_TRANSPORTCONDITIONS_NAME" = "Conditions de Transport";
 
 /*  */
 "IND_BIODIV_DESCRIPTION" = "Les plantes, les animaux et les micro-organismes dans la nature doivent exister dans la plus grande diversité possible et avoir une large variété génétique au sein des différentes espèces pour garantir la vie à long terme. Dans la production alimentaire, la conservation et l'amélioration des écosystèmes sont une priorité. Les variétés et races anciennes sont réintroduites et la domination d'un nombre limité de variétés est évitée. La biodiversité du paysage naturel est conservée autant que possible.";
@@ -232,6 +244,15 @@
 
 /*  */
 "IND_FOOD_NAME" = "Distance de transport";
+
+/*  */
+"IND_FOOD_SUBIND_INPUTPROVENANCE_NAME" = "Provenance des Intrants";
+
+/*  */
+"IND_FOOD_SUBIND_PRODUCTORIGIN_NAME" = "Origine du Produit";
+
+/*  */
+"IND_FOOD_SUBIND_PRODUCTTRACKING_NAME" = "Suivi des Opérations";
 
 /*  */
 "IND_LABOUR_DESCRIPTION" = "Les producteurs d’aliments sont protégés par les normes internationales du travail, garantissant des contrats de travail transparents et juridiquement contraignants, protégeant du travail forcé ou des enfants, et permettant la liberté de réunion et de négociation. Les entreprises du système alimentaire doivent garantir ces droits même dans les pays où les normes internationales sont difficiles à contrôler.";
@@ -649,5 +670,3 @@
 
 
 "fr" = "Français";
-
-"DONE" = "Ok";

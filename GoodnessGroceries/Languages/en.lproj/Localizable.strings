@@ -30,6 +30,9 @@
 "CONTINUE" = "Continue";
 
 
+"DONE" = "Done";
+
+
 "HELP" = "Help";
 
 
@@ -52,6 +55,15 @@
 
 
 "IND_ANIMAL_NAME" = "Animal welfare";
+
+
+"IND_ANIMAL_SUBIND_HUSBANDRYCONDITIONS_NAME" = "Husbandy Conditions";
+
+
+"IND_ANIMAL_SUBIND_SLAUGHTERINGCONDITIONS_NAME" = "Slaughtering Conditions";
+
+
+"IND_ANIMAL_SUBIND_TRANSPORTCONDITIONS_NAME" = "Transport Conditions";
 
 
 "IND_BIODIV_DESCRIPTION" = "Plants, animals and microorganisms in nature must exist in the greatest possible diversity, and have wide genetic variety within the various species to guarantee life in the long-term. In food production, the conservation and improvement of ecosystems is prioritised. Ancient varieties and breeds are reintroduced and the dominance of a limited number of varieties is avoided. The biodiversity of the surrounding natural landscape is conserved as much as possible.";
@@ -234,6 +246,15 @@
 "IND_FOOD_NAME" = "Food miles";
 
 
+"IND_FOOD_SUBIND_INPUTPROVENANCE_NAME" = "Input provenance";
+
+
+"IND_FOOD_SUBIND_PRODUCTORIGIN_NAME" = "Product origin";
+
+
+"IND_FOOD_SUBIND_PRODUCTTRACKING_NAME" = "Product tracking";
+
+
 "IND_LABOUR_DESCRIPTION" = "Food producers are protected by international labour standards. They ensure transparent and legally-binding work contracts, protect from forced or child labour, and allow freedom of assembly and of bargaining. Food-system enterprises have to ensure these rights even in countries where international standards are difficult to control.";
 
 
@@ -414,7 +435,16 @@
 "IND_SUSTAINABLEMANAGEMENT_SUBIND_SUSTAINABILITYMANAGEMENTPLAN_NAME" = "Sustainability Management Plan";
 
 
+"IND_TRANSPARENCY_DESCRIPTION" = "People within food production engage in trustful, open and respectful communication with each other, no matter their hierarchical status. Employees have access to procedures, policies, decisions and decision-making processes of their employers. Consumers can easily find verified publicly-accessible information about products.";
+
+
+"IND_TRANSPARENCY_NAME" = "Transparency";
+
+
 "IND_TRANSPARENCY_SUBIND_PRODUCTINFORMATION_COFFEE_IC_DESCRIPTION" = "Fact-based documentaries of producers’ daily life are published bi-annually.";
+
+
+"IND_TRANSPARENCY_SUBIND_PRODUCTINFORMATION_NAME" = "Product Information";
 
 
 "IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_COFFEE_IC_DESCRIPTION" = "UTZ™ and Rain Forest Alliance™ country reports are published once a year.";
@@ -427,15 +457,6 @@
 
 
 "IND_TRANSPARENCY_SUBIND_SPECIFICATIONS_COFFEE_IC_DESCRIPTION" = "Specification sheets are publicly available on a website.";
-
-
-"IND_TRANSPARENCY_DESCRIPTION" = "People within food production engage in trustful, open and respectful communication with each other, no matter their hierarchical status. Employees have access to procedures, policies, decisions and decision-making processes of their employers. Consumers can easily find verified publicly-accessible information about products.";
-
-
-"IND_TRANSPARENCY_NAME" = "Transparency";
-
-
-"IND_TRANSPARENCY_SUBIND_PRODUCTINFORMATION_NAME" = "Product Information";
 
 
 "IND_TRANSPARENCY_SUBIND_SPECIFICATIONS_NAME" = "Specifications";
@@ -649,5 +670,3 @@
 
 
 "fr" = "Français";
-
-"DONE" = "Done";
