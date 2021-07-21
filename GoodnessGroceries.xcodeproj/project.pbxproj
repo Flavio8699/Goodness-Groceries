@@ -688,7 +688,8 @@
 				CODE_SIGN_ENTITLEMENTS = "push-notifications/push-notificationsDebug.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KZP7B8QNG2;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = 6733725FT8;
 				INFOPLIST_FILE = "push-notifications/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -696,7 +697,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "lu.uni.bicslab.goodnessgroceries.push-notifications";
+				PRODUCT_BUNDLE_IDENTIFIER = "lu.uni.bicslab.goodness.groceries.push-notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -710,7 +711,8 @@
 				CODE_SIGN_ENTITLEMENTS = "push-notifications/push-notificationsRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KZP7B8QNG2;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = 6733725FT8;
 				INFOPLIST_FILE = "push-notifications/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -718,7 +720,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "lu.uni.bicslab.goodnessgroceries.push-notifications";
+				PRODUCT_BUNDLE_IDENTIFIER = "lu.uni.bicslab.goodness.groceries.push-notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -852,8 +854,9 @@
 				CODE_SIGN_ENTITLEMENTS = GoodnessGroceries/GoodnessGroceries.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"GoodnessGroceries/Preview Content\"";
-				DEVELOPMENT_TEAM = KZP7B8QNG2;
+				DEVELOPMENT_TEAM = 6733725FT8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GoodnessGroceries/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -861,7 +864,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lu.uni.bicslab.goodnessgroceries;
+				PRODUCT_BUNDLE_IDENTIFIER = lu.uni.bicslab.goodness.groceries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
@@ -878,8 +881,9 @@
 				CODE_SIGN_ENTITLEMENTS = GoodnessGroceries/GoodnessGroceriesRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"GoodnessGroceries/Preview Content\"";
-				DEVELOPMENT_TEAM = KZP7B8QNG2;
+				DEVELOPMENT_TEAM = 6733725FT8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GoodnessGroceries/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -887,7 +891,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lu.uni.bicslab.goodnessgroceries;
+				PRODUCT_BUNDLE_IDENTIFIER = lu.uni.bicslab.goodness.groceries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;

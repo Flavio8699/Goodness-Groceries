@@ -19,9 +19,31 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Not in use</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Not in use</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Not in use</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Scan QR-codes</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Not in use</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Not in use</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Not in use</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Not in use</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Not in use</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Not in use</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Not in use</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -64,27 +86,5 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Scan QR-codes</string>
-	<key>NSCalendarsUsageDescription</key>
-	<string>Not in use</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Not in use</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Not in use</string>
-	<key>NSMotionUsageDescription</key>
-	<string>Not in use</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Not in use</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>Not in use</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>Not in use</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Not in use</string>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Not in use</string>
-	<key>NSContactsUsageDescription</key>
-	<string>Not in use</string>
 </dict>
 </plist>
