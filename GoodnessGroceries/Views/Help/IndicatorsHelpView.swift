@@ -25,7 +25,6 @@ struct IndicatorsHelpView: View {
                                 if selected.contains(ind) {
                                     Text(NSLocalizedString(ind.general_description, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
                                 }
-                                Divider().padding(.leading, ind == indicators.last ? 0 : 65)
                             }
                             .contentShape(Rectangle())
                             .onTapGesture {
