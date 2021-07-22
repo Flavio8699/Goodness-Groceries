@@ -90,7 +90,7 @@
 "IND_BIODIV_SUBIND_SAVINGOFSEEDSANDBREEDS_NAME" = "Préservation de semences et de races";
 
 /*  */
-"IND_CAT_ECONOMIC_DESCRIPTION" = "Toutes les personnes travaillant dans le secteur alimentaire ont une sécurité financière actuelle et future. Les activités de production alimentaire, en générant non seulement des gains financiers mais aussi des gains sociaux, permettent aux sociétés de prospérer dans leur ensemble. Pour y parvenir, une production alimentaire plus locale, circulaire et solidaire est encouragée.";
+"IND_CAT_ECONOMIC_DESCRIPTION" = "Tout travailleur du secteur alimentaire a une sécurité financière actuelle et future. La société dans son ensemble prospère à travers leurs activités de production alimentaire, générant des gains financiers et sociaux. Une production alimentaire plus locale, circulaire et solidaire est encouragée.";
 
 /*  */
 "IND_CAT_ECONOMIC_NAME" = "Bien-être économique";
@@ -102,7 +102,7 @@
 "IND_CAT_ENVIRONMENT_NAME" = "Environnement";
 
 /*  */
-"IND_CAT_GOVERNANCE_DESCRIPTION" = "La façon dont les entreprises mènent leurs activités, gèrent leurs ressources et leurs actifs, et organisent leurs interactions et processus de décision a le but d’augmenter la durabilité. Toutes les informations sur les produits sont transparentes et facilement accessibles. Les entreprises utilisent des approches participatives et associent les producteurs aux décisions. En fin de compte, les entreprises peuvent être tenues responsables de leurs déclarations.";
+"IND_CAT_GOVERNANCE_DESCRIPTION" = "La façon dont les entreprises mènent leurs activités, gèrent leurs ressources et leurs actifs, et organisent leurs processus de décision a le but d’augmenter la durabilité. Toutes les informations sur les produits sont transparentes et accessibles. Les entreprises utilisent des approches participatives et peuvent être tenues responsables de leurs déclarations.";
 
 /*  */
 "IND_CAT_GOVERNANCE_NAME" = "Bonne gouvernance";
