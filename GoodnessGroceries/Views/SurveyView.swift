@@ -15,7 +15,7 @@ struct SurveyView: View {
                         Text(NSLocalizedString("SURVEY_PAGE_TEXT", lang: UserSettings.language))
     
                         Text(NSLocalizedString(product.name, lang: UserSettings.language)).font(.headline)
-                        HStack (alignment: .top) {
+                        HStack {
                             ProductImageView(url: product.image_url)
                             DottedLine()
                                 .stroke(style: StrokeStyle(lineWidth: 1, dash: [2]))
