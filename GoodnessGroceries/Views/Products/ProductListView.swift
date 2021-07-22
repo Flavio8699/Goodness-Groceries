@@ -13,7 +13,9 @@ struct ProductListView: View {
                 if products.count > 0 {
                     ForEach(products, id: \.self) { product in
                         NavigationLink(destination: ProductView(product: product, category: category)) {
-                            ProductRowView(product: product, category: category).foregroundColor(.black)
+                            ProductRowView(product: product, category: category)
+                                .foregroundColor(.black)
+                                .navigationBarTitle(NSLocalizedString("PRODUCTS", lang: UserSettings.language))
                         }
                         Divider()
                     }

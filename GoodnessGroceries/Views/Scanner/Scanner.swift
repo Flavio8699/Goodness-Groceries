@@ -40,7 +40,6 @@ struct Scanner: View {
                                     .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0, y: 5)
                                     .padding(.horizontal, 20)
                             }.padding(.bottom, 35)
-                            .navigationBarTitle(NSLocalizedString("BACK", lang: UserSettings.language))
                         }
                     }
                     Button(action: {
@@ -68,9 +67,10 @@ struct Scanner: View {
                 scannerIsActive = false
                 torchLightIsActive = false
             }
-            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarTitle(NSLocalizedString("SCANNER", lang: UserSettings.language), displayMode: .inline)
             .navigationBarHidden(true)
-        }.navigationViewStyle(StackNavigationViewStyle())
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

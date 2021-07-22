@@ -12,6 +12,7 @@ struct SearchView: View {
                     NavigationLink(destination: ProductView(product: product, category: nil)) {
                         ProductRowView(product: product, category: nil)
                             .foregroundColor(.black)
+                            .navigationBarTitle(NSLocalizedString("SEARCH", lang: UserSettings.language))
                     }
                     Divider()
                 }

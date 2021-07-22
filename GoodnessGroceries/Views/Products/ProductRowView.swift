@@ -17,19 +17,17 @@ struct ProductRowView: View {
             HStack {
                 ProductImageView(url: product.image_url)
                 DottedLine()
-                            .stroke(style: StrokeStyle(lineWidth: 1, dash: [2]))
-                            .frame(width: 1, height: 100)
+                    .stroke(style: StrokeStyle(lineWidth: 1, dash: [2]))
+                    .frame(width: 1, height: 100)
                     .foregroundColor(Color(.systemGray3))
                 IndicatorIconsView(indicators: product.getIndicators(for: category))
             }
         }
         .padding(.vertical, 5)
-        .navigationBarTitle(NSLocalizedString(category?.name != nil ? "PRODUCTS" : "BACK", lang: UserSettings.language))
     }
 }
 
 struct DottedLine: Shape {
-        
     func path(in rect: CGRect) -> Path {
         var path = Path()
         path.move(to: CGPoint(x: 0, y: 0))

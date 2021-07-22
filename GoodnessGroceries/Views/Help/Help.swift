@@ -44,7 +44,7 @@ struct Help: View {
                     }
                 }
             }
-            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarTitle(NSLocalizedString("HELP", lang: UserSettings.language), displayMode: .inline)
             .navigationBarHidden(true)
         }.navigationViewStyle(StackNavigationViewStyle())
     }
