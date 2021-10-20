@@ -20,7 +20,7 @@ struct CompareView: View {
                     }.rotationEffect(.degrees( -90)).frame(width: geometry.size.width*0.15)
                     ForEach(products, id: \.self) { product in
                         Divider()
-                        VStack (spacing: 10) {
+                        VStack (alignment: .leading, spacing: 10) {
                             ProductImageView(url: product.image_url, width: cellWidth-20, height: cellWidth-20).padding(.top, 10)
                                 .onTapGesture {
                                 PopupManager.currentPopup = .productImage(image: product.image_url)
@@ -32,16 +32,16 @@ struct CompareView: View {
                 }.frame(height: cellWidth*1.5)
                 Divider()
                 ScrollView (.vertical, showsIndicators: true) {
-                    VStack (spacing: 0) {
+                    VStack (alignment: .leading, spacing: 0) {
                         HStack (alignment: .top, spacing: 0) {
-                            VStack (spacing: 0) {
+                            VStack (alignment: .leading, spacing: 0) {
                                 Spacer(minLength: 0)
                                 Text(NSLocalizedString("CATEGORY", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true).frame(width: cellWidth*1.5)
                                 Spacer(minLength: 0)
                             }.rotationEffect(.degrees( -90)).frame(width: geometry.size.width*0.15)
                             ForEach(products, id: \.self) { product in
                                 Divider()
-                                VStack (spacing: 10) {
+                                VStack (alignment: .leading, spacing: 10) {
                                     Image("GG_\(product.category.rawValue)").resizable().scaledToFit().frame(width: cellWidth-20, height: cellWidth-20).padding(.top, 10)
                                     Text(NSLocalizedString(product.category.description, lang: UserSettings.language)).font(.system(size: 12)).multilineTextAlignment(.center)
                                     Spacer(minLength: 0)
@@ -67,7 +67,7 @@ struct CompareView: View {
                             }
                             Divider()
                             ForEach(category.getIndicators()) { indicator in
-                                VStack (spacing: 0) {
+                                VStack (alignment: .leading, spacing: 0) {
                                     HStack (spacing: 0) {
                                         HStack (spacing: 0) {
                                             Spacer(minLength: 0)
