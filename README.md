@@ -3,8 +3,8 @@ This repository contains my Bachelor Semester Project 3 & 4 at the University of
 The app was built using the SwiftUI framework.
 
 ## Screenshots
-![Screenshots 1](screenshot1.png)
-![Screenshots 2](screenshot2.png)
+![Screenshots 1](Screenshots/screenshot1.png)
+![Screenshots 2](Screenshots/screenshot2.png)
 
 ## Requirements
 * Xcode version >= 12.0.1
